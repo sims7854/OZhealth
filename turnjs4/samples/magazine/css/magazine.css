@@ -9,21 +9,23 @@ body{
 	position:absolute;
 	top:50%;
 	left:50%;
-	width:922px;
-	height:600px;
+	width:1152px;
+	height:750px;
 	margin:auto;
 }
 
 .magazine-viewport .magazine{
-	width:922px;
-	height:600px;
-	left:-461px;
-	top:-430px !important;
+	width:1152px;
+	height:750px;
+	left:-576px;
+	
 }
-
+@media screen and (min-width:1440px){
+	.magazine-viewport .magazine{ top:-430px !important; }
+}
 .magazine-viewport .page{
-	width:461px;
-	height:600px;
+	width:576px;
+	height:750px;
 	background-color:white;
 	background-repeat:no-repeat;
 	background-size:100% 100%;
