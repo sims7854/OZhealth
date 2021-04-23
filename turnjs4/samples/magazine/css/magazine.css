@@ -20,7 +20,7 @@ body{
 	left:-576px;
 	
 }
-@media screen and (min-width:1440px){
+@media screen and (min-width:1537px){
 	.magazine-viewport .magazine{ top:-430px !important; }
 }
 .magazine-viewport .page{
