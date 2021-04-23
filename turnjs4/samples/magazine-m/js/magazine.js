@@ -63,9 +63,9 @@ function zoomTo(event) {
 				$('.magazine-viewporte').data().regionClicked = false;
 			} else {
 				if ($('.magazine-viewporte').zoom('value')==1) {
-					$('.magazine-viewporte').zoom('zoomIn', event);
+					//$('.magazine-viewporte').zoom('zoomIn', event);
 				} else {
-					$('.magazine-viewporte').zoom('zoomOut');
+					//$('.magazine-viewporte').zoom('zoomOut');
 				}
 			}
 		}, 1);
