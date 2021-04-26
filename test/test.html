@@ -1,0 +1,75 @@
+<style type="text/css">
+    video#bgvid {
+            position: fixed; right: 0; bottom: 0;
+            min-width: 100%; min-height: 100%;
+            width: auto; height: auto; z-index: -100;
+            background: url(polina.jpg) no-repeat;
+            background-size: cover;
+    }
+    
+    body{margin:0;background:#000}
+    
+    video {
+            position:fixed;
+            top:50%;left:50%;
+            min-width:100%;min-height:100%;width:auto;height:auto;z-index:-100;
+            -webkit-transform:translateX(-50%) translateY(-50%);
+            transform:translateX(-50%) translateY(-50%);
+            
+            background-size:cover;-webkit-transition:1s opacity;transition:1s opacity
+    }
+    
+    div{
+        font-family:Agenda-Light,Agenda\ Light,Agenda,Arial\ Narrow,sans-serif;
+        font-weight:100;background:rgba(0,0,0,.3);color:#fff;padding:2rem;width:33%;
+        margin:2rem;float:right;font-size:1.2rem
+    }
+    
+    h1{
+        font-size:3rem;
+        text-transform:uppercase;
+        margin-top:0;
+        letter-spacing:.3rem
+    }
+    
+    a{
+        display:inline-block;color:#fff;text-decoration:none;background:rgba(0,0,0,.5);
+        padding:.5rem;-webkit-transition:.6s background;
+        transition:.6s background
+    }
+    
+    a:hover{
+        background:rgba(0,0,0,.9)
+    }
+    
+</style>
+ 
+</head>
+<body>
+    <video autoplay loop  id="bgvid">
+        <source src="Atoms.mp4" type="video/mp4">
+    </video>
+    <div id="polina">
+        <h1>Back to Basic</h1>
+        <p>Back to Basic 2015
+            <p />
+                <a href="http://google.com">google</a>
+            <p>
+                [Background Fullscreen Video autoplay~]
+                배경이미지와 재생할 비디오 파일의 경로만 바꾸면 사용가능함.
+                구글의 HTML5 웹동영상 코덱으로 크롬에서 효율적으로 작동합니다.
+                가급적이면 HD영상을 사용하며 분량은 15초에서 30초 내외가 적당하며 
+                자바스크립트를 이용하여 배경음은 재생되지 않도록 합니다.
+ 
+            </p>
+    </div>
+</body>
+<div class="jb-box">
+    <video muted autoplay loop>
+      <source src="./Atoms.mp4" type="video/mp4">
+      <strong>Your browser does not support the video tag.</strong>
+    </video>
+    <div class="jb-text">
+      <p>Lorem Ipsum Dolor</p>
+    </div>
+  </div>
