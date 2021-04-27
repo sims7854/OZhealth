@@ -1,0 +1,88 @@
+<script src="../lib/anime.min.js"></script>
+<div id="ex">
+    <br>
+    <div>
+        <div id="morphing"> 
+            <svg width="420" height="480" viewBox="0 0 140 140">
+                <g fill="none" fill-rule="evenodd">
+                    <g fill="#8453e3" fill-opacity=".15" transform="translate(0 6)">
+                        <polygon points="70 0 130.415 35 130.415 105 70 140 9.585 105 9.585 35"/>
+                        <polygon points="70 18 115.033 46 115.033 97 70 122 24.967 97 24.967 46"/>
+                        <polygon points="70 35 100.306 52.5 100.306 87.5 70 105 39.694 87.5 39.694 52.5"/>
+                        <polygon points="70 50 87.320 60 87.320 80 70 90 52.68 80 52.68 60"/>
+                    </g>
+                    <polygon class="polymorph" stroke-width="1" stroke="#8453e3" points="70 24 115.033 52 115.033 103 70 96 24.967 103 9.585 41"></polygon>
+                </g>
+            </svg> 
+        </div>
+    </div>
+</div>
+  <div class="btn-wrap">
+    <button onclick="promptDialogBox()">입력</button>
+    <a href="#c" class="btn9">Click</a>
+    
+  </div>
+  <script type="text/javascript">
+    var test ='70 24 115.033 52 130.415 111 70 96 52.68 86 9.585 41'
+	var ani9 = anime({
+		targets: '#morphing .polymorph',
+		points: [
+			{ value: test },
+			{ value: '70 6 100.306 58.5 130.415 111 70 146 9.585 111 52.68 66' },
+			{ value: '70 56 100.306 58.5 87.320 86 70 96 9.585 111 52.68 66' },
+			{ value: '70 24 115.033 52 115.033 103 70 96 24.967 103 9.585 41' }
+		],
+		easing: 'easeInOutExpo',
+		duration: 2000,
+		loop: false,
+		autoplay: false
+	});
+	document.querySelector('.btn-wrap .btn9').onclick = ani9.play;
+</script>
+
+
+<p id="text"></p>
+    
+<script>
+    function promptDialogBox() {
+        var inputStr1 = prompt("피지분비 : ", );
+        var inputStr2 = prompt("유수분 : ", );
+        var inputStr3 = prompt("모공 : ", );
+        var inputStr4 = prompt("피부톤 : ", );
+        var inputStr5 = prompt("색소침착 : ", );
+        var inputStr6 = prompt("주름 : ", );
+        
+        
+
+        if (inputStr == "건성") {
+            document.getElementById("text").innerHTML = "입력하신 타입은 " + inputStr + "입니다.";
+            var ani9 = anime({
+		targets: '#morphing .polymorph',
+		points: [
+			{ value: '70 56 87.320 66 87.320 86 70 96 52.68 86 52.68 66' },
+
+		],
+		easing: 'easeInOutExpo',
+		duration: 2000,
+		loop: false,
+		autoplay: false
+        });
+        document.querySelector('.btn-wrap .btn9').onclick = ani9.play;
+    } if (inputStr == "지성") {
+            document.getElementById("text").innerHTML = "입력하신 타입은 " + inputStr + "입니다.";
+            var ani9 = anime({
+		targets: '#morphing .polymorph',
+		points: [
+			{ value: '70 24 115.033 52 115.033 103 70 128 24.967 103 24.967 52' },
+
+		],
+		easing: 'easeInOutExpo',
+		duration: 2000,
+		loop: false,
+		autoplay: false
+        }); 
+        document.querySelector('.btn-wrap .btn9').onclick = ani9.play;
+    }};
+</script>
+
+
