@@ -13,12 +13,13 @@ body {
     flex-direction: column;
     /* justify-content: center; */
     text-align: center;
-    width: 290px;
+    width: 320px;
     height: 100%;
 }
 .line {
     width: 100%;
     padding: 1px 0px;
+    overflow: hidden;
 }
 .shadow {
     position: absolute !important;
@@ -31,11 +32,14 @@ body {
 .square, .circle {
     pointer-events: none;
     position: relative;
-    width: 28px;
-    height: 28px;
-    margin: 1px;
+    width: 320px;
+    height: 320px;
     background-color: currentColor;
     font-size: 14px;
+}
+.el{
+    width: 2240px;
+    background-image: url(seek2.jpg);
 }
 .controls {
     opacity: 1;
@@ -84,16 +88,8 @@ input[type=range]::-webkit-slider-thumb {
       <div class="small square shadow"></div>
       <div class="small square el"></div>
     </div>
-    <div class="line">
-      <div class="small square shadow"></div>
-      <div class="small square el"></div>
-    </div>
-    <div class="line">
-      <div class="small square shadow"></div>
-      <div class="small square el"></div>
-    </div>
     <div class="line controls">
-      <input class="progress" name="points" step=".001" type="range" min="0" max="100" value="0"></input>
+      <input class="progress" name="points" step="14.2857" type="range" min="0" max="100" value="0"></input>
     </div>
 </div>
 <input type="submit" value="submit" />
@@ -101,10 +97,10 @@ input[type=range]::-webkit-slider-thumb {
 <script>
     var animation = anime({
       targets: '.seek-anim-demo .el',
-      translateX: 270,
-      delay: function(el, i) { return i * 100; },
+      translateX: -2240,
+      delay: function(el, i) { return i * 0; },
       elasticity: 200,
-      easing: 'easeInOutSine',
+      easing: 'linear',
       autoplay: false
     });
     
