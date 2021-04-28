@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>HTML</title>
+<style>
+    * {
+        font-size: 16px;
+        font-family: Consolas, sans-serif;
+    }
+</style>
+</head>
+<body>
+    <form action="../morphing4.html" method="get">
+        <p>피지분비 : <input type="text" name="se" /></p>
+        <p>유수분 : <input type="text" name="ow" /></p>
+        <p>모공크기 : <input type="text" name="po" /></p>
+        <p>피부톤 : <input type="text" name="sk" /></p>
+        <p>색소침착 : <input type="text" name="pi" /></p>
+        <p>주름 : <input type="text" name="wr" /></p>
+        <input type="submit" value="입력" />
+    </form>
+    <script>
+        function receive_get_data(param) {
+            var result = null, tmp = [];
+            var items = window.location.search.substring(1).split("&");
+            for (var i = 0; i < items.length; i++) {
+                tmp = items[i].split("=");
+                if (tmp[0] === param) result = decodeURIComponent(tmp[1]);
+            }
+            return result;
+        }
+    </script>
+</body>
+</html>

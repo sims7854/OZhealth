@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>HTML</title>
+<style>
+    * {
+        font-size: 16px;
+        font-family: Consolas, sans-serif;
+    }
+</style>
+</head>
+<body>
+    <p>피지분비 : <span id="se"></span></p>
+    <p>유수분 : <span id="ow"></span></p>
+    <p>모공크기 : <span id="po"></span></p>
+    <p>피부톤 : <span id="sk"></span></p>
+    <p>색소침착 : <span id="pi"></span></p>
+    <p>주름 : <span id="wr"></span></p>
+    <script type="text/javascript">
+        function receive_get_data(param) {
+            var result = null, tmp = [];
+            var items = window.location.search.substring(1).split("&");
+            for (var i = 0; i < items.length; i++) {
+                tmp = items[i].split("=");
+                if (tmp[0] === param) result = decodeURIComponent(tmp[1]);
+            }
+            return result;
+        }
+        document.getElementById("se").innerHTML = receive_get_data("se");
+        document.getElementById("ow").innerHTML = receive_get_data("ow");
+        document.getElementById("po").innerHTML = receive_get_data("po");
+        document.getElementById("sk").innerHTML = receive_get_data("sk");
+        document.getElementById("pi").innerHTML = receive_get_data("pi");
+        document.getElementById("wr").innerHTML = receive_get_data("wr");
+    </script>
+</body>
+</html>
