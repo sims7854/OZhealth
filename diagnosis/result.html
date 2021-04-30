@@ -1,0 +1,149 @@
+<script src="anime.min.js"></script>
+<div id="ex">
+    <br>
+    <div>
+        <div id="morphing"> 
+            <svg width="420" height="480" viewBox="0 0 140 140">
+                <g fill="none" fill-rule="evenodd">
+                    <g fill="#ff0000" fill-opacity=".15" transform="translate(0 0)">
+                        <polygon points="70 0 130.621778 35 130.621778 105 70 140 9.378221999999994 105 9.378221999999994 35"/>
+                        <polygon points="70 21 112.4352446 45.5 112.4352446 94.5 70 119 27.564755399999996 94.5 27.564755399999996 45.5"/>
+                        <polygon points="70 42 94.2487112 56 94.2487112 84 70 98 45.7512888 84 45.7512888 56"/>
+                        <polygon points="70 56 82.1243556 63 82.1243556 77 70 84 57.8756444 77 57.8756444 63"/>
+                    </g>
+                    <polygon class="polymorph" stroke-width="1" stroke="#ff3333" points="70 56 82.1243556 63 82.1243556 77 70 84 57.8756444 77 57.8756444 63"></polygon>
+                </g>
+            </svg> 
+        </div>
+    </div>
+</div>
+  <div class="btn-wrap">
+
+  </div>
+
+<p id="text"></p>
+    
+<script>
+        window.onload = function(){
+			function receive_get_data(param) {
+                var result = null, tmp = [];
+                var items = window.location.search.substring(1).split("&");
+                for (var i = 0; i < items.length; i++) {
+                    tmp = items[i].split("=");
+                    if (tmp[0] === param) result = decodeURIComponent(tmp[1]);
+                }
+                return result;
+            }
+            /* 피지분비 */
+            var input = receive_get_data("Q1")*2 + receive_get_data("Q2")*5 + receive_get_data("Q3")*1 + receive_get_data("Q4")*1 +
+                        receive_get_data("Q5")*1 + receive_get_data("Q6")*1 + receive_get_data("Q7")*1 + receive_get_data("Q8")*1 + 
+                        receive_get_data("Q9")*1 + receive_get_data("Q10")*0 + receive_get_data("Q11")*0 + receive_get_data("Q12")*4 + 
+                        receive_get_data("Q13")*2 + receive_get_data("Q14")*4 + receive_get_data("Q15")*0+ receive_get_data("Q16")*0 ;
+            /* 유수분 */
+            var input2 = receive_get_data("Q1")*1 + receive_get_data("Q2")*5 + receive_get_data("Q3")*1 + receive_get_data("Q4")*2 +
+                        receive_get_data("Q5")*1 + receive_get_data("Q6")*1 + receive_get_data("Q7")*1 + receive_get_data("Q8")*1 + 
+                        receive_get_data("Q9")*1 + receive_get_data("Q10")*4 + receive_get_data("Q11")*4 + receive_get_data("Q12")*2 + 
+                        receive_get_data("Q13")*0 + receive_get_data("Q14")*0 + receive_get_data("Q15")*0+ receive_get_data("Q16")*0 ;
+            /* 모공크기 */
+            var input3 = receive_get_data("Q1")*2 + receive_get_data("Q2")*5 + receive_get_data("Q3")*1 + receive_get_data("Q4")*1 +
+                        receive_get_data("Q5")*1 + receive_get_data("Q6")*1 + receive_get_data("Q7")*1 + receive_get_data("Q8")*1 + 
+                        receive_get_data("Q9")*1 + receive_get_data("Q10")*0 + receive_get_data("Q11")*0 + receive_get_data("Q12")*6 + 
+                        receive_get_data("Q13")*2 + receive_get_data("Q14")*2 + receive_get_data("Q15")*0+ receive_get_data("Q16")*0 ;
+            /* 피부톤 */
+            var input4 = receive_get_data("Q1")*3 + receive_get_data("Q2")*5 + receive_get_data("Q3")*1 + receive_get_data("Q4")*1 +
+                        receive_get_data("Q5")*1 + receive_get_data("Q6")*1 + receive_get_data("Q7")*3 + receive_get_data("Q8")*3 + 
+                        receive_get_data("Q9")*3 + receive_get_data("Q10")*0 + receive_get_data("Q11")*0 + receive_get_data("Q12")*3 + 
+                        receive_get_data("Q13")*0 + receive_get_data("Q14")*0 + receive_get_data("Q15")*0+ receive_get_data("Q16")*0 ;
+            /* 색소침착 */
+            var input5 = receive_get_data("Q1")*1 + receive_get_data("Q2")*5 + receive_get_data("Q3")*1 + receive_get_data("Q4")*1 +
+                        receive_get_data("Q5")*2 + receive_get_data("Q6")*2 + receive_get_data("Q7")*5 + receive_get_data("Q8")*4 + 
+                        receive_get_data("Q9")*1 + receive_get_data("Q10")*0 + receive_get_data("Q11")*0 + receive_get_data("Q12")*0 + 
+                        receive_get_data("Q13")*0 + receive_get_data("Q14")*2 + receive_get_data("Q15")*0+ receive_get_data("Q16")*0 ;
+            /* 주름 */
+            var input6 = receive_get_data("Q1")*1 + receive_get_data("Q2")*5 + receive_get_data("Q3")*3 + receive_get_data("Q4")*1 +
+                        receive_get_data("Q5")*1 + receive_get_data("Q6")*0 + receive_get_data("Q7")*2 + receive_get_data("Q8")*2 + 
+                        receive_get_data("Q9")*2 + receive_get_data("Q10")*0 + receive_get_data("Q11")*0 + receive_get_data("Q12")*0 + 
+                        receive_get_data("Q13")*0 + receive_get_data("Q14")*0 + receive_get_data("Q15")*0+ receive_get_data("Q16")*7 ;
+
+			/* 피지분비 */
+            if (input <= 100) {
+                var se1 = 70
+                var se2 = (100 - input) * 0.70
+                var se = (se1 + " " + se2 + " ")
+            }
+            /*if (input < 21) {
+                var se = "70 56 "
+            }*/
+        
+            /* 유수분 */
+            if (input2 <= 100) {
+                var ow1 = (input2 * 0.60621778) + 70
+                var ow2 = ((100 - input2) * 0.35) + 35
+                var ow = (ow1 + " " + ow2 + " ")
+            }
+            /*if (input2 <21) {
+                var ow = "82.1243556 63 "
+            }*/
+         
+            /* 모공크기 */
+            if (input3 <= 100) {
+                var po1 = (input3 * 0.60621778) + 70
+                var po2 = ((input3) * 0.35) + 70
+                var po = (po1 + " " + po2 + " ")
+            }
+            /*if (input3 < 21) {
+                var po = "82.1243556 77 "
+            }*/
+         
+            /* 피부톤 */
+            if (input4 <= 100) {
+                var sk1 = 70
+                var sk2 = ((input4) * 0.70) +70
+                var sk = (sk1 + " " + sk2 + " ")
+            }
+            /*if (input4 < 21) {
+                var sk = "70 84 "
+            }*/
+           
+            /* 색소침착 */
+            if (input5 <= 100) {
+                var pi1 = 70 - (input5 * 0.60621778)
+                var pi2 = ((input5) * 0.35) + 70
+                var pi = (pi1 + " " + pi2 + " ")
+            }
+            /*if (input5 < 21){
+                var pi = "57.8756444 77 "
+            }*/
+
+            /* 주름 */
+            if (input6 <= 100) {
+                var wr1 = 70 - (input6 * 0.60621778)
+                var wr2 = ((100 - input6) * 0.35) + 35
+                var wr = (wr1 + " " + wr2 + " ")
+            }
+            /*if (input6 < 21){
+                var wr = "57.8756444 63 "
+            }*/
+
+            if (input != null) {
+                var polygon = se + ow + po + sk + pi + wr
+				document.getElementById("text").innerHTML =
+                    "피지분비 : " + input + "<br>" + "유수분 : " + input2 + "<br>" + "모공크기 : " + input3 + "<br>" + "피부톤 : " + input4 + "<br>" + "색소침착 : " + input5 + "<br>" + "주름 : " + input6 + "<br>" + polygon ;                   
+			}
+            var ani9 = anime({
+		        targets: '#morphing .polymorph',
+		        points: [
+		        	{ value: polygon },
+
+		        ],
+		        easing: 'easeInOutExpo',
+		        duration: 2000,
+		        loop: false,
+		        autoplay: true
+                });   
+           
+            
+		}
+        
+              
+</script>
