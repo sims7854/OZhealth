@@ -138,7 +138,7 @@
             if (input != null) {
                 var polygon = po + st + wr + pi + ss + se
 				document.getElementById("text").innerHTML =
-                    "test : " + sq + "<br>" + "모공크기 : " + input + "<br>" + "피부톤 : " + input2 + "<br>" + "주름 : " + input3 + "<br>" + "색소침착 : " + input4 + "<br>" + "피지분비 : " + input5 + "<br>" + "민감성 : " + input6 + "<br>" + "수분 : " + input7 + "<br>" + "유분 : " + input8 + "<br>" + polygon   ;                   
+                    "모공크기 : " + input + "<br>" + "피부톤 : " + input2 + "<br>" + "주름 : " + input3 + "<br>" + "색소침착 : " + input4 + "<br>" + "피지분비 : " + input5 + "<br>" + "민감성 : " + input6 + "<br>" + "수분 : " + input7 + "<br>" + "유분 : " + input8 + "<br>" + polygon   ;                   
 			}
             var ani1 = anime({
 		        targets: '#morphing .polymorph',
