@@ -9,16 +9,24 @@
                 }
                 return result;
             }
-            /* 성별 수분 */
+            /* 성별-수분 */
             var water = receive_get_data("Q2")
             if (water == 0.8) {
                 var q2 = 15
             }
             if (water == 1) {
                 var q2 = 5
-            } 
-            /* 나이 */
+            }
+            /* 수면시간-수분 */
+            var q5 = 10 / receive_get_data("Q5")
+            /* 자외선 차단제-수분 */
+            var q8 = 15 / receive_get_data("Q8")
+        
+            /* 나이-공통 */
             var age = receive_get_data("Q3")
+            if (age > 60) {
+                var q3 = 5
+            }
             if (age <= 60) {
                 var q3 = 4 
             }
@@ -31,11 +39,11 @@
             if (age <= 10) {
                 var q3 = 1 
             }
-            if (age > 60) {
-                var q3 = 5
+            if (age == 0) {
+                var q3 = 0
             }
-            /* 민감성 */
-            var sensitive = receive_get_data("Q2")
+            /* 피부타입-민감성 */
+            var sensitive = receive_get_data("Q4")
             if (sensitive == 1) {
                 var sq = 20
             }
@@ -70,19 +78,18 @@
                         receive_get_data("Q9")*1 + receive_get_data("Q10")*0 + receive_get_data("Q11")*0 + receive_get_data("Q12")*4 + 
                         receive_get_data("Q13")*2 + receive_get_data("Q14")*4 + receive_get_data("Q15")*0+ receive_get_data("Q16")*0 ;
             /* 민감성 점수 */
-            var input6 = receive_get_data("Q1")*1 + sq + q3*3 + receive_get_data("Q4")*1 +
-                        receive_get_data("Q5")*1 + receive_get_data("Q6")*0 + receive_get_data("Q7")*2 + receive_get_data("Q8")*2 + 
-                        receive_get_data("Q9")*2 + receive_get_data("Q10")*0 + receive_get_data("Q11")*0 + receive_get_data("Q12")*0 + 
+            var input6 = receive_get_data("Q1")*1 + receive_get_data("Q2")*5 + q3*1 + sq +
+                        receive_get_data("Q5")*1 + receive_get_data("Q6")*1 + receive_get_data("Q7")*1 + receive_get_data("Q8")*1 + 
+                        receive_get_data("Q9")*1 + receive_get_data("Q10")*0 + receive_get_data("Q11")*0 + receive_get_data("Q12")*0 + 
                         receive_get_data("Q13")*0 + receive_get_data("Q14")*0 + receive_get_data("Q15")*8+ receive_get_data("Q16")*0 ;
             /* 수분 점수 */
-            var input7 = receive_get_data("Q1")*1 + q2 - q3*3 + receive_get_data("Q4")*3 +
-                        receive_get_data("Q5")*3 - receive_get_data("Q6")*1 - receive_get_data("Q7")*2 + receive_get_data("Q8")*3 - 
-                        receive_get_data("Q9")*1 + receive_get_data("Q10")*6 + receive_get_data("Q11")*6 + receive_get_data("Q12")*0 + 
+            var input7 = receive_get_data("Q1")*1 + q2 - q3 + receive_get_data("Q4")*3 +
+                        q5 - receive_get_data("Q6")*2 - receive_get_data("Q7")*2 + q8 - 
+                        receive_get_data("Q9")*2 + receive_get_data("Q10")*4 + receive_get_data("Q11")*4 + receive_get_data("Q12")*0 + 
                         receive_get_data("Q13")*0 + receive_get_data("Q14")*0 + receive_get_data("Q15")*0+ receive_get_data("Q16")*0 ;
-            var wat = input7 / 2 ;
             /* 유분 점수 */
             var input8 = receive_get_data("Q1")*1 + receive_get_data("Q2")*5 + q3*3 + receive_get_data("Q4")*2 -
-                        receive_get_data("Q5")*1 + receive_get_data("Q6")*1 + receive_get_data("Q7")*1 - receive_get_data("Q8")*1 + 
+                        receive_get_data("Q5")*1 + receive_get_data("Q6")*1 + receive_get_data("Q7")*1 + receive_get_data("Q8")*1 + 
                         receive_get_data("Q9")*1 + receive_get_data("Q10")*4 + receive_get_data("Q11")*0 + receive_get_data("Q12")*4 + 
                         receive_get_data("Q13")*3 + receive_get_data("Q14")*0 + receive_get_data("Q15")*0+ receive_get_data("Q16")*0 ;
             
@@ -131,7 +138,7 @@
             if (input != null) {
                 var polygon = po + st + wr + pi + ss + se
 				document.getElementById("text").innerHTML =
-                    "모공크기 : " + input + "<br>" + "피부톤 : " + input2 + "<br>" + "주름 : " + input3 + "<br>" + "색소침착 : " + input4 + "<br>" + "피지분비 : " + input5 + "<br>" + "민감성 : " + input6 + "<br>" + "수분 : " + wat + "<br>" + "유분 : " + input8 + "<br>" + polygon   ;                   
+                    "test : " + sq + "<br>" + "모공크기 : " + input + "<br>" + "피부톤 : " + input2 + "<br>" + "주름 : " + input3 + "<br>" + "색소침착 : " + input4 + "<br>" + "피지분비 : " + input5 + "<br>" + "민감성 : " + input6 + "<br>" + "수분 : " + input7 + "<br>" + "유분 : " + input8 + "<br>" + polygon   ;                   
 			}
             var ani1 = anime({
 		        targets: '#morphing .polymorph',
@@ -146,7 +153,7 @@
             });   
             var ani2 = anime({
                 targets: '.list1 .water',
-                width: wat*2,
+                width: input7*2,
                 duration: 2000,
                 easing: 'easeInOutExpo',
                 autoplay: true
