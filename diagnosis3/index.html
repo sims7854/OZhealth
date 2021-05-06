@@ -1,0 +1,144 @@
+<script src="jquery-1.12.4.min.js"></script>
+<script src="question.js"></script>
+
+<link href="question.css" rel="stylesheet">
+
+<form action="result.html" method="get">
+<div class="question">
+    <ul class="Q1">
+        <!-- Q. 1 -->
+        <span>기본 피부를 선택해 주세요.</span>
+        <label for="Q1_1"><li><input type="radio" name="Q1" id="Q1_1" value="4">아시안</input></li></label>
+        <label for="Q1_2"><li><input type="radio" name="Q1" id="Q1_2" value="2">유러피안</input></li></label>
+    </ul>
+    <ul class="Q2">
+        <!-- Q. 2 -->
+        <span>성별을 골라주세요. </span>
+        <label for="Q2_1"><li><input type="radio" name="Q2" id="Q2_1" value="0.8">여성</input></li></label>
+        <label for="Q2_2"><li><input type="radio" name="Q2" id="Q2_2" value="1">남성</input></li></label>
+    </ul>
+    <ul class="Q3">
+        <!-- Q. 3 -->
+        <span>나이를 입력해 주세요.</span>
+        <li><input name="Q3" value=""></input></li>
+    </ul>
+    <ul class="Q4">
+        <!-- Q. 4 -->
+        <span>피부타입을 골라주세요.</span>
+        <label for="Q4_1"><li><input type="radio" name="Q4" id="Q4_1" value="1">건성</input></li></label>
+        <label for="Q4_2"><li><input type="radio" name="Q4" id="Q4_2" value="2">지성</input></li></label>
+        <label for="Q4_3"><li><input type="radio" name="Q4" id="Q4_3" value="3">복합성</input></li></label>
+        <label for="Q4_4"><li><input type="radio" name="Q4" id="Q4_4" value="4">중성</input></li></label>
+        <label for="Q4_5"><li><input type="radio" name="Q4" id="Q4_5" value="3">모르겠다</input></li></label>
+    </ul>
+    <ul class="Q5">
+        <!-- Q. 5 -->
+        <span>하루 수면시간이 어떻게 되나요?</span>
+        <label for="Q5_1"><li><input type="radio" name="Q5" id="Q5_1" value="5">4시간 미만</input></li></label>
+        <label for="Q5_2"><li><input type="radio" name="Q5" id="Q5_2" value="4">4~5시간</input></li></label>
+        <label for="Q5_3"><li><input type="radio" name="Q5" id="Q5_3" value="2">5~7시간</input></li></label>
+        <label for="Q5_4"><li><input type="radio" name="Q5" id="Q5_4" value="1">7~8시간</input></li></label>
+        <label for="Q5_5"><li><input type="radio" name="Q5" id="Q5_5" value="1">8시간 이상</input></li></label>
+    </ul>
+    <ul class="Q6">
+        <!-- Q. 6 -->
+        <span>하루에 커피를 얼마나 드시나요?</span>
+        <label for="Q6_1"><li><input type="radio" name="Q6" id="Q6_1" value="1">마시지않는다</input></li></label>
+        <label for="Q6_2"><li><input type="radio" name="Q6" id="Q6_2" value="2">1~2잔</input></li></label>
+        <label for="Q6_3"><li><input type="radio" name="Q6" id="Q6_3" value="3">3~4잔</input></li></label>
+        <label for="Q6_4"><li><input type="radio" name="Q6" id="Q6_4" value="4">5~6잔</input></li></label>
+        <label for="Q6_5"><li><input type="radio" name="Q6" id="Q6_5" value="5">7잔 이상</input></li></label>
+    </ul>
+    <ul class="Q7">
+        <!-- Q. 7 -->
+        <span>하루에 햇빛에 노출되는 시간은 얼마나 되나요?</span>
+        <label for="Q7_1"><li><input type="radio" name="Q7" id="Q7_1" value="1">별로 없다 (흐리거나 구름많은 장소에서 주로 살아왔다.)</input></li></label>
+        <label for="Q7_2"><li><input type="radio" name="Q7" id="Q7_2" value="2">약간 있다 (규칙적으로 일광이 존재하는 장소에서 살아왔다.)</input></li></label>
+        <label for="Q7_3"><li><input type="radio" name="Q7" id="Q7_3" value="3">보통이다 (꽤 많은 양의 일광이 존재하는 장소에서 살아왔다.)</input></li></label>
+        <label for="Q7_4"><li><input type="radio" name="Q7" id="Q7_4" value="4">많다 (화창한 장소에서 살아왔다.)</input></li></label>
+        <label for="Q7_5"><li><input type="radio" name="Q7" id="Q7_5" value="5">매우 많다 (덥고 뜨거운 장소에서 살아왔다.)</input></li></label>
+    </ul>
+    <ul class="Q8">
+        <!-- Q. 8 -->
+        <span>평소에 자외선 차단제를 얼마나 자주 사용하나요?</span>
+        <label for="Q8_1"><li><input type="radio" name="Q8" id="Q8_1" value="5">전혀 바르지 않는다</input></li></label>
+        <label for="Q8_2"><li><input type="radio" name="Q8" id="Q8_2" value="4">여름철 같이 뜨거운 계절에만 바른다</input></li></label>
+        <label for="Q8_3"><li><input type="radio" name="Q8" id="Q8_3" value="3">가끔식 바른다</input></li></label>
+        <label for="Q8_4"><li><input type="radio" name="Q8" id="Q8_4" value="2">외출할 때마다 바른다</input></li></label>
+        <label for="Q8_5"><li><input type="radio" name="Q8" id="Q8_5" value="1">매일 바르며 수시로 덧바른다</input></li></label>
+    </ul>
+    <ul class="Q9">
+        <!-- Q. 9 -->
+        <span>담배를 얼마나 많이 피우나요? 혹은 담배연기에 얼마나 노출되나요?</span>
+        <label for="Q9_1"><li><input type="radio" name="Q9" id="Q9_1" value="1">전혀 아니다</input></li></label>
+        <label for="Q9_2"><li><input type="radio" name="Q9" id="Q9_2" value="2">하루 반갑 이하</input></li></label>
+        <label for="Q9_3"><li><input type="radio" name="Q9" id="Q9_3" value="3">하루1갑</input></li></label>
+        <label for="Q9_4"><li><input type="radio" name="Q9" id="Q9_4" value="5">하루2갑이상</input></li></label>
+        <label for="Q9_5"><li><input type="radio" name="Q9" id="Q9_5" value="3">주변 흡연자로부터 간접흡연을 자주한다</input></li></label>
+    </ul>
+    <ul class="Q10">
+        <!-- Q. 10 -->
+        <span>클렌저 사용 후 당신의 얼굴 피부 상태는 어떤가요?</span>
+        <label for="Q10_1"><li><input type="radio" name="Q10" id="Q10_1" value="0">건조하거나 갈라지는 느낌이 든다.</input></li></label>
+        <label for="Q10_2"><li><input type="radio" name="Q10" id="Q10_2" value="1">약간 건조한 느낌은 들지만 갈라지는 느낌은 없다.</input></li></label>
+        <label for="Q10_3"><li><input type="radio" name="Q10" id="Q10_3" value="3">정상적인 느낌이다</input></li></label>
+        <label for="Q10_4"><li><input type="radio" name="Q10" id="Q10_4" value="4">촉촉한 느낌이다</input></li></label>
+        <label for="Q10_5"><li><input type="radio" name="Q10" id="Q10_5" value="1">클렌저를 사용하지 않는다</input></li></label>
+    </ul>
+    <ul class="Q11">
+        <!-- Q. 11 -->
+        <span>보습제를 사용하지 않아도 얼굴 피부는 촉촉한가요?</span>
+        <label for="Q11_1"><li><input type="radio" name="Q11" id="Q11_1" value="0">전혀 그렇지 않다</input></li></label>
+        <label for="Q11_2"><li><input type="radio" name="Q11" id="Q11_2" value="1">거의 그렇지 않다</input></li></label>
+        <label for="Q11_3"><li><input type="radio" name="Q11" id="Q11_3" value="2">때때로 그렇다</input></li></label>
+        <label for="Q11_4"><li><input type="radio" name="Q11" id="Q11_4" value="3">자주 그렇다</input></li></label>
+        <label for="Q11_5"><li><input type="radio" name="Q11" id="Q11_5" value="4">항상 그렇다</input></li></label>
+    </ul>
+    <ul class="Q12">
+        <!-- Q. 12 -->
+        <span>얼굴에 모공이 있나요?</span>
+        <label for="Q12_1"><li><input type="radio" name="Q12" id="Q12_1" value="0">전혀 없다</input></li></label>
+        <label for="Q12_2"><li><input type="radio" name="Q12" id="Q12_2" value="1">거의 없다</input></li></label>
+        <label for="Q12_3"><li><input type="radio" name="Q12" id="Q12_3" value="2">때때로 있다</input></li></label>
+        <label for="Q12_4"><li><input type="radio" name="Q12" id="Q12_4" value="4">자주 있다</input></li></label>
+        <label for="Q12_5"><li><input type="radio" name="Q12" id="Q12_5" value="5">항상 있다</input></li></label>
+    </ul>
+    <ul class="Q13">
+        <!-- Q. 13 -->
+        <span>얼굴의 T존(이마와 코)에 기름기가 있나요?</span>
+        <label for="Q13_1"><li><input type="radio" name="Q13" id="Q13_1" value="0">전혀 없다</input></li></label>
+        <label for="Q13_2"><li><input type="radio" name="Q13" id="Q13_2" value="1">거의 없다</input></li></label>
+        <label for="Q13_3"><li><input type="radio" name="Q13" id="Q13_3" value="2">때때로 있다</input></li></label>
+        <label for="Q13_4"><li><input type="radio" name="Q13" id="Q13_4" value="4">자주 있다</input></li></label>
+        <label for="Q13_5"><li><input type="radio" name="Q13" id="Q13_5" value="5">항상 있다</input></li></label>
+    </ul>
+    <ul class="Q14">
+        <!-- Q. 14 -->
+        <span>코에 블랙헤드나 화이트헤드가 있나요?</span>
+        <label for="Q14_1"><li><input type="radio" name="Q14" id="Q14_1" value="1">전혀 없다</input></li></label>
+        <label for="Q14_2"><li><input type="radio" name="Q14" id="Q14_2" value="2">거의 없다</input></li></label>
+        <label for="Q14_3"><li><input type="radio" name="Q14" id="Q14_3" value="3">때때로 있다</input></li></label>
+        <label for="Q14_4"><li><input type="radio" name="Q14" id="Q14_4" value="4">자주 있다</input></li></label>
+        <label for="Q14_5"><li><input type="radio" name="Q14" id="Q14_5" value="5">항상 있다</input></li></label>
+    </ul>
+    <ul class="Q15">
+        <!-- Q. 15 -->
+        <span>화장품을 사용한 뒤 피부 트러블 발진, 가려움, 혹은 따끔거리는 증상을 경험한 적이 있나요?</span>
+        <label for="Q15_1"><li><input type="radio" name="Q15" id="Q15_1" value="1">거의 없다</input></li></label>
+        <label for="Q15_2"><li><input type="radio" name="Q15" id="Q15_2" value="2">가끔 없다</input></li></label>
+        <label for="Q15_3"><li><input type="radio" name="Q15" id="Q15_3" value="3">자주 있다</input></li></label>
+        <label for="Q15_4"><li><input type="radio" name="Q15" id="Q15_4" value="5">항상 있다</input></li></label>
+        <label for="Q15_5"><li><input type="radio" name="Q15" id="Q15_5" value="2">화장품을 사용하지 않는다</input></li></label>
+    </ul>
+    <ul class="Q16">
+        <!-- Q. 16 -->
+        <span>얼굴에 주름이 있나요?</span>
+        <label for="Q16_1"><li><input type="radio" name="Q16" id="Q16_1" value="0">웃거나 찡그리거나 눈썹을 치켜 올릴 경우에도 없다</input></li></label>
+        <label for="Q16_2"><li><input type="radio" name="Q16" id="Q16_2" value="1">웃거나 찡그리거나 눈썹을 치켜 올릴 때에 있다</input></li></label>
+        <label for="Q16_3"><li><input type="radio" name="Q16" id="Q16_3" value="3">얼굴을 움직이거나 움직임이 없는 안정된 상태에서 약간 있다</input></li></label>
+        <label for="Q16_4"><li><input type="radio" name="Q16" id="Q16_4" value="4">얼굴을 움직이거나 움직임이 없는 안정된 상태에서 많이 있다</input></li></label>
+        <label for="Q16_5"><li><input type="radio" name="Q16" id="Q16_5" value="5">웃거나 찡그리거나 혹은 눈썹을 치켜 올리지 않아도 주름이 있다</input></li></label>
+    </ul>
+</div>
+<input class="submit" type="submit" value="submit" />
+</form>

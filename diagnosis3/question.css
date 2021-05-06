@@ -1,0 +1,53 @@
+* { margin: 0; padding: 0; font-family: 'arial'; }
+input[type=radio] { display: none; }
+.question ul { text-align: center; }
+.question ul li { list-style: none; border: 1px solid #c1c1c1; border-radius: 10px; width:500px; height:35px; position: relative; left: 50%; transform: translate(-50%, 0px); margin: 15px 0 15px 0; line-height: 35px; }
+
+.submit { display:none; }
+
+.Q1 { display: block; }
+.Q1 label { cursor: pointer; }
+.Q1 li:hover { background-color: #c1c1c1; }
+.Q2 { display: none; }
+.Q2 label { cursor: pointer; }
+.Q2 li:hover { background-color: #c1c1c1; }
+.Q3 { display: none; }
+.Q4 { display: none; }
+.Q4 label { cursor: pointer; }
+.Q4 li:hover { background-color: #c1c1c1; }
+.Q5 { display: none; }
+.Q5 label { cursor: pointer; }
+.Q5 li:hover { background-color: #c1c1c1; }
+.Q6 { display: none; }
+.Q6 label { cursor: pointer; }
+.Q6 li:hover { background-color: #c1c1c1; }
+.Q7 { display: none; }
+.Q7 label { cursor: pointer; }
+.Q7 li:hover { background-color: #c1c1c1; }
+.Q8 { display: none; }
+.Q8 label { cursor: pointer; }
+.Q8 li:hover { background-color: #c1c1c1; }
+.Q9 { display: none; }
+.Q9 label { cursor: pointer; }
+.Q9 li:hover { background-color: #c1c1c1; }
+.Q10 { display: none; }
+.Q10 label { cursor: pointer; }
+.Q10 li:hover { background-color: #c1c1c1; }
+.Q11 { display: none; }
+.Q11 label { cursor: pointer; }
+.Q11 li:hover { background-color: #c1c1c1; }
+.Q12 { display: none; }
+.Q12 label { cursor: pointer; }
+.Q12 li:hover { background-color: #c1c1c1; }
+.Q13 { display: none; }
+.Q13 label { cursor: pointer; }
+.Q13 li:hover { background-color: #c1c1c1; }
+.Q14 { display: none; }
+.Q14 label { cursor: pointer; }
+.Q14 li:hover { background-color: #c1c1c1; }
+.Q15 { display: none; }
+.Q15 label { cursor: pointer; }
+.Q15 li:hover { background-color: #c1c1c1; }
+.Q16 { display: none; }
+.Q16 label { cursor: pointer; }
+.Q16 li:hover { background-color: #c1c1c1; }
