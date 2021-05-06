@@ -1,32 +1,11 @@
-.ow-zone {
-    width: 420px;
-    height: 40px;
-    padding: 0 0 0 20px;
-}
-.ow-zone #ex {
-    width: 210px;
-    float: left;
-}
+#container { position: relative; width: 700px; height: 520px; left:50%; top: 50%; transform: translate(-50%, -55%); }
+#container1 { width:550px; height: 480px; float:left; }
+#container2 { width:150px; height: 480px; float:left; }
 
-.list1 > div {
-    width: 0px;
-    height: 20px;
-    background-image: linear-gradient(120deg, #0099ff 0%, #0099ff 100%);
-    line-height: 60px;
-    text-align: center;
-    
-    font-size: 12px;
- 
-    position: relative;
-}
-.list2 > div {
-    width: 0px;
-    height: 20px;
-    background-image: linear-gradient(120deg, #ffcc33 0%, #ffcc33 100%);
-    line-height: 60px;
-    text-align: center;
-    
-    font-size: 12px;
+#text { padding:250px 0 0 0; }
 
-    position: relative;
-}
+.ow-zone { width: 420px; height: 40px; padding: 0 0 0 20px;}
+.ow-zone #ex { width: 210px; float: left; }
+
+.list1 > div { width: 0px; height: 20px; background-image: linear-gradient(120deg, #0099ff 0%, #0099ff 100%); line-height: 60px; text-align: center; font-size: 12px; position: relative; }
+.list2 > div { width: 0px; height: 20px; background-image: linear-gradient(120deg, #ffcc33 0%, #ffcc33 100%); line-height: 60px; text-align: center; font-size: 12px; position: relative; }

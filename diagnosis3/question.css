@@ -1,9 +1,12 @@
 * { margin: 0; padding: 0; font-family: 'arial'; }
 input[type=radio] { display: none; }
+.question { width: 600px; height: 400px; transform: translate(-50%, -50%); left: 50%; top: 50%; position: absolute; }
 .question ul { text-align: center; }
-.question ul li { list-style: none; border: 1px solid #c1c1c1; border-radius: 10px; width:500px; height:35px; position: relative; left: 50%; transform: translate(-50%, 0px); margin: 15px 0 15px 0; line-height: 35px; }
+.question ul li { list-style: none; border: 1px solid #c1c1c1; border-radius: 5px; width:500px; height:35px; position: relative; left: 50%; transform: translate(-50%, 0px); margin: 15px 0 15px 0; line-height: 35px; }
 
-.submit { display:none; }
+.submit { display:none; width:500px; height:35px; border-radius: 5px; cursor: pointer;}
+.submit:hover { background-color: #c1c1c1; }
+.age { width:500px; height:35px; border-radius: 5px; text-align: center; font-size: 18px; }
 
 .Q1 { display: block; }
 .Q1 label { cursor: pointer; }
@@ -12,6 +15,7 @@ input[type=radio] { display: none; }
 .Q2 label { cursor: pointer; }
 .Q2 li:hover { background-color: #c1c1c1; }
 .Q3 { display: none; }
+.Q3 ul li { border: none; }
 .Q4 { display: none; }
 .Q4 label { cursor: pointer; }
 .Q4 li:hover { background-color: #c1c1c1; }
