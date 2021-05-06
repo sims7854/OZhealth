@@ -1,4 +1,4 @@
-#container { position: relative; width: 700px; height: 520px; left:50%; top: 50%; transform: translate(-50%, -55%); }
+#container { position: absolute; width: 700px; height: 520px; left:50%; top: 50%; transform: translate(-50%, -55%); }
 #container1 { width:550px; height: 480px; float:left; }
 #container2 { width:150px; height: 480px; float:left; }
 
