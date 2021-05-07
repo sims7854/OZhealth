@@ -136,10 +136,14 @@
             }
            
             if (input != null) {
-                var polygon = po + st + wr + pi + ss + se
-				document.getElementById("text").innerHTML =
-                    "모공크기 : " + input + "<br>" + "피부톤 : " + input2 + "<br>" + "주름 : " + input3 + "<br>" + "색소침착 : " + input4 + "<br>" + "피지분비 : " + input5 + "<br>" + "민감성 : " + input6 + "<br>" + "수분 : " + input7 + "<br>" + "유분 : " + input8 + "<br>" ;                   
-			}
+                var polygon = po + st + wr + pi + ss + se          
+                document.getElementById("po").innerHTML = "모공크기<br>" + input ;
+                document.getElementById("st").innerHTML = "피부톤<br>" + input2 ;
+                document.getElementById("wr").innerHTML = "주름<br>" + input3 ;
+                document.getElementById("pi").innerHTML = "색소침착<br>" + input4 ;
+                document.getElementById("ss").innerHTML = "피지분비<br>" + input5 ;
+                document.getElementById("se").innerHTML = "민감성<br>" + input6 ;
+            }
             var ani1 = anime({
 		        targets: '#morphing .polymorph',
 		        points: [
@@ -147,21 +151,21 @@
 
 		        ],
 		        easing: 'easeInOutExpo',
-		        duration: 2000,
+		        duration: 1500,
 		        loop: false,
 		        autoplay: true
             });   
             var ani2 = anime({
                 targets: '.list1 .water',
-                width: input7*2,
-                duration: 2000,
+                height: input7*2,
+                duration: 1500,
                 easing: 'easeInOutExpo',
                 autoplay: true
             });
             var ani3 = anime({
                 targets: '.list2 .oil',
-                width: input8*2,
-                duration: 2000,
+                height: input8*2,
+                duration: 1500,
                 easing: 'easeInOutExpo',
                 autoplay: true
             });

@@ -61,3 +61,12 @@ $(function() {
     });
 
 });
+window.onload = function(){
+    var ani3 = anime({
+        targets: '.progress .progress-bar',
+        width: bar,
+        duration: 2000,
+        easing: 'easeInOutExpo',
+        autoplay: true
+    });
+}

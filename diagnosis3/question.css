@@ -7,6 +7,8 @@ input[type=radio] { display: none; }
 .submit { display:none; width:500px; height:35px; border-radius: 5px; cursor: pointer;}
 .submit:hover { background-color: #c1c1c1; }
 .age { width:500px; height:35px; border-radius: 5px; text-align: center; font-size: 18px; }
+.ex { width: 420px; height: 40px; padding: 0 0 0 20px;}
+.progress > .progress-bar { width: 0px; height: 20px; background-image: linear-gradient(120deg, #c1c1c1 0%, #c1c1c1 100%); line-height: 60px; text-align: center; font-size: 12px; position: relative; }
 
 .Q1 { display: block; }
 .Q1 label { cursor: pointer; }
