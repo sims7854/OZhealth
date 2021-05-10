@@ -1,3 +1,4 @@
+<script src="jquery-1.12.4.min.js"></script>
 <script src="anime.min.js"></script>
 <script src="diagnosis.js"></script>
 <link href="diagnosis.css" rel="stylesheet">
@@ -61,43 +62,21 @@
 </div>
 <ul>
     <li><a href="#none"> 추천 상품 보러가기 </a></li>
-    <li><a href="https://sims7854.github.io/OZhealth/diagnosis3/"> 다시 피부 진단하기 </a></li>
-    <div style="width: 100%; text-align: center; margin-top: 20px;">
-        <!-- 페이스북 공유 버튼 --> 
-        <a href="" onclick="window.open(url_combine_fb, '', 'scrollbars=no, width=600, height=600'); return false;"><img src="https://storage.googleapis.com/storage.chris-chris.ai/images/facebook.gif" title="페이스북으로 공유하기" class="sharebtn_custom" style="width: 32px;"></a> 
-        <!-- 트위터 공유 버튼 --> 
-        <a href="" onclick="window.open(url_combine_tw, '', 'scrollbars=no, width=600, height=600'); return false;"><img src="https://storage.googleapis.com/storage.chris-chris.ai/images/twitter.gif" title="트위터로 공유하기" class="sharebtn_custom" style="width: 32px;"></a> 
-        <!-- 카카오 스토리 공유 버튼 --> 
-        <a href="" onclick="window.open(url_combine_ks, '', 'scrollbars=no, width=600, height=600'); return false;"><img src="https://storage.googleapis.com/storage.chris-chris.ai/images/story.gif" title="카카오스토리로 공유하기" class="sharebtn_custom" style="width: 32px;"></a> 
-        <!-- 네이버 공유 버튼 --> 
-        <a href="" onclick="window.open(url_combine_naver, '', 'scrollbars=no, width=600, height=600'); return false;"><img src="https://storage.googleapis.com/storage.chris-chris.ai/images/naver.gif" title="네이버로 공유하기" class="sharebtn_custom" style="width: 32px;"></a> 
-        <!-- 밴드 공유 버튼 --> 
-        <a href="" onclick="window.open(url_combine_band, '', 'scrollbars=no, width=584, height=635'); return false;"><img src="https://storage.googleapis.com/storage.chris-chris.ai/images/band.gif" title="밴드로 공유하기" class="sharebtn_custom" style="width: 32px;"></a> 
-      </div> 
+    <li><a href="https://sims7854.github.io/OZhealth/diagnosis3/"> 피부 진단 다시하기 </a></li>
+    <li><a href="#none" onclick="copy_to_clipboard()">공유하기</a></li>
+
 </ul>
 </div>
 </div>
-    
-
-  
-  <!-- SNS 공유용 주소 연결 용 --> 
-    <script type="text/javascript" async> 
-    var url_default_ks = "https://story.kakao.com/share?url="; 
-    var url_default_fb = "https://www.facebook.com/sharer/sharer.php?u="; 
-    var url_default_tw_txt = "https://twitter.com/intent/tweet?text="; 
-    var url_default_tw_url = "&url="; 
-    var url_default_band = "http://band.us/plugin/share?body="; 
-    var url_route_band = "&route="; 
-    var url_default_naver = "http://share.naver.com/web/shareView.nhn?url="; 
-    var title_default_naver = "&title="; 
-    var url_this_page = location.href; 
-    var title_this_page = document.title; 
-    var url_combine_ks = url_default_ks + url_this_page; 
-    var url_combine_fb = url_default_fb + url_this_page; 
-    var url_combine_tw = url_default_tw_txt + document.title + url_default_tw_url + url_this_page; 
-    var url_combine_band = url_default_band + encodeURI(url_this_page)+ '%0A' + encodeURI(title_this_page)+'%0A' + '&route=tistory.com'; 
-    var url_combine_naver = url_default_naver + encodeURI(url_this_page) + title_default_naver + encodeURI(title_this_page); 
-  </script>
-  <!--
-  출처: https://bssow.tistory.com/116
-  //-->
+<script type="text/javascript" async> 
+    function copy_to_clipboard() {    
+        var dummy   = document.createElement("input");
+        var text    = location.href;
+        
+        document.body.appendChild(dummy);
+        dummy.value = text;
+        dummy.select();
+        document.execCommand("copy");
+        document.body.removeChild(dummy);
+    }
+</script>

@@ -6,7 +6,7 @@
 #container2 ul {position: absolute; top: 280px; list-style: none; padding: 20px; }
 #container2 ul li { width: 460px; height: 40px; border: 1px solid #c1c1c1; border-radius: 5px; text-align: center; margin-top: 20px; line-height: 40px;}
 #container2 ul li:hover{ background-color: #c1c1c1; }
-#container2 ul li a { text-decoration: none; color: #000000; padding: 11px 154px; }
+#container2 ul li a { text-decoration: none; color: #000000;  display: block;}
 
 #text p {  width: 90px; height: 48px; line-height: 24px; border: 3px solid transparent; }
 
