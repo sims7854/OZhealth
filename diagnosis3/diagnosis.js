@@ -148,6 +148,60 @@
 		        duration: 1500,
 		        loop: false,
 		        autoplay: true
+            });
+            var dotAni = anime({
+		        targets: '#morphing .dot',
+		        cx: po1,
+                cy: po2,
+		        easing: 'easeInOutExpo',
+		        duration: 1500,
+		        loop: false,
+		        autoplay: true
+            });
+            var dotAni2 = anime({
+		        targets: '#morphing .dot2',
+		        cx: st1,
+                cy: st2,
+		        easing: 'easeInOutExpo',
+		        duration: 1500,
+		        loop: false,
+		        autoplay: true
+            });
+            var dotAni3 = anime({
+		        targets: '#morphing .dot3',
+		        cx: wr1,
+                cy: wr2,
+		        easing: 'easeInOutExpo',
+		        duration: 1500,
+		        loop: false,
+		        autoplay: true
+            });
+            var dotAni4 = anime({
+		        targets: '#morphing .dot4',
+		        cx: pi1,
+                cy: pi2,
+		        easing: 'easeInOutExpo',
+		        duration: 1500,
+		        loop: false,
+		        autoplay: true
+            });
+            var dotAni5 = anime({
+		        targets: '#morphing .dot5',
+		        cx: ss1,
+                cy: ss2,
+		        easing: 'easeInOutExpo',
+		        duration: 1500,
+		        loop: false,
+		        autoplay: true
+            });
+            var dotAni6 = anime({
+		        targets: '#morphing .dot6',
+		        cx: se1,
+                cy: se2,
+		        easing: 'easeInOutExpo',
+		        duration: 1500,
+		        loop: false,
+		        autoplay: true
             });   
             var WatAni = anime({
                 targets: '.list1 .water',

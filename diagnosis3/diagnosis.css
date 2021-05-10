@@ -3,7 +3,7 @@
 #container { position: absolute; width: 1050px; height: 480px; left:50%; top: 50%; transform: translate(-50%, -55%); }
 #container1 { width:500px; height: 480px; float:left; }
 #container2 { width:500px; height: 250px; float:left; position: relative; padding:0 0 0 50px;}
-#container2 ul {position: absolute; top: 350px; list-style: none; padding: 20px; }
+#container2 ul {position: absolute; top: 280px; list-style: none; padding: 20px; }
 #container2 ul li { width: 460px; height: 40px; border: 1px solid #c1c1c1; border-radius: 5px; text-align: center; margin-top: 20px; line-height: 40px;}
 #container2 ul li:hover{ background-color: #c1c1c1; }
 #container2 ul li a { text-decoration: none; color: #000000; padding: 11px 154px; }
