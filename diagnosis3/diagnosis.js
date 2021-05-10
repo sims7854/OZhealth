@@ -137,14 +137,8 @@
            
             if (input != null) {
                 var polygon = po + st + wr + pi + ss + se          
-                document.getElementById("po").innerHTML = "모공크기<br>" + input ;
-                document.getElementById("st").innerHTML = "피부톤<br>" + input2 ;
-                document.getElementById("wr").innerHTML = "주름<br>" + input3 ;
-                document.getElementById("pi").innerHTML = "색소침착<br>" + input4 ;
-                document.getElementById("ss").innerHTML = "피지분비<br>" + input5 ;
-                document.getElementById("se").innerHTML = "민감성<br>" + input6 ;
             }
-            var ani1 = anime({
+            var PolyAni = anime({
 		        targets: '#morphing .polymorph',
 		        points: [
 		        	{ value: polygon },
@@ -155,21 +149,123 @@
 		        loop: false,
 		        autoplay: true
             });   
-            var ani2 = anime({
+            var WatAni = anime({
                 targets: '.list1 .water',
                 height: input7*2,
                 duration: 1500,
                 easing: 'easeInOutExpo',
                 autoplay: true
             });
-            var ani3 = anime({
+            var OilAni = anime({
                 targets: '.list2 .oil',
                 height: input8*2,
                 duration: 1500,
                 easing: 'easeInOutExpo',
                 autoplay: true
             });
-            
+            var myObject = { prop: '0%' }
+              var ResultAni = anime({
+                targets: myObject,
+                prop: input,
+                easing: 'linear',
+                autoplay: true,
+                round: 1,
+                update: function() {
+                    var el = document.querySelector('#po span');
+                        el.innerHTML = JSON.stringify(myObject).replace(/\"/gi, "").replace(/\{/gi, "").replace(/\}/gi, "").replace(/prop:/gi, "");
+                }
+                
+              });
+              var myObject2 = { prop: '0%' }
+              var ResultAni2 = anime({
+                targets: myObject2,
+                prop: input2,
+                easing: 'linear',
+                autoplay: true,
+                round: 1,
+                update: function() {
+                    var el = document.querySelector('#st span');
+                        el.innerHTML = JSON.stringify(myObject2).replace(/\"/gi, "").replace(/\{/gi, "").replace(/\}/gi, "").replace(/prop:/gi, "");
+                }
+                
+              });
+              var myObject3 = { prop: '0%' }
+              var ResultAni3 = anime({
+                targets: myObject3,
+                prop: input3,
+                easing: 'linear',
+                autoplay: true,
+                round: 1,
+                update: function() {
+                    var el = document.querySelector('#wr span');
+                        el.innerHTML = JSON.stringify(myObject3).replace(/\"/gi, "").replace(/\{/gi, "").replace(/\}/gi, "").replace(/prop:/gi, "");
+                }
+                
+              });
+              var myObject4 = { prop: '0%' }
+              var ResultAni4 = anime({
+                targets: myObject4,
+                prop: input4,
+                easing: 'linear',
+                autoplay: true,
+                round: 1,
+                update: function() {
+                    var el = document.querySelector('#pi span');
+                        el.innerHTML = JSON.stringify(myObject4).replace(/\"/gi, "").replace(/\{/gi, "").replace(/\}/gi, "").replace(/prop:/gi, "");
+                }
+                
+              });
+              var myObject5 = { prop: '0%' }
+              var ResultAni5 = anime({
+                targets: myObject5,
+                prop: input5,
+                easing: 'linear',
+                autoplay: true,
+                round: 1,
+                update: function() {
+                    var el = document.querySelector('#ss span');
+                        el.innerHTML = JSON.stringify(myObject5).replace(/\"/gi, "").replace(/\{/gi, "").replace(/\}/gi, "").replace(/prop:/gi, "");
+                }
+                
+              });
+              var myObject6 = { prop: '0%' }
+              var ResultAni6 = anime({
+                targets: myObject6,
+                prop: input6,
+                easing: 'linear',
+                autoplay: true,
+                round: 1,
+                update: function() {
+                    var el = document.querySelector('#se span');
+                        el.innerHTML = JSON.stringify(myObject6).replace(/\"/gi, "").replace(/\{/gi, "").replace(/\}/gi, "").replace(/prop:/gi, "");
+                }
+              });
+              var myObject7 = { prop: '0%' }
+              var ResultAni7 = anime({
+                targets: myObject7,
+                prop: input7,
+                easing: 'linear',
+                autoplay: true,
+                round: 1,
+                update: function() {
+                    var el = document.querySelector('.list1 span');
+                        el.innerHTML = JSON.stringify(myObject7).replace(/\"/gi, "").replace(/\{/gi, "").replace(/\}/gi, "").replace(/prop:/gi, "");
+                }
+              });
+
+              var myObject8 = { prop: '0%' }
+              var ResultAni8 = anime({
+                targets: myObject8,
+                prop: input8,
+                easing: 'linear',
+                autoplay: true,
+                round: 1,
+                update: function() {
+                    var el = document.querySelector('.list2 span');
+                        el.innerHTML = JSON.stringify(myObject8).replace(/\"/gi, "").replace(/\{/gi, "").replace(/\}/gi, "").replace(/prop:/gi, "");
+                }
+              });
+              
 		}
         
               

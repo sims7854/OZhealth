@@ -1,4 +1,4 @@
-* {font-family: 'arial';}
+* {font-family: 'arial'; font-weight: 600;}
 
 #container { position: absolute; width: 1050px; height: 480px; left:50%; top: 50%; transform: translate(-50%, -55%); }
 #container1 { width:500px; height: 480px; float:left; }
@@ -8,18 +8,19 @@
 #container2 ul li:hover{ background-color: #c1c1c1; }
 #container2 ul li a { text-decoration: none; color: #000000; padding: 11px 154px; }
 
-#text p {  width: 90px; height: 40px; line-height: 24px; }
+#text p {  width: 90px; height: 48px; line-height: 24px; border: 3px solid transparent; }
 
-.ow-zone { width: 480px; height: 480px; padding: 0 0 0 20px;}
-.ow-zone #ex { width: 235px; height: 480px; float: left; text-align: center; }
-.water-p { margin:250px 0 0 0; }
-.oil-p { width: 210px; margin:250px 0 0 25px; }
+.ow-zone { width: 480px; height: 300px; padding: 0 0 0 20px;}
+.ow-zone #ex { width: 235px; height: 300px; float: left; text-align: center; }
+.water-p { width: 200px; margin:250px 0 0 5px; }
+.oil-p { width: 200px; margin:250px 0 0 25px; }
 
-.list1 { float: right; width: 200px; height: 200px; background-color: #f1f1f1; border-radius: 110px; border:5px solid #c1c1c1;  overflow: hidden; position: absolute; bottom:0; }
-.list1 > div { width:200px; height: 0px; background-image: linear-gradient(120deg, #aecfe6 0%, #afd3eb 100%); line-height: 60px; text-align: center; font-size: 12px; position: absolute; bottom :0; }
+.list1 { float: right; width: 200px; height: 200px; border-radius: 110px; border:3px solid #c1c1c1;  overflow: hidden; position: absolute; bottom:0; }
+.list1 > div { width:200px; height: 0px; background-color: #e2e0e0; line-height: 60px; text-align: center; font-size: 12px; position: absolute; bottom :0; }
+.list1 > span { position: absolute; top: 50%; font-size: 50px; transform: translate(-50%, -50%); }
 
-.list2 { float: left; width: 200px; height: 200px; background-color: #f1f1f1; border-radius: 110px; border:5px solid #c1c1c1; overflow: hidden; position: absolute; bottom:0; margin-left:20px; }
-.list2 > div { width:200px; height: 0px; background-image: linear-gradient(120deg, #f8e098 0%, #f1e0aa 100%); line-height: 60px; text-align: center; font-size: 12px; position: absolute; bottom: 0; }
-
+.list2 { float: left; width: 200px; height: 200px; border-radius: 110px; border:3px solid #c1c1c1; overflow: hidden; position: absolute; bottom:0; margin-left:20px; }
+.list2 > div { width:200px; height: 0px; background-color: #e2e0e0; line-height: 60px; text-align: center; font-size: 12px; position: absolute; bottom: 0; }
+.list2 > span { position: absolute; top: 50%; font-size: 50px; transform: translate(-50%, -50%); }
 
 @keyframes wave { 0% { transform: translate(-50%) rotate(-180deg); } 100% { transform: translate(-50%) rotate(360deg); } } 
