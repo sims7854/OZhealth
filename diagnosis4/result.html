@@ -1,0 +1,83 @@
+<script src="jquery-1.12.4.min.js"></script>
+<script src="anime.min.js"></script>
+<script src="diagnosis.js"></script>
+<link href="diagnosis.css" rel="stylesheet">
+<div id="container">
+<div id="container1">
+<div id="ex">
+    <br>
+    <div>
+        <div id="morphing" style="padding: 0 0 0 20px; text-align: center;">
+            <div id="text" style="position: absolute;">
+                <p id="po" style="transform: translate(193px, -43px);">모공크기<br><span>0%</span></p>
+                <p id="st" style="transform: translate(422px, -3px);">피부톤<br><span>0%</span></p>
+                <p id="wr" style="transform: translate(422px, 188px);">주름<br><span>0%</span></p>
+                <p id="pi" style="transform: translate(193px, 227px);">색소침착<br><span>0%</span></p>
+                <p id="ss" style="transform: translate(-38px, 48px);">피지분비<br><span>0%</span></p>
+                <p id="se" style="transform: translate(-38px, -284px);">민감성<br><span>0%</span></p>
+            </div>
+            <svg width="420" height="480" viewBox="0 0 140 140">
+                <g fill="none" fill-rule="evenodd">
+                    <g transform="translate(0 0)">
+                        <polygon fill="#d7d6d6" points="70 0 130.621778 35 130.621778 105 70 140 9.378221999999994 105 9.378221999999994 35"/>
+                        <polygon fill="#e2e0e0" points="70 21 112.4352446 45.5 112.4352446 94.5 70 119 27.564755399999996 94.5 27.564755399999996 45.5"/>
+                        <polygon fill="#ecebeb" points="70 42 94.2487112 56 94.2487112 84 70 98 45.7512888 84 45.7512888 56"/>
+                        <polygon fill="#f7f7f7" points="70 56 82.1243556 63 82.1243556 77 70 84 57.8756444 77 57.8756444 63"/>
+                    </g>
+                    <polygon class="polymorph" stroke-width="0.5" stroke="#f57272" points="70 56 82.1243556 63 82.1243556 77 70 84 57.8756444 77 57.8756444 63"></polygon>
+                    <polygon stroke-width="0.2" stroke="#c1c1c1" points="70 0  70 140"></polygon>
+                    <polygon stroke-width="0.2" stroke="#c1c1c1" points="130.621778 35 9.378221999999994 105"></polygon>
+                    <polygon stroke-width="0.2" stroke="#c1c1c1" points="130.621778 105 9.378221999999994 35"></polygon>
+                    <circle class="dot" fill="#f57272" cx="70" cy="56" r="1"></circle>
+                    <circle class="dot2" fill="#f57272" cx="82.1243556" cy="63" r="1"></circle>
+                    <circle class="dot3" fill="#f57272" cx="82.1243556" cy="77" r="1"></circle>
+                    <circle class="dot4" fill="#f57272" cx="70" cy="84" r="1"></circle>
+                    <circle class="dot5" fill="#f57272" cx="57.8756444" cy="77" r="1"></circle>
+                    <circle class="dot6" fill="#f57272" cx="57.8756444" cy="63" r="1"></circle>
+                </g>
+            </svg> 
+        </div>
+    </div>
+</div>
+</div>
+<div id="container2">
+<div class="ow-zone">
+    <div id="ex">
+        <br>
+        <p class="water-p">수분</p>
+        <div class="list1">
+            <div class="water"></div>
+            <span>0%</span>
+        </div>
+        
+    </div>
+    <div id="ex">
+        <br>
+        <p class="oil-p">유분</p>
+        <div class="list2">
+            <div class="oil"></div>
+            <span>0%</span>
+        </div>
+    </div>
+</div>
+<ul>
+    <li><a href="#none"> 추천 상품 보러가기 </a></li>
+    <li><a href="https://sims7854.github.io/OZhealth/diagnosis3/"> 피부 진단 다시하기 </a></li>
+    <li><a href="#none" onclick="copy_to_clipboard()">공유하기</a></li>
+
+</ul>
+</div>
+</div>
+<script type="text/javascript" async> 
+    function copy_to_clipboard() {    
+        var dummy   = document.createElement("input");
+        var text    = location.href;
+        
+        document.body.appendChild(dummy);
+        dummy.value = text;
+        dummy.select();
+        document.execCommand("copy");
+        document.body.removeChild(dummy);
+        alert('클립보드에 복사 됐습니다.');
+    }
+</script>
