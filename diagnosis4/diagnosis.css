@@ -1,12 +1,12 @@
 * {font-family: 'arial'; font-weight: 600;}
 
-#container { position: absolute; width: 1050px; height: 480px; left:50%; top: 50%; transform: translate(-50%, -55%); }
+#container { position: absolute; width: 1100px; height: 480px; left:50%; top: 50%; transform: translate(-50%, -55%); margin:-20px 0 0 0; }
 #container1 { width:500px; height: 480px; float:left; }
-#container2 { width:500px; height: 250px; float:left; position: relative; padding:0 0 0 50px;}
-#container2 ul {position: absolute; top: 280px; list-style: none; padding: 20px; }
-#container2 ul li { width: 460px; height: 40px; border: 1px solid #c1c1c1; border-radius: 5px; text-align: center; margin-top: 20px; line-height: 40px;}
-#container2 ul li:hover{ background-color: #c1c1c1; }
-#container2 ul li a { text-decoration: none; color: #000000;  display: block;}
+#container1 ul {position: absolute; list-style: none; padding: 10px 0px 20px 55px; }
+#container1 ul li { width: 290px; height: 40px; border: 1px solid #c1c1c1; border-radius: 5px; text-align: center; margin: 20px; line-height: 40px; float: left;}
+#container1 ul li:hover{ background-color: #c1c1c1; }
+#container1 ul li a { text-decoration: none; color: #000000;  display: block;}
+#container2 { width:500px; height: 250px; float:left; position: relative; padding:0 0 0 50px; margin: -50px 0 0 0;}
 
 #text p {  width: 90px; height: 48px; line-height: 24px; border: 3px solid transparent; }
 
@@ -24,3 +24,9 @@
 .list2 > span { position: absolute; top: 50%; left: 50%; font-size: 50px; transform: translate(-50%, -50%); }
 
 @keyframes wave { 0% { transform: translate(-50%) rotate(-180deg); } 100% { transform: translate(-50%) rotate(360deg); } } 
+
+.result-bar { width:550px; height: 260px;}
+.result-bar div { width: 550px; height: 20px; float: left; margin: 20px 0 0 0; }
+.result-bar div p { margin: 0; width:90px; float: left; text-align: left; }
+.result-bar div span { line-height: 20px;}
+.result-bar div .bar {background-color: #a03333; width: 0px; height: 4px; float: left; margin-top: 7px; border:1px solid #a03333; border-radius:3px;}

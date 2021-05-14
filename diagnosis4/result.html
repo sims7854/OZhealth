@@ -9,12 +9,12 @@
     <div>
         <div id="morphing" style="padding: 0 0 0 20px; text-align: center;">
             <div id="text" style="position: absolute;">
-                <p id="po" style="transform: translate(193px, -43px);">모공크기<br><span>0%</span></p>
-                <p id="st" style="transform: translate(422px, -3px);">피부톤<br><span>0%</span></p>
-                <p id="wr" style="transform: translate(422px, 188px);">주름<br><span>0%</span></p>
-                <p id="pi" style="transform: translate(193px, 227px);">색소침착<br><span>0%</span></p>
-                <p id="ss" style="transform: translate(-38px, 48px);">피지분비<br><span>0%</span></p>
-                <p id="se" style="transform: translate(-38px, -284px);">민감성<br><span>0%</span></p>
+                <p id="po" style="transform: translate(193px, -43px);">모공크기<br></p>
+                <p id="st" style="transform: translate(422px, -3px);">피부톤<br></p>
+                <p id="wr" style="transform: translate(422px, 188px);"><br>주름<br></p>
+                <p id="pi" style="transform: translate(193px, 227px);"><br>색소침착<br></p>
+                <p id="ss" style="transform: translate(-38px, 48px);"><br>피지분비<br></p>
+                <p id="se" style="transform: translate(-38px, -284px);">민감성<br></p>
             </div>
             <svg width="420" height="480" viewBox="0 0 140 140">
                 <g fill="none" fill-rule="evenodd">
@@ -24,20 +24,25 @@
                         <polygon fill="#ecebeb" points="70 42 94.2487112 56 94.2487112 84 70 98 45.7512888 84 45.7512888 56"/>
                         <polygon fill="#f7f7f7" points="70 56 82.1243556 63 82.1243556 77 70 84 57.8756444 77 57.8756444 63"/>
                     </g>
-                    <polygon class="polymorph" stroke-width="0.5" stroke="#f57272" points="70 56 82.1243556 63 82.1243556 77 70 84 57.8756444 77 57.8756444 63"></polygon>
+                    <polygon class="polymorph" stroke-width="0.5" stroke="#a03333" points="70 56 82.1243556 63 82.1243556 77 70 84 57.8756444 77 57.8756444 63"></polygon>
                     <polygon stroke-width="0.2" stroke="#c1c1c1" points="70 0  70 140"></polygon>
                     <polygon stroke-width="0.2" stroke="#c1c1c1" points="130.621778 35 9.378221999999994 105"></polygon>
                     <polygon stroke-width="0.2" stroke="#c1c1c1" points="130.621778 105 9.378221999999994 35"></polygon>
-                    <circle class="dot" fill="#f57272" cx="70" cy="56" r="1"></circle>
-                    <circle class="dot2" fill="#f57272" cx="82.1243556" cy="63" r="1"></circle>
-                    <circle class="dot3" fill="#f57272" cx="82.1243556" cy="77" r="1"></circle>
-                    <circle class="dot4" fill="#f57272" cx="70" cy="84" r="1"></circle>
-                    <circle class="dot5" fill="#f57272" cx="57.8756444" cy="77" r="1"></circle>
-                    <circle class="dot6" fill="#f57272" cx="57.8756444" cy="63" r="1"></circle>
+                    <circle class="dot" fill="#a03333" cx="70" cy="56" r="1"></circle>
+                    <circle class="dot2" fill="#a03333" cx="82.1243556" cy="63" r="1"></circle>
+                    <circle class="dot3" fill="#a03333" cx="82.1243556" cy="77" r="1"></circle>
+                    <circle class="dot4" fill="#a03333" cx="70" cy="84" r="1"></circle>
+                    <circle class="dot5" fill="#a03333" cx="57.8756444" cy="77" r="1"></circle>
+                    <circle class="dot6" fill="#a03333" cx="57.8756444" cy="63" r="1"></circle>
                 </g>
             </svg> 
         </div>
     </div>
+    <ul>
+        <li><a href="#none"> 추천 상품 보러가기 </a></li>
+        <li><a href="https://sims7854.github.io/OZhealth/diagnosis3/"> 피부 진단 다시하기 </a></li>
+        <li><a href="#none" onclick="copy_to_clipboard()">URL 복사하기</a></li>
+    </ul>
 </div>
 </div>
 <div id="container2">
@@ -60,12 +65,14 @@
         </div>
     </div>
 </div>
-<ul>
-    <li><a href="#none"> 추천 상품 보러가기 </a></li>
-    <li><a href="https://sims7854.github.io/OZhealth/diagnosis3/"> 피부 진단 다시하기 </a></li>
-    <li><a href="#none" onclick="copy_to_clipboard()">공유하기</a></li>
-
-</ul>
+<div class="result-bar">
+    <div id="po"><p>모공크기</p><div class="bar"></div>&nbsp;<span>0%</span></div>
+    <div id="st"><p>피부톤</p><div class="bar"></div>&nbsp;<span>0%</span></div>
+    <div id="wr"><p>주름</p><div class="bar"></div>&nbsp;<span>0%</span></div>
+    <div id="pi"><p>색소침착</p><div class="bar"></div>&nbsp;<span>0%</span></div>
+    <div id="ss"><p>피지분비</p><div class="bar"></div>&nbsp;<span>0%</span></div>
+    <div id="se"><p>민감성</p><div class="bar"></div>&nbsp;<span>0%</span></div>
+</div>
 </div>
 </div>
 <script type="text/javascript" async> 

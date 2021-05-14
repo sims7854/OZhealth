@@ -147,6 +147,3 @@ window.onload = function(){
 };
 $(function() { $("input:text").keydown(function(evt) { if (evt.keyCode == 13) return false; }); });
 
-$('li').on('click', function(){
-    $(this).addClass('active');
-});

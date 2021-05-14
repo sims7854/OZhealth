@@ -12,16 +12,17 @@
             /* 성별-수분 */
             var water = receive_get_data("Q2")
             if (water == 0.8) {
-                var q2 = 15
+                var q2 = 10
             }
             if (water == 1) {
                 var q2 = 5
             }
-            /* 수면시간-수분 */
-            var q5 = 10 / receive_get_data("Q5")
-            /* 자외선 차단제-수분 */
-            var q8 = 15 / receive_get_data("Q8")
-        
+            /* 점수반전-수분 */
+            var q5 = (5 / receive_get_data("Q5")) -1
+            var q6 = (5 / receive_get_data("Q6")) -1
+            var q7 = (5 / receive_get_data("Q7")) -1
+            var q8 = (5 / receive_get_data("Q8")) -1
+            var q9 = (5 / receive_get_data("Q9")) -1
             /* 나이-공통 */
             var age = receive_get_data("Q3")
             if (age > 60) {
@@ -83,15 +84,15 @@
                         receive_get_data("Q9")*1 + receive_get_data("Q10")*0 + receive_get_data("Q11")*0 + receive_get_data("Q12")*0 + 
                         receive_get_data("Q13")*0 + receive_get_data("Q14")*0 + receive_get_data("Q15")*8+ receive_get_data("Q16")*0 ;
             /* 수분 점수 */
-            var input7 = receive_get_data("Q1")*1 + q2 - q3 + receive_get_data("Q4")*3 +
-                        q5 - receive_get_data("Q6")*2 - receive_get_data("Q7")*2 + q8 - 
-                        receive_get_data("Q9")*2 + receive_get_data("Q10")*4 + receive_get_data("Q11")*4 + receive_get_data("Q12")*0 + 
+            var input7 = 6 - receive_get_data("Q1") + q2 + 6 - q3 + receive_get_data("Q4")*3 +
+                        q5 + q6 + q7 + q8 + 
+                        q9 + receive_get_data("Q10")*4 + receive_get_data("Q11")*4 + receive_get_data("Q12")*0 + 
                         receive_get_data("Q13")*0 + receive_get_data("Q14")*0 + receive_get_data("Q15")*0+ receive_get_data("Q16")*0 ;
             /* 유분 점수 */
-            var input8 = receive_get_data("Q1")*1 + receive_get_data("Q2")*5 + q3*3 + receive_get_data("Q4")*2 +
+            var input8 = receive_get_data("Q1")*1 + receive_get_data("Q2")*5 + q3*1 + receive_get_data("Q4")*2 +
                         receive_get_data("Q5")*1 + receive_get_data("Q6")*1 + receive_get_data("Q7")*1 + receive_get_data("Q8")*1 + 
-                        receive_get_data("Q9")*1 + receive_get_data("Q10")*4 + receive_get_data("Q11")*0 + receive_get_data("Q12")*4 + 
-                        receive_get_data("Q13")*3 + receive_get_data("Q14")*0 + receive_get_data("Q15")*0+ receive_get_data("Q16")*0 ;
+                        receive_get_data("Q9")*1 + receive_get_data("Q10")*0 + receive_get_data("Q11")*0 + receive_get_data("Q12")*4 + 
+                        receive_get_data("Q13")*6 + receive_get_data("Q14")*0 + receive_get_data("Q15")*0+ receive_get_data("Q16")*0 ;
             
 			/* 모공크기 좌표 */
             if (input <= 100) {
@@ -230,6 +231,13 @@
                 }
                 
               });
+              var Resultbar = anime({
+                targets: '#po .bar',
+                width: input*4,
+                duration: 1500,
+                easing: 'easeInOutExpo',
+                autoplay: true
+            });
               var myObject2 = { prop: '0%' }
               var ResultAni2 = anime({
                 targets: myObject2,
@@ -243,6 +251,13 @@
                 }
                 
               });
+              var Resultbar2 = anime({
+                targets: '#st .bar',
+                width: input2*4,
+                duration: 1500,
+                easing: 'easeInOutExpo',
+                autoplay: true
+            });
               var myObject3 = { prop: '0%' }
               var ResultAni3 = anime({
                 targets: myObject3,
@@ -256,6 +271,13 @@
                 }
                 
               });
+              var Resultbar3 = anime({
+                targets: '#wr .bar',
+                width: input3*4,
+                duration: 1500,
+                easing: 'easeInOutExpo',
+                autoplay: true
+            });
               var myObject4 = { prop: '0%' }
               var ResultAni4 = anime({
                 targets: myObject4,
@@ -269,6 +291,13 @@
                 }
                 
               });
+              var Resultbar4 = anime({
+                targets: '#pi .bar',
+                width: input4*4,
+                duration: 1500,
+                easing: 'easeInOutExpo',
+                autoplay: true
+            });
               var myObject5 = { prop: '0%' }
               var ResultAni5 = anime({
                 targets: myObject5,
@@ -282,6 +311,13 @@
                 }
                 
               });
+              var Resultbar5 = anime({
+                targets: '#ss .bar',
+                width: input5*4,
+                duration: 1500,
+                easing: 'easeInOutExpo',
+                autoplay: true
+            });
               var myObject6 = { prop: '0%' }
               var ResultAni6 = anime({
                 targets: myObject6,
@@ -294,6 +330,13 @@
                         el.innerHTML = JSON.stringify(myObject6).replace(/\"/gi, "").replace(/\{/gi, "").replace(/\}/gi, "").replace(/prop:/gi, "");
                 }
               });
+              var Resultbar6 = anime({
+                targets: '#se .bar',
+                width: input6*4,
+                duration: 1500,
+                easing: 'easeInOutExpo',
+                autoplay: true
+            });
               var myObject7 = { prop: '0%' }
               var ResultAni7 = anime({
                 targets: myObject7,
