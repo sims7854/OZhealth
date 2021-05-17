@@ -1,4 +1,10 @@
 window.onload = function(){
+    document.querySelector('.start-btn').onclick = function(){
+        $(".intro").fadeOut(100);
+        $(".progress").delay(100).fadeIn(100);
+        $(".next-btn").delay(100).fadeIn(100);
+        $(".question1").delay(100).fadeIn(100);
+    }
     var page = 0
     document.querySelector('.next-btn').onclick = function(){
         page = page +1
@@ -68,8 +74,12 @@ window.onload = function(){
         };
         if (page==15) {
             $(".Q15").fadeOut(100);
-            $(".next-btn").fadeOut(100);
             $(".Q16").delay(100).fadeIn(100);	
+        };
+        if (page==16) {
+            $(".Q16").fadeOut(100);
+            $(".next-btn").fadeOut(100);
+            $(".Q17").delay(100).fadeIn(100);	
         };
     };
     document.querySelector('.prev-btn').onclick = function(){
@@ -140,8 +150,12 @@ window.onload = function(){
         };
         if (page==14) {
             $(".Q16").fadeOut(100);
-            $(".next-btn").fadeIn(100);
             $(".Q15").delay(100).fadeIn(100);	
+        };
+        if (page==15) {
+            $(".Q17").fadeOut(100);
+            $(".next-btn").fadeIn(100);
+            $(".Q16").delay(100).fadeIn(100);	
         };
     };
 };

@@ -19,21 +19,21 @@
             <svg width="420" height="480" viewBox="0 0 140 140">
                 <g fill="none" fill-rule="evenodd">
                     <g transform="translate(0 0)">
-                        <polygon fill="#d7d6d6" points="70 0 130.621778 35 130.621778 105 70 140 9.378221999999994 105 9.378221999999994 35"/>
-                        <polygon fill="#e2e0e0" points="70 21 112.4352446 45.5 112.4352446 94.5 70 119 27.564755399999996 94.5 27.564755399999996 45.5"/>
-                        <polygon fill="#ecebeb" points="70 42 94.2487112 56 94.2487112 84 70 98 45.7512888 84 45.7512888 56"/>
-                        <polygon fill="#f7f7f7" points="70 56 82.1243556 63 82.1243556 77 70 84 57.8756444 77 57.8756444 63"/>
+                        <polygon fill="#E0E5EE" stroke="#EBEEF5" points="70 0 130.621778 35 130.621778 105 70 140 9.378221999999994 105 9.378221999999994 35"/>
+                        <polygon fill="#E0E5EE" stroke="#EBEEF5" points="70 21 112.4352446 45.5 112.4352446 94.5 70 119 27.564755399999996 94.5 27.564755399999996 45.5"/>
+                        <polygon fill="#E0E5EE" stroke="#EBEEF5" points="70 42 94.2487112 56 94.2487112 84 70 98 45.7512888 84 45.7512888 56"/>
+                        <polygon fill="#E0E5EE" stroke="#EBEEF5" points="70 56 82.1243556 63 82.1243556 77 70 84 57.8756444 77 57.8756444 63"/>
                     </g>
-                    <polygon class="polymorph" stroke-width="0.5" stroke="#a03333" points="70 56 82.1243556 63 82.1243556 77 70 84 57.8756444 77 57.8756444 63"></polygon>
-                    <polygon stroke-width="0.2" stroke="#c1c1c1" points="70 0  70 140"></polygon>
-                    <polygon stroke-width="0.2" stroke="#c1c1c1" points="130.621778 35 9.378221999999994 105"></polygon>
-                    <polygon stroke-width="0.2" stroke="#c1c1c1" points="130.621778 105 9.378221999999994 35"></polygon>
-                    <circle class="dot" fill="#a03333" cx="70" cy="56" r="1"></circle>
-                    <circle class="dot2" fill="#a03333" cx="82.1243556" cy="63" r="1"></circle>
-                    <circle class="dot3" fill="#a03333" cx="82.1243556" cy="77" r="1"></circle>
-                    <circle class="dot4" fill="#a03333" cx="70" cy="84" r="1"></circle>
-                    <circle class="dot5" fill="#a03333" cx="57.8756444" cy="77" r="1"></circle>
-                    <circle class="dot6" fill="#a03333" cx="57.8756444" cy="63" r="1"></circle>
+                    <polygon class="polymorph" stroke-width="0.5" stroke="#BF152C" points="70 56 82.1243556 63 82.1243556 77 70 84 57.8756444 77 57.8756444 63"></polygon>
+                    <polygon stroke="#EBEEF5" points="70 0  70 140"></polygon>
+                    <polygon stroke="#EBEEF5" points="130.621778 35 9.378221999999994 105"></polygon>
+                    <polygon stroke="#EBEEF5" points="130.621778 105 9.378221999999994 35"></polygon>
+                    <circle class="dot" fill="#BF152C" cx="70" cy="56" r="1"></circle>
+                    <circle class="dot2" fill="#BF152C" cx="82.1243556" cy="63" r="1"></circle>
+                    <circle class="dot3" fill="#BF152C" cx="82.1243556" cy="77" r="1"></circle>
+                    <circle class="dot4" fill="#BF152C" cx="70" cy="84" r="1"></circle>
+                    <circle class="dot5" fill="#BF152C" cx="57.8756444" cy="77" r="1"></circle>
+                    <circle class="dot6" fill="#BF152C" cx="57.8756444" cy="63" r="1"></circle>
                 </g>
             </svg> 
         </div>
@@ -78,10 +78,11 @@
 <script type="text/javascript" async> 
     function copy_to_clipboard() {    
         var dummy   = document.createElement("input");
-        var text    = location.href;
+        var url1    = "https://4dskins.com/4dskins/Result-diagnosis.html";
+        var url2    = location.search;
         
         document.body.appendChild(dummy);
-        dummy.value = text;
+        dummy.value = url1 + url2;
         dummy.select();
         document.execCommand("copy");
         document.body.removeChild(dummy);

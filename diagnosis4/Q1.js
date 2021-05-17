@@ -1,8 +1,8 @@
     $('.asia').mouseenter(function(){
-        $('.asia').css('fill','#c1c1c1');
+        $('.asia').css('fill','#868EB0');
     });
     $('.asia').mouseleave(function(){
-        $('.asia').css('fill','#e0e0e0');
+        $('.asia').css('fill','#BEC8DE');
     });
     $('.asia').on('click', function(){
         $('#Q1_1').prop('checked', true);
@@ -19,10 +19,10 @@
         }
     });
     $('.africa').mouseenter(function(){
-        $('.africa').css('fill','#c1c1c1');
+        $('.africa').css('fill','#868EB0');
     });
     $('.africa').mouseleave(function(){
-        $('.africa').css('fill','#e0e0e0');
+        $('.africa').css('fill','#BEC8DE');
     });
     $('.africa').on('click', function(){
         $('#Q1_2').prop('checked', true);
@@ -39,10 +39,10 @@
         }
     });
     $('.australia').mouseenter(function(){
-        $('.australia').css('fill','#c1c1c1');
+        $('.australia').css('fill','#868EB0');
     });
     $('.australia').mouseleave(function(){
-        $('.australia').css('fill','#e0e0e0');
+        $('.australia').css('fill','#BEC8DE');
     });
     $('.australia').on('click', function(){
         $('#Q1_3').prop('checked', true);
@@ -59,10 +59,10 @@
         }
     });
     $('.europe').mouseenter(function(){
-        $('.europe').css('fill','#c1c1c1');
+        $('.europe').css('fill','#868EB0');
     });
     $('.europe').mouseleave(function(){
-        $('.europe').css('fill','#e0e0e0');
+        $('.europe').css('fill','#BEC8DE');
     });
     $('.europe').on('click', function(){
         $('#Q1_4').prop('checked', true);
@@ -79,10 +79,10 @@
         }
     });
     $('.nothamerica').mouseenter(function(){
-        $('.nothamerica').css('fill','#c1c1c1');
+        $('.nothamerica').css('fill','#868EB0');
     });
     $('.nothamerica').mouseleave(function(){
-        $('.nothamerica').css('fill','#e0e0e0');
+        $('.nothamerica').css('fill','#BEC8DE');
     });
     $('.nothamerica').on('click', function(){
         $('#Q1_5').prop('checked', true);
@@ -99,10 +99,10 @@
         }
     });
     $('.southamerica').mouseenter(function(){
-        $('.southamerica').css('fill','#c1c1c1');
+        $('.southamerica').css('fill','#868EB0');
     });
     $('.southamerica').mouseleave(function(){
-        $('.southamerica').css('fill','#e0e0e0');
+        $('.southamerica').css('fill','#BEC8DE');
     });
     $('.southamerica').on('click', function(){
         $('#Q1_6').prop('checked', true);
@@ -119,10 +119,10 @@
         }
     });
     $('.southeast').mouseenter(function(){
-        $('.southeast').css('fill','#c1c1c1');
+        $('.southeast').css('fill','#868EB0');
     });
     $('.southeast').mouseleave(function(){
-        $('.southeast').css('fill','#e0e0e0');
+        $('.southeast').css('fill','#BEC8DE');
     });
     $('.southeast').on('click', function(){
         $('#Q1_7').prop('checked', true);
@@ -139,10 +139,10 @@
         }
     });
     $('.middleeast').mouseenter(function(){
-        $('.middleeast').css('fill','#c1c1c1');
+        $('.middleeast').css('fill','#868EB0');
     });
     $('.middleeast').mouseleave(function(){
-        $('.middleeast').css('fill','#e0e0e0');
+        $('.middleeast').css('fill','#BEC8DE');
     });
     $('.middleeast').on('click', function(){
         $('#Q1_8').prop('checked', true);

@@ -4,22 +4,25 @@
 <script src="jquery-1.12.4.min.js"></script>
 <link href="Q1.css" rel="stylesheet">
 <link href="question.css" rel="stylesheet">
-
 <form action="result.html" method="get">
 <div class="question">
     <div id="ex">
         <br>
-        <div class="progress">
+        <div class="progress" >
             <div class="progress-bar"></div>
         </div>
     </div><br>
 	<div class="btn">
 		<div class="prev-btn" style="display: none;">&#60;</div>
-		<div class="next-btn">&#62;</div>
+		<div class="next-btn" style="display: none;">&#62;</div>
 	</div>
+	<ul class="intro">
+		<img src="image/logo.png"></img>
+		<div class="start-btn">테스트 시작하기</div>
+	</ul>
     <ul class="Q1">
         <!-- Q. 1 -->
-        <span>Q1. 기본 피부를 선택해 주세요.</span>
+        <span>기본 피부를 선택해 주세요.</span>
     	<input type="radio" name="Q1" id="Q1_1" value="3"><label for="Q1_1">아시아</label>
     	<input type="radio" name="Q1" id="Q1_2" value="5"><label for="Q1_1">아프리카</label>
     	<input type="radio" name="Q1" id="Q1_3" value="2"><label for="Q1_1">오세아니아</label>
@@ -31,19 +34,19 @@
     </ul>
     <ul class="Q2">
         <!-- Q. 2 -->
-        <span>Q2. 성별을 골라주세요. </span>
+        <span>성별을 골라주세요. </span>
         <input type="radio" name="Q2" id="Q2_1" value="0.8"><label for="Q2_1">여성</label>
         <input type="radio" name="Q2" id="Q2_2" value="1"/><label for="Q2_2">남성</label>
     </ul>
     <ul class="Q3">
         <!-- Q. 3 -->
-        <span>Q3. 나이를 입력해 주세요.</span><br>
+        <span>나이를 입력해 주세요.</span><br>
         <input class="age" name="Q3" type="text" autocomplete="off" value="">
         
     </ul>
     <ul class="Q4">
         <!-- Q. 4 -->
-        <span>Q4. 피부타입을 골라주세요.</span>
+        <span>피부타입을 골라주세요.</span>
         <input type="radio" name="Q4" id="Q4_1" value="1"><label for="Q4_1">건성</label>
         <input type="radio" name="Q4" id="Q4_2" value="2"><label for="Q4_2">지성</label>
         <input type="radio" name="Q4" id="Q4_3" value="3"><label for="Q4_3">복합성</label>
@@ -52,7 +55,7 @@
     </ul>
     <ul class="Q5">
         <!-- Q. 5 -->
-        <span>Q5. 하루 수면시간이 어떻게 되나요?</span>
+        <span>하루 수면시간이 어떻게 되나요?</span>
         <input type="radio" name="Q5" id="Q5_1" value="5"><label for="Q5_1">4시간 미만</label>
         <input type="radio" name="Q5" id="Q5_2" value="4"><label for="Q5_2">4~5시간</label>
         <input type="radio" name="Q5" id="Q5_3" value="2"><label for="Q5_3">5~7시간</label>
@@ -61,7 +64,7 @@
     </ul>
     <ul class="Q6">
         <!-- Q. 6 -->
-        <span>Q6. 하루에 커피를 얼마나 드시나요?</span>
+        <span>하루에 커피를 얼마나 드시나요?</span>
         <input type="radio" name="Q6" id="Q6_1" value="1"><label for="Q6_1">마시지않는다</label>
         <input type="radio" name="Q6" id="Q6_2" value="2"><label for="Q6_2">1~2잔</label>
         <input type="radio" name="Q6" id="Q6_3" value="3"><label for="Q6_3">3~4잔</label>
@@ -70,7 +73,7 @@
     </ul>
     <ul class="Q7">
         <!-- Q. 7 -->
-        <span>Q7. 하루에 자외선에 노출되는 시간은 얼마나 되나요?</span>
+        <span>하루에 자외선에 노출되는 시간은 얼마나 되나요?</span>
         <input type="radio" name="Q7" id="Q7_1" value="1"><label for="Q7_1">1시간 미만</label>
         <input type="radio" name="Q7" id="Q7_2" value="2"><label for="Q7_2">1~2시간</label>
         <input type="radio" name="Q7" id="Q7_3" value="3"><label for="Q7_3">3시간</label>
@@ -79,7 +82,7 @@
     </ul>
     <ul class="Q8">
         <!-- Q. 8 -->
-        <span>Q8. 평소에 자외선 차단제를 얼마나 자주 사용하나요?</span>
+        <span>평소에 자외선 차단제를 얼마나 자주 사용하나요?</span>
         <input type="radio" name="Q8" id="Q8_1" value="5"><label for="Q8_1">전혀 바르지 않는다</label>
         <input type="radio" name="Q8" id="Q8_2" value="4"><label for="Q8_2">여름철 같이 뜨거운 계절에만 바른다</label>
         <input type="radio" name="Q8" id="Q8_3" value="3"><label for="Q8_3">가끔식 바른다</label>
@@ -88,7 +91,7 @@
     </ul>
     <ul class="Q9">
         <!-- Q. 9 -->
-        <span>Q9. 담배를 얼마나 많이 피우나요? 혹은 담배연기에 얼마나 노출되나요?</span>
+        <span>담배를 얼마나 피우시나요?</span>
         <input type="radio" name="Q9" id="Q9_1" value="1"><label for="Q9_1">전혀 아니다</label>
         <input type="radio" name="Q9" id="Q9_2" value="2"><label for="Q9_2">하루 반갑 이하</label>
         <input type="radio" name="Q9" id="Q9_3" value="3"><label for="Q9_3">하루1갑</label>
@@ -97,7 +100,7 @@
     </ul>
     <ul class="Q10">
         <!-- Q. 10 -->
-        <span>Q10. 클렌저 사용 후 당신의 얼굴 피부 상태는 어떤가요?</span>
+        <span>클렌저 사용 후 당신의 얼굴 피부 상태는 어떤가요?</span>
         <input type="radio" name="Q10" id="Q10_1" value="0"><label for="Q10_1">건조하거나 갈라지는 느낌이 든다.</label>
         <input type="radio" name="Q10" id="Q10_2" value="1"><label for="Q10_2">건조한 느낌은 들지만 갈라지는 느낌은 없다.</label>
         <input type="radio" name="Q10" id="Q10_3" value="4"><label for="Q10_3">정상적인 느낌이다</label>
@@ -106,7 +109,7 @@
     </ul>
     <ul class="Q11">
         <!-- Q. 11 -->
-        <span>Q11. 보습제를 사용하지 않아도 얼굴 피부는 촉촉한가요?</span>
+        <span>보습제를 사용하지 않아도 얼굴 피부는 촉촉한가요?</span>
         <input type="radio" name="Q11" id="Q11_1" value="0"><label for="Q11_1">전혀 그렇지 않다</label>
         <input type="radio" name="Q11" id="Q11_2" value="1"><label for="Q11_2">거의 그렇지 않다</label>
         <input type="radio" name="Q11" id="Q11_3" value="3"><label for="Q11_3">때때로 그렇다</label>
@@ -115,7 +118,7 @@
     </ul>
     <ul class="Q12">
         <!-- Q. 12 -->
-        <span>Q12. 얼굴에 모공이 얼마나 있나요?</span>
+        <span>얼굴에 모공이 얼마나 있나요?</span>
         <input type="radio" name="Q12" id="Q12_1" value="0"><label for="Q12_1">0(사진)</label>
         <input type="radio" name="Q12" id="Q12_2" value="1"><label for="Q12_2">1(사진)</label>
         <input type="radio" name="Q12" id="Q12_3" value="2"><label for="Q12_3">2(사진)</label>
@@ -124,7 +127,7 @@
     </ul>
     <ul class="Q13">
         <!-- Q. 13 -->
-        <span>Q13. 세안 후 언제 몇 시간 뒤에 유분기가 생기나요?</span>
+        <span>세안 후 언제 몇 시간 뒤에 유분기가 생기나요?</span>
         <input type="radio" name="Q13" id="Q13_1" value="0"><label for="Q13_1">전혀 생기지않는다</label>
         <input type="radio" name="Q13" id="Q13_2" value="1"><label for="Q13_2">4~6시간</label>
         <input type="radio" name="Q13" id="Q13_3" value="2"><label for="Q13_3">2~4시간</label>
@@ -133,14 +136,14 @@
     </ul>
     <ul class="Q14">
         <!-- Q. 14 -->
-        <span>Q14. 코에 블랙헤드나 화이트헤드가 얼마나 있나요?</span>
+        <span>코에 블랙헤드나 화이트헤드가 얼마나 있나요?</span>
         <input type="radio" name="Q14" id="Q14_1" value="1"><label for="Q14_1">거의 없다</label>
         <input type="radio" name="Q14" id="Q14_3" value="3"><label for="Q14_3">다소 있다</label>
         <input type="radio" name="Q14" id="Q14_5" value="5"><label for="Q14_5">많이 있다</label>
     </ul>
     <ul class="Q15">
         <!-- Q. 15 -->
-        <span>Q15. 화장품을 사용한 뒤 피부 트러블 발진, 가려움, 혹은 따끔거리는 증상이 있나요?</span>
+        <span>화장품을 사용한 뒤 홍조나 따끔거리는 증상이 있나요?</span>
         <input type="radio" name="Q15" id="Q15_1" value="1"><label for="Q15_1">거의 없다</label>
         <input type="radio" name="Q15" id="Q15_2" value="2"><label for="Q15_2">가끔 있다</label>
         <input type="radio" name="Q15" id="Q15_3" value="3"><label for="Q15_3">자주 있다</label>
@@ -149,18 +152,21 @@
     </ul>
     <ul class="Q16">
         <!-- Q. 16 -->
-        <span>Q16. 얼굴에 주름이 있나요?</span>
+        <span>얼굴에 주름이 있나요?</span>
         <input type="radio" name="Q16" id="Q16_1" value="0"><label for="Q16_1">0(사진)</label>
         <input type="radio" name="Q16" id="Q16_2" value="1"><label for="Q16_2">1(사진)</label>
         <input type="radio" name="Q16" id="Q16_3" value="3"><label for="Q16_3">3(사진)</label>
         <input type="radio" name="Q16" id="Q16_4" value="4"><label for="Q16_4">4(사진)</label>
         <input type="radio" name="Q16" id="Q16_5" value="5"><label for="Q16_5">5(사진)</label>
 		<input class="submit" type="submit" id="submit" style="display:none;" value="결과보기" />
-		<label class="result"for="submit">결과보기</label>
+		
     </ul>
+	<ul class="Q17">
+		<label class="result"for="submit">결과보기</label>
+	</ul>
 <!-- Q. 1 svg -->
 <ul class="question1">
-<span>Q1. 현재 살고있는 지역을 선택해 주세요.</span>
+<span>현재 살고있는 지역을 선택해 주세요.</span>
 <svg version="1.1" id="svg2985" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 2560 1134" style="enable-background:new 0 0 2560 1134;" xml:space="preserve">
 <rect id="ocean" class="st0" width="2831.6" height="1134"/>
