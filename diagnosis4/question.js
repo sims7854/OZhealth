@@ -1,12 +1,24 @@
+function age() {
+    $(".Q3").fadeOut(100);
+    $(".next-btn").fadeOut(100);
+    $(".Q4").delay(100).fadeIn(100);
+    page = 3 
+    var ani3 = anime({
+        targets: '.progress .progress-bar',
+        width: page*80,
+        duration: 500,
+        easing: 'easeInOutExpo',
+        autoplay: true
+    });
+}
 window.onload = function(){
     document.querySelector('.start-btn').onclick = function(){
         $(".intro").fadeOut(100);
         $(".progress").delay(100).fadeIn(100);
-        $(".next-btn").delay(100).fadeIn(100);
         $(".question1").delay(100).fadeIn(100);
     }
-    var page = 0
-    document.querySelector('.next-btn').onclick = function(){
+    page = 0
+    $('path, label, .next-btn').on('click', function(){
         page = page +1
         var ani3 = anime({
             targets: '.progress .progress-bar',
@@ -22,10 +34,12 @@ window.onload = function(){
         };
         if (page==2) {
             $(".Q2").fadeOut(100);
+            $(".next-btn").delay(100).fadeIn(100);
             $(".Q3").delay(100).fadeIn(100);	
         };
         if (page==3) {
             $(".Q3").fadeOut(100);
+            $(".next-btn").fadeOut(100);
             $(".Q4").delay(100).fadeIn(100);	
         };
         if (page==4) {
@@ -78,10 +92,9 @@ window.onload = function(){
         };
         if (page==16) {
             $(".Q16").fadeOut(100);
-            $(".next-btn").fadeOut(100);
             $(".Q17").delay(100).fadeIn(100);	
         };
-    };
+    });
     document.querySelector('.prev-btn').onclick = function(){
         page = page -1
         var ani3 = anime({
@@ -102,6 +115,7 @@ window.onload = function(){
         };
         if (page==2) {
             $(".Q4").fadeOut(100);
+            $(".next-btn").fadeIn(100);
             $(".Q3").delay(100).fadeIn(100);	
         };
         if (page==3) {

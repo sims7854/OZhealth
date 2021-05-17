@@ -1,4 +1,4 @@
-* {font-family: 'arial'; font-weight: 600; -webkit-tap-highlight-color : transparent; }
+* {font-family: 'arial'; font-weight: 600; -webkit-tap-highlight-color : transparent; -ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none; }
 
 #container { position: absolute; width: 1100px; height: 480px; left:50%; top: 50%; transform: translate(-50%, -55%); margin:-20px 0 0 0; }
 #container1 { width:500px; height: 480px; float:left; }
