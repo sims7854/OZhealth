@@ -3,7 +3,7 @@ input:focus{ outline:none; }
 span { font-weight: 600; color: #BF152C; font-size:18px; display: block; border: 2px solid #BF152C; border-radius: 19px; width:500px; height:36px; position: relative; left: 50%; transform: translate(-50%, 70px); margin: 15px 0 15px 0; line-height: 36px;  }
 svg { margin:5px 0 0 0; border-radius: 50px; } 
 input[type=radio] { display: none; }
-.question { width: 1200px; height: 600px; transform: translate(-50%, -50%); left: 50%; top: 50%; position: absolute; border: 5px solid #BF152C; border-radius: 17px;}
+.question { width: 1200px; height: 600px; transform: translate(-50%, -50%); left: 50%; top: 50%; position: absolute; border: 5px solid transparent; border-radius: 17px;}
 .question ul { text-align: center; }
 .intro { margin: 0px 0 0 0; }
 .start-btn { font-weight: 600; background-color: #BF152C; color:#ffffff; font-size:18px; display: block; border: 2px solid #BF152C; border-radius: 31px; width:400px; height:60px; position: relative; left: 50%; transform: translate(-50%, 0px); margin: 15px 0 15px 0; line-height: 60px;  }

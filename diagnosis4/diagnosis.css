@@ -1,5 +1,5 @@
 * {font-family: 'arial'; font-weight: 600; -webkit-tap-highlight-color : transparent; -ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none; }
-#line { width: 1200px; height: 600px; border: 5px solid #BF152C; border-radius: 17px; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background-image: url(image/line.png);}
+#line { width: 1200px; height: 600px; border: 5px solid transparent; border-radius: 17px; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background-image: url(image/line.png);}
 #container { position: absolute; width: 1200px; height: 480px; left:50%; top: 50%; transform: translate(-50%, -55%); margin:-20px 0 0 0; }
 #container1 { width:500px; height: 480px; float:left; padding: 0 0 0 40px; }
 #container1 ul {position: absolute; list-style: none; padding: 17px 0px 0px 55px; }
@@ -30,4 +30,5 @@
 .result-bar div { width: 550px; height: 20px; float: left; margin: 20px 0 0 0; }
 .result-bar div p { margin: 0; width:90px; float: left; text-align: left; }
 .result-bar div span { line-height: 20px;}
-.result-bar div .bar {background-color: #BF152C; width: 0px; height: 4px; float: left; margin-top: 7px; border:1px solid #BF152C; border-radius:3px;}
+.result-bar div .bar {background-color: #BF152C; width: 0px; height: 6px; float: left; margin-top: 7px;  border-radius:3px; overflow: hidden;}
+.result-bar div .bar2 {background-color: #E0E5EE; height: 6px; float: left; margin:0px; border:1px solid #E0E5EE}
