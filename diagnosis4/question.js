@@ -34,7 +34,7 @@ window.onload = function(){
         };
         if (page==2) {
             $(".Q2").fadeOut(100);
-            $(".next-btn").delay(100).fadeIn(100);
+            //$(".next-btn").delay(100).fadeIn(100);
             $(".Q3").delay(100).fadeIn(100);	
         };
         if (page==3) {
@@ -115,7 +115,7 @@ window.onload = function(){
         };
         if (page==2) {
             $(".Q4").fadeOut(100);
-            $(".next-btn").fadeIn(100);
+            //$(".next-btn").fadeIn(100);
             $(".Q3").delay(100).fadeIn(100);	
         };
         if (page==3) {
@@ -168,7 +168,7 @@ window.onload = function(){
         };
         if (page==15) {
             $(".Q17").fadeOut(100);
-            $(".next-btn").fadeIn(100);
+            //$(".next-btn").fadeIn(100);
             $(".Q16").delay(100).fadeIn(100);	
         };
     };

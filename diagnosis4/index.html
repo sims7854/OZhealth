@@ -41,7 +41,13 @@
     <ul class="Q3">
         <!-- Q. 3 -->
         <span>나이를 입력해 주세요.</span><br>
-        <input class="age" name="Q3" type="text" onkeyup="if(window.event.keyCode==13){age()}" autocomplete="off" value="">
+        <!--input class="age" name="Q3" type="text" onkeyup="if(window.event.keyCode==13){age()}" autocomplete="off" value=""-->
+		<input type="radio" name="Q3" id="Q3_1" value="1"><label for="Q3_1">10대</label>
+        <input type="radio" name="Q3" id="Q3_2" value="2"><label for="Q3_2">20대</label>
+        <input type="radio" name="Q3" id="Q3_3" value="3"><label for="Q3_3">30대</label>
+        <input type="radio" name="Q3" id="Q3_4" value="4"><label for="Q3_4">40대</label>
+        <input type="radio" name="Q3" id="Q3_5" value="4"><label for="Q3_5">50대</label>
+        <input type="radio" name="Q3" id="Q3_6" value="5"><label for="Q3_6">60대 이상</label>
         <script>
 			
 		</script>
@@ -102,12 +108,12 @@
     </ul>
     <ul class="Q10">
         <!-- Q. 10 -->
-        <span>클렌저 사용 후 당신의 얼굴 피부 상태는 어떤가요?</span>
-        <input type="radio" name="Q10" id="Q10_1" value="0"><label for="Q10_1">건조하거나 갈라지는 느낌이 든다.</label>
-        <input type="radio" name="Q10" id="Q10_2" value="1"><label for="Q10_2">건조한 느낌은 들지만 갈라지는 느낌은 없다.</label>
-        <input type="radio" name="Q10" id="Q10_3" value="4"><label for="Q10_3">정상적인 느낌이다</label>
-        <input type="radio" name="Q10" id="Q10_4" value="5"><label for="Q10_4">촉촉한 느낌이다</label>
-        <input type="radio" name="Q10" id="Q10_5" value="1"><label for="Q10_5">클렌저를 사용하지 않는다</label>
+        <span>세안 후 당신의 얼굴 피부 상태는 어떤가요?</span>
+        <input type="radio" name="Q10" id="Q10_1" value="1"><label for="Q10_1">건조하고 심하게 당긴다</label>
+        <input type="radio" name="Q10" id="Q10_2" value="2"><label for="Q10_2">건조하거나 당기는 느낌이 든다.</label>
+        <input type="radio" name="Q10" id="Q10_3" value="3"><label for="Q10_3">건조한 느낌은 들지만 당기는 느낌은 없다.</label>
+        <input type="radio" name="Q10" id="Q10_4" value="4"><label for="Q10_4">아무느낌이 없다</label>
+        <input type="radio" name="Q10" id="Q10_5" value="5"><label for="Q10_5">촉촉한 느낌이다</label>
     </ul>
     <ul class="Q11">
         <!-- Q. 11 -->
@@ -121,11 +127,11 @@
     <ul class="Q12">
         <!-- Q. 12 -->
         <span>얼굴에 모공이 얼마나 있나요?</span>
-        <input type="radio" name="Q12" id="Q12_1" value="0"><label for="Q12_1">0(사진)</label>
-        <input type="radio" name="Q12" id="Q12_2" value="1"><label for="Q12_2">1(사진)</label>
-        <input type="radio" name="Q12" id="Q12_3" value="2"><label for="Q12_3">2(사진)</label>
-        <input type="radio" name="Q12" id="Q12_4" value="4"><label for="Q12_4">4(사진)</label>
-        <input type="radio" name="Q12" id="Q12_5" value="5"><label for="Q12_5">5(사진)</label>
+        <input type="radio" name="Q12" id="Q12_1" value="0"><label for="Q12_1" style="background-image: url(image/normal.png);"></label>
+        <input type="radio" name="Q12" id="Q12_2" value="2"><label for="Q12_2" style="background-image: url(image/po-2.png);"></label>
+        <input type="radio" name="Q12" id="Q12_3" value="4"><label for="Q12_3" style="background-image: url(image/po-3.png);"></label>
+        <input type="radio" name="Q12" id="Q12_4" value="5"><label for="Q12_4" style="background-image: url(image/po-4.png);"></label>
+        <!--input type="radio" name="Q12" id="Q12_5" value="5"><label for="Q12_5">5(사진)</label-->
     </ul>
     <ul class="Q13">
         <!-- Q. 13 -->
@@ -146,20 +152,20 @@
     <ul class="Q15">
         <!-- Q. 15 -->
         <span>화장품을 사용한 뒤 홍조나 따끔거리는 증상이 있나요?</span>
-        <input type="radio" name="Q15" id="Q15_1" value="1"><label for="Q15_1">거의 없다</label>
-        <input type="radio" name="Q15" id="Q15_2" value="2"><label for="Q15_2">가끔 있다</label>
-        <input type="radio" name="Q15" id="Q15_3" value="3"><label for="Q15_3">자주 있다</label>
-        <input type="radio" name="Q15" id="Q15_4" value="5"><label for="Q15_4">항상 있다</label>
-        <input type="radio" name="Q15" id="Q15_5" value="2"><label for="Q15_5">화장품을 사용하지 않는다</label>
+        <input type="radio" name="Q15" id="Q15_1" value="0"><label for="Q15_1" style="background-image: url(image/normal.png);"></label>
+        <input type="radio" name="Q15" id="Q15_2" value="2"><label for="Q15_2" style="background-image: url(image/se-2.png);"></label>
+        <input type="radio" name="Q15" id="Q15_3" value="4"><label for="Q15_3" style="background-image: url(image/se-3.png);"></label>
+        <input type="radio" name="Q15" id="Q15_4" value="5"><label for="Q15_4" style="background-image: url(image/se-4.png);"></label>
+        <!--input type="radio" name="Q15" id="Q15_5" value="2"><label for="Q15_5">화장품을 사용하지 않는다</label-->
     </ul>
     <ul class="Q16">
         <!-- Q. 16 -->
         <span>얼굴에 주름이 있나요?</span>
-        <input type="radio" name="Q16" id="Q16_1" value="0"><label for="Q16_1">0(사진)</label>
-        <input type="radio" name="Q16" id="Q16_2" value="1"><label for="Q16_2">1(사진)</label>
-        <input type="radio" name="Q16" id="Q16_3" value="3"><label for="Q16_3">3(사진)</label>
-        <input type="radio" name="Q16" id="Q16_4" value="4"><label for="Q16_4">4(사진)</label>
-        <input type="radio" name="Q16" id="Q16_5" value="5"><label for="Q16_5">5(사진)</label>
+        <input type="radio" name="Q16" id="Q16_1" value="0"><label for="Q16_1" style="background-image: url(image/normal.png);"></label>
+        <input type="radio" name="Q16" id="Q16_2" value="2"><label for="Q16_2" style="background-image: url(image/wr-2.png);"></label>
+        <input type="radio" name="Q16" id="Q16_3" value="4"><label for="Q16_3" style="background-image: url(image/wr-3.png);"></label>
+        <input type="radio" name="Q16" id="Q16_4" value="5"><label for="Q16_4" style="background-image: url(image/wr-4.png);"></label>
+        <!--input type="radio" name="Q16" id="Q16_5" value="5"><label for="Q16_5">5(사진)</label-->
 		<input class="submit" type="submit" id="submit" style="display:none;" value="결과보기" />
 		
     </ul>
@@ -1964,7 +1970,7 @@
 	<path id="path3966" class="st2" d="M2211.8,720.4c0.1-0.5-0.2-0.7-0.7-0.7C2211.3,719.9,2211.5,720.2,2211.8,720.4"/>
 	<path id="path3968" class="st2" d="M2212.2,717.7c0.1-0.5-0.1-0.5-0.7-0.2C2211.8,717.5,2212,717.6,2212.2,717.7"/>
 	<path id="path3970" class="st2" d="M2214.3,715.5c-0.1-0.4-0.3-0.6-0.7-0.7C2213.8,715,2214.1,715.3,2214.3,715.5"/>
-	<path id="path3954" class="st1 australia" d="M2192.6,725.8l1.3-16.7c-0.1-1.1-1.1-1.7-0.9-3c0.2-1.1,0.8-2.3,1.2-3.2l1.6-28.8
+	<path id="path3954" class="st1 southeast" d="M2192.6,725.8l1.3-16.7c-0.1-1.1-1.1-1.7-0.9-3c0.2-1.1,0.8-2.3,1.2-3.2l1.6-28.8
 		c1,0.4,3.1,1.1,4.1,1.6c2.7,1.4,5.2,3.3,8.1,4.1c1.5,0.4,3,0.2,4.4,0.8c1.6,0.7,2.7,2.1,4.1,3c1.2,0.7,1.4-0.1,2.3,0.1
 		c1.2,0.2,1.2,1.5,2.3,1.7c1.3,0.3,1.5,1.7,2.3,2.4c0.8,0.8,2,0.5,2.9,1.4c1,0.9,1.8,2.2,2,3.6c0.2,1.2-0.7,2.1-0.6,3.1
 		c0.2,1.4,3.7,1.7,4.8,2.1c1.1,0.4,2.3,1.2,3.3,1.8c0.5,0.3,0.7,0.8,1.3,0.9c0.7,0.2,1.3-0.2,2,0c1.6,0.5,4.1,4.1,2.7,5.7
@@ -1984,7 +1990,7 @@
 	<path id="path3974" class="st2" d="M2237.5,696.7c1.3-0.1,0.7-2-0.3-2C2236.4,694.7,2237.2,696.5,2237.5,696.7"/>
 	<path id="path3976" class="st2" d="M2243.3,699.9c1-0.8,0.7-2.8-0.7-2.8C2240.8,697.1,2242.8,699.4,2243.3,699.9"/>
 	<path id="path3978" class="st2" d="M2243.1,672.1c0.6,0.2,0.7-0.1,0.3-0.7C2243.3,671.7,2243.2,671.9,2243.1,672.1"/>
-	<path id="path3982" class="st2 australia" d="M2249.4,700.7c0.4,0.6,1.2,0.8,1.4,1.5c0.9-0.6,2.1-0.9,2.9,0c0.6,0.6,0.5,1.3,1.6,1.2
+	<path id="path3982" class="st2 southeast" d="M2249.4,700.7c0.4,0.6,1.2,0.8,1.4,1.5c0.9-0.6,2.1-0.9,2.9,0c0.6,0.6,0.5,1.3,1.6,1.2
 		c1.4-0.1,2.8,0.2,4.2-0.1c1.8-0.4,2.8-2.1,4.4-2.1c1.6,0,3.8-2.3,3.6-3.9c0.9,0.1,5.3,0.7,4.7-1.5c-0.1-0.4-1.6-3.1-0.3-2.8
 		c2.2,0.4,2.7-1.9,2.7-3.5c0-0.6,0.2-1.3-0.5-1.6c-0.6-0.3-1.3-0.6-0.6-1.3c-0.6,0.2-1.9,1.7-2.6,0.8c-0.6-0.9-2.3-0.9-2.2,0.5
 		c0.2,1.3,0.9,2.5,0.7,3.9s-2.2,0.7-3.2,1.5c-1.1,0.9-1.2,2.2-2.1,3.3c-0.3,0.4-1,0.4-1.5,0.5c-1.1,0.3-0.9-0.1-1.9-0.3
@@ -2005,7 +2011,7 @@
 	<path id="path4000" class="st2" d="M2263.4,723.5c-0.4-0.9-0.2-2.5,0.2-3.3c-0.7,0.1-1.3,1.2-0.2,1.3
 		C2263.2,722.1,2262.5,722.9,2263.4,723.5"/>
 	<path id="path4002" class="st2" d="M2264,677.1c0.4-0.1,0.9-0.2,1.3-0.3C2264.9,676.5,2264.3,676.7,2264,677.1"/>
-	<path id="path4004" class="st2 australia" d="M2276.9,684c-1-0.1-1.3-1.8-1.9-2.4c-0.9-1-2.5-2.5-3.8-3s-2-1.9-3.3-2.4
+	<path id="path4004" class="st2 southeast" d="M2276.9,684c-1-0.1-1.3-1.8-1.9-2.4c-0.9-1-2.5-2.5-3.8-3s-2-1.9-3.3-2.4
 		c-0.5-0.2-0.8,0.3-1-0.4s-1.6-1.2-2.1-1.7c0.2,0.5,0,0.8-0.5,0.9c0.6,0.6,1.6,0.5,2.2,1.1c0.8,0.7,1.6,1.4,2.4,2.1
 		c0.9,0.7,1.8,1.7,2.8,2.2c0.8,0.4,1.7,0.5,2.4,1.1c1.3,1.1,1.8,3,2.6,4.5c0.5,1,0,2.1,0.1,3.2c0.1,1,0.8,1.8,1.3,2.7
 		c0.8-0.7,2.3-3.8,1.9-4.8c-0.3-0.8-1.1-1.3-1.5-2.1C2278,684,2277.9,684.4,2276.9,684"/>
@@ -2019,13 +2025,13 @@
 	<path id="path4020" class="st2" d="M2281.9,744.1c0.4-0.3,0.8-0.4,1.3-0.4c-0.6-0.9-1.3,0-2,0
 		C2281.4,743.8,2281.6,744,2281.9,744.1"/>
 	<path id="path4024" class="st2" d="M2289.9,696.7c1-0.8,1-2.6,0-3.4C2289.3,694.3,2289.5,695.7,2289.9,696.7"/>
-	<path id="path4026" class="st2 australia" d="M2292,702.8c0.5,0.5,1.2,0.7,1.3,1.4c0.1,0.9,0,1.9,0.7,2.6c1,1.1,4.7,1.4,4.3-0.7
+	<path id="path4026" class="st2 southeast" d="M2292,702.8c0.5,0.5,1.2,0.7,1.3,1.4c0.1,0.9,0,1.9,0.7,2.6c1,1.1,4.7,1.4,4.3-0.7
 		c-0.2-0.9-0.4-1.5-1-2.2c-0.3-0.4-0.7-1.2-1.2-1.5c-0.5-0.2-1-0.2-1.2-0.7c-1-2.2-2.3-4.3-4.8-5.1c0.7,0.7,0.2,1.9,0.2,2.7
 		C2290.3,700.6,2291.4,701.6,2292,702.8"/>
 	<path id="path4028" class="st2" d="M2296.9,709.9c0.2-0.1,0.4-0.1,0.7-0.2c-0.1-0.9-1.1-1-1.3-0.1
 		C2296.4,709.8,2296.6,709.9,2296.9,709.9"/>
 	<path id="path4030" class="st2" d="M2299.2,708.8c0.1-0.4,0.1-0.9,0-1.3C2299.2,707.9,2299.2,708.4,2299.2,708.8"/>
-	<path id="path4032" class="st2" d="M2234.8,671.2c-0.9-1,0.6-1.9,1.5-2.2c1.4-0.4,2.9,0.4,4.3,0.7c-1.2,0.3-1.3,1.2-2.7,1.2
+	<path id="path4032" class="st2 southeast" d="M2234.8,671.2c-0.9-1,0.6-1.9,1.5-2.2c1.4-0.4,2.9,0.4,4.3,0.7c-1.2,0.3-1.3,1.2-2.7,1.2
 		c-0.6,0-1.1-0.5-1.7-0.5C2235.7,670.5,2235.3,671,2234.8,671.2"/>
 </g>
 <path id="iq" class="st1 middleeast" d="M1470.8,389.2c4-2,7.5-3.9,11-6.3c1.1-0.8,2.4-1.7,3-2.7c1.2-1.9,0.2-4.4,0.5-5.1c0-3,0.8-3.3,0.6-4.7
@@ -2739,40 +2745,40 @@
 	c-0.4-0.3-0.2-0.7-0.6-0.9c-0.3-0.2-2.7,1.8-3.8,1.7c-0.8-0.1-0.9-0.3-1.4-0.9c-0.7-0.9-1.9-0.5-2.8-0.2c0-0.2-0.1-0.5-0.1-0.7
 	c-0.5,0.4-1.3,0.5-2.2,0.4c-2.1-0.3-2.6,0.8-3.4,0.3c-0.9-0.6-1.2-4.5,0.1-2.9C1663.3,337,1663.5,336.6,1663.6,336.3"/>
 <g id="sb">
-	<path id="path4726" class="st2 australia" d="M2302.9,716.5c0-0.5,1-1.3,0.6-1.7c-0.2-0.2-0.8-1.3-1.1-1.3
+	<path id="path4726" class="st2 southeast" d="M2302.9,716.5c0-0.5,1-1.3,0.6-1.7c-0.2-0.2-0.8-1.3-1.1-1.3
 		C2300.9,713.6,2302.2,716.1,2302.9,716.5"/>
-	<path id="path4728" class="st2 australia" d="M2301.9,718.5c0.2-0.7,0.3-1.5-0.3-2C2301.7,717.2,2301.6,717.9,2301.9,718.5"/>
-	<path id="path4730" class="st2 australia" d="M2304.4,709.9c0.8,1.3,2.9,2.9,4.5,2.1c-0.5-0.6-1.3-0.8-1.8-1.4c-0.6-0.8-0.6-1.8-1.3-2.5
+	<path id="path4728" class="st2 southeast" d="M2301.9,718.5c0.2-0.7,0.3-1.5-0.3-2C2301.7,717.2,2301.6,717.9,2301.9,718.5"/>
+	<path id="path4730" class="st2 southeast" d="M2304.4,709.9c0.8,1.3,2.9,2.9,4.5,2.1c-0.5-0.6-1.3-0.8-1.8-1.4c-0.6-0.8-0.6-1.8-1.3-2.5
 		c-1-1-2.4-1.7-3.6-2.2C2301.4,707.2,2303.8,708.8,2304.4,709.9"/>
-	<path id="path4732" class="st2 australia" d="M2305.8,718.1c0.5-0.5,0.7-2.2-0.3-2.3C2303.9,715.6,2304.6,718,2305.8,718.1"/>
-	<path id="path4734" class="st2 australia" d="M2307,722.7c-0.7-0.9,0.7-1.6,0.1-2.5C2305.8,721.1,2306.2,721.5,2307,722.7"/>
-	<path id="path4736" class="st2 australia" d="M2310,721.4c0.8,0.3,0.9-0.5,0.8-1.1c-0.2-1.1-1.1-1.4-1.7-2.3c-0.3-0.5-0.2-2-1.3-1.1
+	<path id="path4732" class="st2 southeast" d="M2305.8,718.1c0.5-0.5,0.7-2.2-0.3-2.3C2303.9,715.6,2304.6,718,2305.8,718.1"/>
+	<path id="path4734" class="st2 southeast" d="M2307,722.7c-0.7-0.9,0.7-1.6,0.1-2.5C2305.8,721.1,2306.2,721.5,2307,722.7"/>
+	<path id="path4736" class="st2 southeast" d="M2310,721.4c0.8,0.3,0.9-0.5,0.8-1.1c-0.2-1.1-1.1-1.4-1.7-2.3c-0.3-0.5-0.2-2-1.3-1.1
 		c-0.6,0.5-1.7,1.6-1.6,2.4c0.9,0.2,1.8-0.7,2.4,0.2c0.1,0.2,0.1,0.5,0,0.7C2308.6,720.7,2309.7,721.2,2310,721.4"/>
-	<path id="path4738" class="st2 australia" d="M2308.6,723.2c0.2-0.6-0.1-0.7-0.7-0.3C2308.1,723,2308.4,723.1,2308.6,723.2"/>
-	<path id="path4740" class="st2 australia" d="M2309.3,712.6c0.2-0.6-0.1-0.7-0.7-0.3C2308.9,712.4,2309.1,712.5,2309.3,712.6"/>
-	<path id="path4742" class="st2 australia" d="M2310.2,712.7c0.7,0.1,0.7-0.1,0-0.7C2310.2,712.3,2310.2,712.5,2310.2,712.7"/>
-	<path id="path4744" class="st2 australia" d="M2311.2,723c1.2-0.3,0.4-1.1,0.7-2C2310.6,720.7,2310.2,722.4,2311.2,723"/>
-	<path id="path4748" class="st2 australia" d="M2315,713.4c-0.3-0.3-0.1-0.5-0.7-0.3C2314.6,713.1,2314.8,713.3,2315,713.4"/>
-	<path id="path4750" class="st2 australia" d="M2315.8,714.2c-0.3-0.5-0.8-0.8-1.4-0.5C2314.8,713.8,2315.3,714,2315.8,714.2"/>
-	<path id="path4752" class="st2 australia" d="M2319.5,717.8c1.3,1.3,3.2,1.9,4.6,3.2c0.7-1.7-1.6-4.1-3.2-4.4c-1-0.2-2.1-1.4-2.9-2.1
+	<path id="path4738" class="st2 southeast" d="M2308.6,723.2c0.2-0.6-0.1-0.7-0.7-0.3C2308.1,723,2308.4,723.1,2308.6,723.2"/>
+	<path id="path4740" class="st2 southeast" d="M2309.3,712.6c0.2-0.6-0.1-0.7-0.7-0.3C2308.9,712.4,2309.1,712.5,2309.3,712.6"/>
+	<path id="path4742" class="st2 southeast" d="M2310.2,712.7c0.7,0.1,0.7-0.1,0-0.7C2310.2,712.3,2310.2,712.5,2310.2,712.7"/>
+	<path id="path4744" class="st2 southeast" d="M2311.2,723c1.2-0.3,0.4-1.1,0.7-2C2310.6,720.7,2310.2,722.4,2311.2,723"/>
+	<path id="path4748" class="st2 southeast" d="M2315,713.4c-0.3-0.3-0.1-0.5-0.7-0.3C2314.6,713.1,2314.8,713.3,2315,713.4"/>
+	<path id="path4750" class="st2 southeast" d="M2315.8,714.2c-0.3-0.5-0.8-0.8-1.4-0.5C2314.8,713.8,2315.3,714,2315.8,714.2"/>
+	<path id="path4752" class="st2 southeast" d="M2319.5,717.8c1.3,1.3,3.2,1.9,4.6,3.2c0.7-1.7-1.6-4.1-3.2-4.4c-1-0.2-2.1-1.4-2.9-2.1
 		c-0.4-0.4-0.6-0.8-1.2-1c-0.5-0.2-1-0.1-1.5-0.5C2316.1,714.9,2317.5,717.1,2319.5,717.8"/>
 	<path id="path4754" class="st2" d="M2318.7,725.7c0.4-0.2,0.6-0.3,0.5-0.8C2318.5,724.8,2318.3,725.1,2318.7,725.7"/>
-	<path id="path4756" class="st2 australia" d="M2324.4,731.3c1.2,0.2,2-0.2,3.1,0.4c0.6,0.3,2,0.8,2.3-0.2c0.4-1.3-1.8-3.2-2.9-3.3
+	<path id="path4756" class="st2 southeast" d="M2324.4,731.3c1.2,0.2,2-0.2,3.1,0.4c0.6,0.3,2,0.8,2.3-0.2c0.4-1.3-1.8-3.2-2.9-3.3
 		c-1.1-0.1-2.6,0.5-3.4-0.6c-0.5-0.7-1.1-1-1.7-0.1C2321,728.9,2323.1,731,2324.4,731.3"/>
-	<path id="path4758" class="st2 australia" d="M2323.2,721.2c-0.2-0.4-0.2-0.9-0.2-1.3C2321.7,719.9,2322.5,720.9,2323.2,721.2"/>
-	<path id="path4760" class="st2 australia" d="M2322.7,745.1c0.4,0.2,1.4,0.3,1.7,0.5c0.7,0.4,0.6,1.4,1.5,1.6
+	<path id="path4758" class="st2 southeast" d="M2323.2,721.2c-0.2-0.4-0.2-0.9-0.2-1.3C2321.7,719.9,2322.5,720.9,2323.2,721.2"/>
+	<path id="path4760" class="st2 southeast" d="M2322.7,745.1c0.4,0.2,1.4,0.3,1.7,0.5c0.7,0.4,0.6,1.4,1.5,1.6
 		C2326.8,746,2322.4,743.7,2322.7,745.1"/>
-	<path id="path4764" class="st2 australia" d="M2326.8,725.8c0.3-0.6-0.1-1.1-0.7-1.1C2325.9,725.3,2326.2,725.7,2326.8,725.8"/>
-	<path id="path4766" class="st2 australia" d="M2326.6,726.4c0.4-0.2,0.8-0.4,1.2-0.6C2327.2,725.6,2326.7,725.8,2326.6,726.4"/>
-	<path id="path4768" class="st2 australia" d="M2330.9,726c1.3,1,2,2.5,3.1,3.8c0.4-0.8-0.3-3.8-0.7-4.6c-0.2-0.5-0.8-1.5-1.3-1.8
+	<path id="path4764" class="st2 southeast" d="M2326.8,725.8c0.3-0.6-0.1-1.1-0.7-1.1C2325.9,725.3,2326.2,725.7,2326.8,725.8"/>
+	<path id="path4766" class="st2 southeast" d="M2326.6,726.4c0.4-0.2,0.8-0.4,1.2-0.6C2327.2,725.6,2326.7,725.8,2326.6,726.4"/>
+	<path id="path4768" class="st2 southeast" d="M2330.9,726c1.3,1,2,2.5,3.1,3.8c0.4-0.8-0.3-3.8-0.7-4.6c-0.2-0.5-0.8-1.5-1.3-1.8
 		c-0.8-0.4,0.5-1.1,0.2-1.7c-0.4-0.6-0.5-1.6-1.2-2c-0.3-0.2-1.6-0.7-1.3,0.3C2330.3,721.8,2330,724.1,2330.9,726"/>
-	<path id="path4770" class="st2 australia" d="M2336.3,738.7c1.1,0.4,2.3,0.4,3.5,0.7c-0.7-2.2-1.3-2.4-3.1-3.4c-0.6-0.3-3.4-2.3-3.8-1
+	<path id="path4770" class="st2 southeast" d="M2336.3,738.7c1.1,0.4,2.3,0.4,3.5,0.7c-0.7-2.2-1.3-2.4-3.1-3.4c-0.6-0.3-3.4-2.3-3.8-1
 		c0.5,0.3,1,0.4,1.2,1C2334.6,737.3,2335.2,737.8,2336.3,738.7"/>
-	<path id="path4772" class="st2 australia" d="M2335.2,731.1c0.4-1.1-0.1-2.3-0.9-3.1c0.1,0.6,0.1,1.2-0.1,1.9
+	<path id="path4772" class="st2 southeast" d="M2335.2,731.1c0.4-1.1-0.1-2.3-0.9-3.1c0.1,0.6,0.1,1.2-0.1,1.9
 		C2334.2,730.3,2335,730.6,2335.2,731.1"/>
-	<path id="path4774" class="st2 australia" d="M2364.3,739.6c0.5-0.7,2-0.4,2-1.5c-1-0.3-2.1,0.1-2.6,1.1
+	<path id="path4774" class="st2 southeast" d="M2364.3,739.6c0.5-0.7,2-0.4,2-1.5c-1-0.3-2.1,0.1-2.6,1.1
 		C2363.9,739.3,2364.1,739.4,2364.3,739.6"/>
-	<path id="path4778" class="st2 australia" d="M2370.1,746.1c0.2-0.1,0.4-0.2,0.6-0.3c-0.2-0.5-0.7-0.8-1.2-0.4
+	<path id="path4778" class="st2 southeast" d="M2370.1,746.1c0.2-0.1,0.4-0.2,0.6-0.3c-0.2-0.5-0.7-0.8-1.2-0.4
 		C2369.7,745.7,2369.9,745.9,2370.1,746.1"/>
 </g>
 <g id="om">

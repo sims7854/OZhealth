@@ -23,26 +23,6 @@
             var q7 = (5 / receive_get_data("Q7")) -1
             var q8 = (5 / receive_get_data("Q8")) -1
             var q9 = (5 / receive_get_data("Q9")) -1
-            /* 나이-공통 */
-            var age = receive_get_data("Q3")
-            if (age > 60) {
-                var q3 = 5
-            }
-            if (age <= 60) {
-                var q3 = 4 
-            }
-            if (age <= 40) {
-                var q3 = 3 
-            }
-            if (age <= 20) {
-                var q3 = 2 
-            }
-            if (age <= 10) {
-                var q3 = 1 
-            }
-            if (age == 0) {
-                var q3 = 0
-            }
             /* 피부타입-민감성 */
             var sensitive = receive_get_data("Q4")
             if (sensitive == 1) {
@@ -53,43 +33,43 @@
             }
             
             /* 모공크기 점수 */
-            var input = receive_get_data("Q1")*2 + receive_get_data("Q2")*5 + q3*1 + receive_get_data("Q4")*1 +
+            var input = receive_get_data("Q1")*2 + receive_get_data("Q2")*5 + receive_get_data("Q3")*1 + receive_get_data("Q4")*1 +
                         receive_get_data("Q5")*1 + receive_get_data("Q6")*1 + receive_get_data("Q7")*1 + receive_get_data("Q8")*1 + 
                         receive_get_data("Q9")*1 + receive_get_data("Q10")*0 + receive_get_data("Q11")*0 + receive_get_data("Q12")*6 + 
                         receive_get_data("Q13")*2 + receive_get_data("Q14")*2 + receive_get_data("Q15")*0+ receive_get_data("Q16")*0 ;
 
             /* 피부톤 점수 */
-            var input2 = receive_get_data("Q1")*3 + receive_get_data("Q2")*5 + q3*1 + receive_get_data("Q4")*1 +
+            var input2 = receive_get_data("Q1")*3 + receive_get_data("Q2")*5 + receive_get_data("Q3")*1 + receive_get_data("Q4")*1 +
                         receive_get_data("Q5")*1 + receive_get_data("Q6")*1 + receive_get_data("Q7")*3 + receive_get_data("Q8")*3 + 
                         receive_get_data("Q9")*3 + receive_get_data("Q10")*0 + receive_get_data("Q11")*0 + receive_get_data("Q12")*3 + 
                         receive_get_data("Q13")*0 + receive_get_data("Q14")*0 + receive_get_data("Q15")*0+ receive_get_data("Q16")*0 ;
             /* 주름 점수 */
-            var input3 = receive_get_data("Q1")*1 + receive_get_data("Q2")*5 + q3*3 + receive_get_data("Q4")*1 +
+            var input3 = receive_get_data("Q1")*1 + receive_get_data("Q2")*5 + receive_get_data("Q3")*3 + receive_get_data("Q4")*1 +
                         receive_get_data("Q5")*1 + receive_get_data("Q6")*0 + receive_get_data("Q7")*2 + receive_get_data("Q8")*2 + 
                         receive_get_data("Q9")*2 + receive_get_data("Q10")*0 + receive_get_data("Q11")*0 + receive_get_data("Q12")*0 + 
                         receive_get_data("Q13")*0 + receive_get_data("Q14")*0 + receive_get_data("Q15")*0+ receive_get_data("Q16")*7 ;
             /* 색소침착 점수 */
-            var input4 = receive_get_data("Q1")*1 + receive_get_data("Q2")*5 + q3*1 + receive_get_data("Q4")*1 +
+            var input4 = receive_get_data("Q1")*1 + receive_get_data("Q2")*5 + receive_get_data("Q3")*1 + receive_get_data("Q4")*1 +
                         receive_get_data("Q5")*2 + receive_get_data("Q6")*2 + receive_get_data("Q7")*5 + receive_get_data("Q8")*4 + 
                         receive_get_data("Q9")*1 + receive_get_data("Q10")*0 + receive_get_data("Q11")*0 + receive_get_data("Q12")*0 + 
                         receive_get_data("Q13")*0 + receive_get_data("Q14")*2 + receive_get_data("Q15")*0+ receive_get_data("Q16")*0 ;
             /* 피지분비 점수 */
-            var input5 = receive_get_data("Q1")*2 + receive_get_data("Q2")*5 + q3*1 + receive_get_data("Q4")*1 +
+            var input5 = receive_get_data("Q1")*2 + receive_get_data("Q2")*5 + receive_get_data("Q3")*1 + receive_get_data("Q4")*1 +
                         receive_get_data("Q5")*1 + receive_get_data("Q6")*1 + receive_get_data("Q7")*1 + receive_get_data("Q8")*1 + 
                         receive_get_data("Q9")*1 + receive_get_data("Q10")*0 + receive_get_data("Q11")*0 + receive_get_data("Q12")*4 + 
                         receive_get_data("Q13")*2 + receive_get_data("Q14")*4 + receive_get_data("Q15")*0+ receive_get_data("Q16")*0 ;
             /* 민감성 점수 */
-            var input6 = receive_get_data("Q1")*1 + receive_get_data("Q2")*5 + q3*1 + sq +
+            var input6 = receive_get_data("Q1")*1 + receive_get_data("Q2")*5 + receive_get_data("Q3")*1 + sq +
                         receive_get_data("Q5")*1 + receive_get_data("Q6")*1 + receive_get_data("Q7")*1 + receive_get_data("Q8")*1 + 
                         receive_get_data("Q9")*1 + receive_get_data("Q10")*0 + receive_get_data("Q11")*0 + receive_get_data("Q12")*0 + 
                         receive_get_data("Q13")*0 + receive_get_data("Q14")*0 + receive_get_data("Q15")*8+ receive_get_data("Q16")*0 ;
             /* 수분 점수 */
-            var input7 = 6 - receive_get_data("Q1") + q2 + 6 - q3 + receive_get_data("Q4")*3 +
+            var input7 = 6 - receive_get_data("Q1") + q2 + 6 - receive_get_data("Q3") + receive_get_data("Q4")*3 +
                         q5 + q6 + q7 + q8 + 
                         q9 + receive_get_data("Q10")*4 + receive_get_data("Q11")*4 + receive_get_data("Q12")*0 + 
                         receive_get_data("Q13")*0 + receive_get_data("Q14")*0 + receive_get_data("Q15")*0+ receive_get_data("Q16")*0 ;
             /* 유분 점수 */
-            var input8 = receive_get_data("Q1")*1 + receive_get_data("Q2")*5 + q3*1 + receive_get_data("Q4")*2 +
+            var input8 = receive_get_data("Q1")*1 + receive_get_data("Q2")*5 + receive_get_data("Q3")*1 + receive_get_data("Q4")*2 +
                         receive_get_data("Q5")*1 + receive_get_data("Q6")*1 + receive_get_data("Q7")*1 + receive_get_data("Q8")*1 + 
                         receive_get_data("Q9")*1 + receive_get_data("Q10")*0 + receive_get_data("Q11")*0 + receive_get_data("Q12")*4 + 
                         receive_get_data("Q13")*6 + receive_get_data("Q14")*0 + receive_get_data("Q15")*0+ receive_get_data("Q16")*0 ;
@@ -363,6 +343,7 @@
                 }
               });
               
+
 		}
         
               

@@ -1,17 +1,17 @@
 * {font-family: 'arial'; font-weight: 600; -webkit-tap-highlight-color : transparent; -ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none; }
-
-#container { position: absolute; width: 1100px; height: 480px; left:50%; top: 50%; transform: translate(-50%, -55%); margin:-20px 0 0 0; }
-#container1 { width:500px; height: 480px; float:left; }
-#container1 ul {position: absolute; list-style: none; padding: 10px 0px 20px 55px; }
-#container1 ul li { width: 290px; height: 40px; border: 2px solid #BF152C; border-radius: 21px; text-align: center; margin: 20px; line-height: 40px; float: left;}
+#line { width: 1200px; height: 600px; border: 5px solid #BF152C; border-radius: 17px; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background-image: url(image/line.png);}
+#container { position: absolute; width: 1200px; height: 480px; left:50%; top: 50%; transform: translate(-50%, -55%); margin:-20px 0 0 0; }
+#container1 { width:500px; height: 480px; float:left; padding: 0 0 0 40px; }
+#container1 ul {position: absolute; list-style: none; padding: 17px 0px 0px 55px; }
+#container1 ul li { width: 290px; height: 40px; border: 2px solid #BF152C; border-radius: 21px; text-align: center; margin: 0px 20px 0px 20px; line-height: 40px; float: left;}
 #container1 ul li:hover{ background-color: #BF152C; }
 #container1 ul li:hover a { color: #ffffff; } 
 #container1 ul li a { text-decoration: none; color: #BF152C;  display: block;}
-#container2 { width:500px; height: 250px; float:left; position: relative; padding:0 0 0 50px; margin: -50px 0 0 0;}
+#container2 { width:500px; height: 250px; float:left; position: relative; padding:0 0 0 100px; margin: -35px 0 0 0;}
 
 #text p {  width: 90px; height: 48px; line-height: 24px; border: 3px solid transparent; }
 
-.ow-zone { width: 480px; height: 300px; padding: 0 0 0 20px;}
+.ow-zone { width: 480px; height: 300px; padding: 0 0 0 35px;}
 .ow-zone #ex { width: 235px; height: 300px; float: left; text-align: center; }
 .water-p { width: 200px; margin:250px 0 0 5px; }
 .oil-p { width: 200px; margin:250px 0 0 25px; }
