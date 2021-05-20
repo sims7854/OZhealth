@@ -11,7 +11,7 @@ input[type=radio] { display: none; }
 .start-btn:hover { background-color: #B00020; cursor: pointer; }
 .btn .next-btn { width: 32px; height: 100px;text-align: center; line-height: 100px; background-color: #BEC8DE; position: absolute; right: 0; top:278px; z-index: 1; border: 2px solid #868EB0; border-radius: 5px; }
 .btn .next-btn:hover { background-color: #868EB0; cursor: pointer; }
-.btn .prev-btn { width: 50px; height: 50px;text-align: center; line-height: 50px; background-color: transparent; position: absolute; right: 6px; top:489px; z-index: 1; border: 2px solid #868EB0; border-radius: 27px; }
+.btn .prev-btn { width: 50px; height: 50px;text-align: center; line-height: 50px; background-color: transparent; position: absolute; right: 6px; bottom:6px; z-index: 1; border: 2px solid #868EB0; border-radius: 27px; }
 .btn .prev-btn:hover { background-color: #868EB0; cursor: pointer; }
 .age { width:500px; height:80px; border: 2px solid #868EB0; border-radius: 41px; text-align: center; font-size: 60px; margin: 0px 0 0 0; position: relative; top:150px; }
 .ex { width: 420px; height: 40px; padding: 0 0 0 20px;}
