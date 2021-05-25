@@ -352,13 +352,13 @@
               /* 상품 추천 */
               recommendurl1 = "http://skin-skin13.victoriabeautykr.cafe24.com/4dskins/recommend.html";
               recommendurl2 = "?product_no=25&sActionType=basket&cate_no=158";
-              recommend1 = "&recommend1=" ;
-              recommend2 = "&recommend2=" ;
-              recommend3 = "&recommend3=" ;
-              recommend4 = "&recommend4=" ;
-              recommend5 = "&recommend5=" ;
-              recommend6 = "&recommend6=" ;
-              recommendurl = recommendurl1 + recommendurl2 
+              recommend1 = "&recommend1=14" ;
+              recommend2 = "&recommend2=13" ;
+              recommend3 = "&recommend3=12" ;
+              recommend4 = "&recommend4=11" ;
+              recommend5 = "&recommend5=10" ;
+              recommend6 = "&recommend6=9" ;
+              recommendurl = recommendurl1 + recommendurl2 + recommend1 + recommend2 + recommend3 + recommend4 + recommend5 + recommend6
               
 
 		}
