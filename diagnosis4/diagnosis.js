@@ -1,6 +1,6 @@
 
         window.onload = function(){
-			function receive_get_data(param) {
+			      function receive_get_data(param) {
                 var result = null, tmp = [];
                 var items = window.location.search.substring(1).split("&");
                 for (var i = 0; i < items.length; i++) {
@@ -74,7 +74,13 @@
                         receive_get_data("Q9")*1 + receive_get_data("Q10")*0 + receive_get_data("Q11")*0 + receive_get_data("Q12")*4 + 
                         receive_get_data("Q13")*6 + receive_get_data("Q14")*0 + receive_get_data("Q15")*0+ receive_get_data("Q16")*0 ;
             
-			/* 모공크기 좌표 */
+            $('.recommend_url').on('click', function(){
+                var url1  = "http://skin-skin13.victoriabeautykr.cafe24.com/product/basket_option2.html?product_no=14&sActionType=basket&cate_no=42&";
+                var url2  = "w="+Math.round(input7)+"&o="+Math.round(input8)+"&po="+Math.round(input)+"&st="+Math.round(input2)+"&wr="+Math.round(input3)+"&pi="+Math.round(input4)+"&ss="+Math.round(input5)+"&se="+Math.round(input6);
+                var finalurl = url1 + url2 ;
+                window.open(finalurl,'_blank','width=600px,height=500px'); 
+            });            
+			      /* 모공크기 좌표 */
             if (input <= 100) {
                 var po1 = 70
                 var po2 = (100 - input) * 0.70
@@ -342,6 +348,17 @@
                         el.innerHTML = JSON.stringify(myObject8).replace(/\"/gi, "").replace(/\{/gi, "").replace(/\}/gi, "").replace(/prop:/gi, "");
                 }
               });
+              
+              /* 상품 추천 */
+              recommedurl1 = "http://skin-skin13.victoriabeautykr.cafe24.com/4dskins/recommed.html";
+              recommedurl2 = "?product_no=25&sActionType=basket&cate_no=158";
+              recommed1 = "&recommed1=" ;
+              recommed2 = "&recommed2=" ;
+              recommed3 = "&recommed3=" ;
+              recommed4 = "&recommed4=" ;
+              recommed5 = "&recommed5=" ;
+              recommed6 = "&recommed6=" ;
+              recommedurl = recommedurl1 + recommedurl2 
               
 
 		}
