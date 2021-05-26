@@ -1,4 +1,5 @@
 * {font-family: 'arial'; font-weight: 600; -webkit-tap-highlight-color : transparent; -ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none; margin: 0; }
+#container { width: 320px; height: 568px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 #container1 { width:320px; height: 275px; position: absolute; top: 250px; left: 50%; padding: 0 0 0 0px; transform: translate(-50%,0px); }
 #container1 ul {position: absolute; list-style: none; padding: 17px 0px 0px 55px; }
 #container1 ul li { width: 290px; height: 40px; border: 2px solid #BF152C; border-radius: 21px; text-align: center; margin: 0px 20px 0px 20px; line-height: 40px; float: left;}
