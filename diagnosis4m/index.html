@@ -166,8 +166,21 @@
 		
     </ul>
 	<ul class="Q17">
-		<label class="result"for="submit">결과보기</label>
+		<label class="result-delay"for="submit" style="display: none;">결과보기</label>
+        <div class="result"><p>결과보기</p></div>
+		<div class="result-text" style="padding: 105px 0 0 0;"><p>본 테스트는 측정기를 통한 결과를 대신할 수는 없으며, 참고용으로만 사용해주세요.</p></div>
+		<div class="loading" style="display: none; padding: 210px 0 0 0;"><i class="xi-spinner-2 xi-spin" style="font-size: 40px;"></i><br><span style="display: contents; color: #000000;">분석 중...</span></div>
 	</ul>
 <!-- Q. 1 svg -->
-
+    
 </form>
+<script>
+    document.querySelector('.result').onclick = function(){
+        $('.result').fadeOut(100);
+        $('.result-text').fadeOut(100);
+        $('.loading').delay(100).fadeIn(100);
+        setTimeout(function(){
+           $('.result-delay').click();
+        },2000);
+   };
+</script>    

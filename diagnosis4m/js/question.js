@@ -93,6 +93,7 @@ window.onload = function(){
         if (page==16) {
             $(".Q16").fadeOut(100);
             $(".progress").fadeOut(100);
+            $(".prev-btn").fadeOut(100);
             $(".Q17").delay(100).fadeIn(100);	
         };
     });
