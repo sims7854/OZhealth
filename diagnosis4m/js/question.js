@@ -60,7 +60,7 @@ window.onload = function(){
         };
         if (page==8) {
             $(".Q8").fadeOut(100);
-            $(".Q9").delay(100).fadeIn(100);	
+            $(".Q9").delay(100).fadeIn(100);	c
         };
         if (page==9) {
             $(".Q9").fadeOut(100);
