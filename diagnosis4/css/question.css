@@ -60,6 +60,11 @@ input:checked + label {background-color: #2A3352; color: #ffffff;}
 .Q16 label:hover { border: 10px solid #868EB0; background-color: #ffffff; color:#000000; }
 .Q16 input:checked + label { border: 10px solid #2A3352; background-color: transparent; color:#000000; }
 .Q17 { display: none; }
-.Q17 label { top:357px;}
+.Q17 label { top:357px; display: none;}
+.Q17 .result { top:250px; font-weight: 600;}
+.Q17 .result-text { position: relative; top: 260px; font-weight: 600;}
+.Q17 .loading { display: none; }
+.Q17 .loading i { position: relative; top:250px; font-size: 80;}
+.Q17 .loading span { position: relative; top:180px; border:none; color:#000000; }
 .question1{ display:none; position: absolute; top: 0px; left: 50%; transform: translate(-50%, 0px); width: 1200px; height:600px; overflow: hidden;}
 .question1 span { transform: translate(-50%, 0px); } 

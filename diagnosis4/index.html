@@ -1,9 +1,10 @@
-<script src="jquery-1.12.4.min.js"></script>
-<script src="anime.min.js"></script>
-<script src="question.js"></script>
-<script src="jquery-1.12.4.min.js"></script>
-<link href="Q1.css" rel="stylesheet">
-<link href="question.css" rel="stylesheet">
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/anime.min.js"></script>
+<script src="js/question.js"></script>
+<script src="js/jquery-1.12.4.min.js"></script>
+<link href="css/Q1.css" rel="stylesheet">
+<link href="css/question.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/xeicon/xeicon.min.css">
 <form action="result.html" method="get">
 <div class="question">
     <div id="ex">
@@ -170,7 +171,10 @@
 		
     </ul>
 	<ul class="Q17">
-		<label class="result"for="submit">결과보기</label>
+		<label class="result-delay"for="submit">결과보기</label>
+		<div class="result"><p>결과보기</p></div>
+		<div class="result-text"><p>본 테스트는 측정기를 통한 결과를 대신할 수는 없으며, 참고용으로만 사용해주세요.</p></div>
+		<div class="loading"><i class="xi-spinner-2 xi-spin"></i><br><span>분석 중...</span></div>
 	</ul>
 <!-- Q. 1 svg -->
 <ul class="question1">
@@ -7611,5 +7615,16 @@
 </svg>
 </ul>
 </div>
-<script src="Q1.js"></script>
+<script src="js/Q1.js"></script>
+<script>
+ document.querySelector('.result').onclick = function(){
+	 $('.result').fadeOut(100);
+	 $('.result-text').fadeOut(100);
+	 $('.prev-btn').fadeOut(100);
+	 $('.loading').delay(100).fadeIn(100);
+	 setTimeout(function(){
+		$('.result-delay').click();
+	 },2000);
+};
+</script>
 </form>

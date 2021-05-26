@@ -1,16 +1,4 @@
-function age() {
-    $(".Q3").fadeOut(100);
-    $(".next-btn").fadeOut(100);
-    $(".Q4").delay(100).fadeIn(100);
-    page = 3 
-    var ani3 = anime({
-        targets: '.progress .progress-bar',
-        width: page*80,
-        duration: 500,
-        easing: 'easeInOutExpo',
-        autoplay: true
-    });
-}
+
 window.onload = function(){
     document.querySelector('.start-btn').onclick = function(){
         $(".intro").fadeOut(100);
@@ -92,6 +80,7 @@ window.onload = function(){
         };
         if (page==16) {
             $(".Q16").fadeOut(100);
+            $(".progress").fadeOut(100);
             $(".Q17").delay(100).fadeIn(100);	
         };
     });
@@ -170,8 +159,10 @@ window.onload = function(){
             $(".Q17").fadeOut(100);
             //$(".next-btn").fadeIn(100);
             $(".Q16").delay(100).fadeIn(100);	
+            $(".progress").delay(100).fadeIn(100);
         };
     };
 };
-$(function() { $("input:text").keydown(function(evt) { if (evt.keyCode == 13) return false; }); });
+
+
 
