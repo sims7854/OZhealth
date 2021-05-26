@@ -213,7 +213,7 @@
               });
               var Resultbar = anime({
                 targets: '#po .bar',
-                width: input*4,
+                width: input*2,
                 duration: 1500,
                 easing: 'easeInOutExpo',
                 autoplay: true
@@ -233,7 +233,7 @@
               });
               var Resultbar2 = anime({
                 targets: '#st .bar',
-                width: input2*4,
+                width: input2*2,
                 duration: 1500,
                 easing: 'easeInOutExpo',
                 autoplay: true
@@ -253,7 +253,7 @@
               });
               var Resultbar3 = anime({
                 targets: '#wr .bar',
-                width: input3*4,
+                width: input3*2,
                 duration: 1500,
                 easing: 'easeInOutExpo',
                 autoplay: true
@@ -273,7 +273,7 @@
               });
               var Resultbar4 = anime({
                 targets: '#pi .bar',
-                width: input4*4,
+                width: input4*2,
                 duration: 1500,
                 easing: 'easeInOutExpo',
                 autoplay: true
@@ -293,7 +293,7 @@
               });
               var Resultbar5 = anime({
                 targets: '#ss .bar',
-                width: input5*4,
+                width: input5*2,
                 duration: 1500,
                 easing: 'easeInOutExpo',
                 autoplay: true
@@ -312,7 +312,7 @@
               });
               var Resultbar6 = anime({
                 targets: '#se .bar',
-                width: input6*4,
+                width: input6*2,
                 duration: 1500,
                 easing: 'easeInOutExpo',
                 autoplay: true

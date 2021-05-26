@@ -1,9 +1,10 @@
-<script src="jquery-1.12.4.min.js"></script>
-<script src="anime.min.js"></script>
-<script src="diagnosis.js"></script>
-<link href="diagnosis.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/anime.min.js"></script>
+<script src="js/diagnosis.js"></script>
+<link href="css/diagnosis.css" rel="stylesheet">
 <div id="line">
-<div id="container">
+
 <div id="container1">
 <div id="ex">
     <br>
@@ -11,13 +12,13 @@
         <div id="morphing" style="padding: 0 0 0 20px; text-align: center;">
             <div id="text" style="position: absolute;">
                 <p id="po" style="transform: translate(193px, -25px);">모공크기<br></p>
-                <p id="st" style="transform: translate(422px, 20px);">피부톤<br></p>
-                <p id="wr" style="transform: translate(422px, 170px);"><br>주름<br></p>
-                <p id="pi" style="transform: translate(193px, 215px);"><br>색소침착<br></p>
-                <p id="ss" style="transform: translate(-38px, 33px);"><br>피지분비<br></p>
-                <p id="se" style="transform: translate(-38px, -258px);">민감성<br></p>
+                <p id="st" style="transform: translate(294px, 27px);">피부톤<br></p>
+                <p id="wr" style="transform: translate(294px, 141px);"><br>주름<br></p>
+                <p id="pi" style="transform: translate(193px, 189px);"><br>색소침착<br></p>
+                <p id="ss" style="transform: translate(91px, 141px);"><br>피지분비<br></p>
+                <p id="se" style="transform: translate(91px, 27px);">민감성<br></p>
             </div>
-            <svg width="420" height="480" viewBox="0 0 140 140">
+            <svg width="210" height="240" viewBox="0 0 140 140">
                 <g fill="none" fill-rule="evenodd">
                     <g transform="translate(0 0)">
                         <polygon fill="#E0E5EE" stroke="#EBEEF5" points="70 0 130.621778 35 130.621778 105 70 140 9.378221999999994 105 9.378221999999994 35"/>
@@ -39,11 +40,7 @@
             </svg> 
         </div>
     </div>
-    <ul>
-        <li><a href="#none"> 추천 상품 보러가기 </a></li>
-        <li><a href="https://sims7854.github.io/OZhealth/diagnosis4/"> 피부 진단 다시하기 </a></li>
-        <li><a href="#none" onclick="copy_to_clipboard()">URL 복사하기</a></li>
-    </ul>
+    
 </div>
 </div>
 <div id="container2">
@@ -67,16 +64,21 @@
     </div>
 </div>
 <div class="result-bar">
-    <div id="po"><p>모공크기</p><div class="bar"><div class="bar2" style="width:88px;"></div></div>&nbsp;<span>0%</span></div>
-    <div id="st"><p>피부톤</p><div class="bar"><div class="bar2" style="width:116px;"></div></div>&nbsp;<span>0%</span></div>
-    <div id="wr"><p>주름</p><div class="bar"><div class="bar2" style="width:84px;"></div></div>&nbsp;<span>0%</span></div>
-    <div id="pi"><p>색소침착</p><div class="bar"><div class="bar2" style="width:112px;"></div></div>&nbsp;<span>0%</span></div>
-    <div id="ss"><p>피지분비</p><div class="bar"><div class="bar2" style="width:96px;"></div></div>&nbsp;<span>0%</span></div>
-    <div id="se"><p>민감성</p><div class="bar"><div class="bar2" style="width:72px;"></div></div>&nbsp;<span>0%</span></div>
+    <div id="po"><p>모공크기</p><div class="bar"><div class="bar2" style="width:44px;"></div></div>&nbsp;<span>0%</span></div>
+    <div id="st"><p>피부톤</p><div class="bar"><div class="bar2" style="width:58px;"></div></div>&nbsp;<span>0%</span></div>
+    <div id="wr"><p>주름</p><div class="bar"><div class="bar2" style="width:42px;"></div></div>&nbsp;<span>0%</span></div>
+    <div id="pi"><p>색소침착</p><div class="bar"><div class="bar2" style="width:56px;"></div></div>&nbsp;<span>0%</span></div>
+    <div id="ss"><p>피지분비</p><div class="bar"><div class="bar2" style="width:48px;"></div></div>&nbsp;<span>0%</span></div>
+    <div id="se"><p>민감성</p><div class="bar"><div class="bar2" style="width:36px;"></div></div>&nbsp;<span>0%</span></div>
 </div>
 </div>
+<ul class="menu">
+    <li><a href="#none"> 추천  </a></li>
+    <li><a href="https://sims7854.github.io/OZhealth/diagnosis4/"> 다시 </a></li>
+    <li><a href="#none" onclick="copy_to_clipboard()">링크</a></li>
+</ul>
 </div>
-</div>
+
 <script type="text/javascript" async> 
     function copy_to_clipboard() {    
         var dummy   = document.createElement("input");

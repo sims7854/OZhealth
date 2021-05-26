@@ -1,0 +1,38 @@
+* {font-family: 'arial'; font-weight: 600; -webkit-tap-highlight-color : transparent; -ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none; }
+#line { width: 1200px; height: 600px; border: 5px solid transparent; border-radius: 17px; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background-image: url(image/line.png);}
+#container { position: absolute; width: 1200px; height: 480px; left:50%; top: 50%; transform: translate(-50%, -55%); margin:-20px 0 0 0; }
+#container1 { width:500px; height: 480px; position: absolute; left: 300px; top: 260px; padding: 0 0 0 40px; }
+#container1 ul {position: absolute; list-style: none; padding: 17px 0px 0px 55px; }
+#container1 ul li { width: 290px; height: 40px; border: 2px solid #BF152C; border-radius: 21px; text-align: center; margin: 0px 20px 0px 20px; line-height: 40px; float: left;}
+#container1 ul li:hover{ background-color: #BF152C; }
+#container1 ul li:hover a { color: #ffffff; } 
+#container1 ul li a { text-decoration: none; color: #BF152C;  display: block;}
+#container2 { width:320px; height: 110px; transform: translate(-50%,0); position: absolute; left: 50%; }
+
+#text p {  width: 90px; height: 48px; line-height: 24px; border: 3px solid transparent; font-size: 11px; position: absolute; }
+
+
+.ow-zone { width: 480px; height: 135px; }
+.ow-zone #ex { width: 90px; height: 135px; float: left; text-align: center; padding:0 0 0 40px; }
+.water-p { width: 84px; margin:95px 0 0 3px; font-size: 11px; }
+.oil-p { width: 84px; margin:95px 0 0 23px; font-size: 11px; }
+.menu { position: absolute; width: 230px; list-style: none; top: 525px; left: 50%; text-align: center; transform: translate(-50%, 0px); padding: 0; }
+.menu li { float:left; }
+.menu li a { display: block; width: 76px; }
+
+.list1 { float: right; width: 84px; height: 84px; border-radius: 110px; border:3px solid #c1c1c1;  overflow: hidden; position: absolute; bottom:0; }
+.list1 > div { width:84px; height: 0px; background-color: #E0E5EE; line-height: 60px; text-align: center; font-size: 12px; position: absolute; bottom :0; }
+.list1 > span { position: absolute; top: 50%; left: 50%; font-size: 27px; transform: translate(-50%, -50%); }
+
+.list2 { float: left; width: 84px; height: 84px; border-radius: 110px; border:3px solid #c1c1c1; overflow: hidden; position: absolute; bottom:0; margin-left:20px; }
+.list2 > div { width:84px; height: 0px; background-color: #E0E5EE; line-height: 60px; text-align: center; font-size: 12px; position: absolute; bottom: 0; }
+.list2 > span { position: absolute; top: 50%; left: 50%; font-size: 27px; transform: translate(-50%, -50%); }
+
+@keyframes wave { 0% { transform: translate(-50%) rotate(-180deg); } 100% { transform: translate(-50%) rotate(360deg); } } 
+
+.result-bar { width:320px; height: 132px;}
+.result-bar div { width: 550px; height: 20px; float: left; margin: 2px 0 0 0; }
+.result-bar div p { margin: 0 0 0 5px; width:55px; float: left; text-align: left; font-size:11px; }
+.result-bar div span { line-height: 20px; font-size: 11px;}
+.result-bar div .bar {background-color: #BF152C; width: 0px; height: 6px; float: left; margin-top: 7px;  border-radius:3px; overflow: hidden;}
+.result-bar div .bar2 {background-color: #E0E5EE; height: 6px; float: left; margin:0px; border:1px solid #E0E5EE}
