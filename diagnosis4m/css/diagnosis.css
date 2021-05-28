@@ -39,5 +39,5 @@
 
 .result-bar div .bar {background-color: #e2e2e2; width: 200px; height: 6px; float: left; margin-top: 7px;  border-radius:3px;}
 .result-bar div .bar1 {background-color: #BF152C; width: 0px; height: 6px; float: left; margin-top: 0px;  border-radius:3px;}
-.result-bar div .bar2 { height: 8px; float: left; margin:0px;  border-right: 3px solid#ffffff;}
+.result-bar div .bar2 { height: 8px; float: left; margin:0px;  border-right: 3px solid #ffffff;}
 .result-bar div .bar2::after { content: "정상"; float: right; transform:translate(11px, -14px); font-size: 10px;}
