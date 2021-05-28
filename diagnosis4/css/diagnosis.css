@@ -30,5 +30,7 @@
 .result-bar div { width: 550px; height: 20px; float: left; margin: 20px 0 0 0; }
 .result-bar div p { margin: 0; width:90px; float: left; text-align: left; }
 .result-bar div span { line-height: 20px;}
-.result-bar div .bar {background-color: #BF152C; width: 0px; height: 6px; float: left; margin-top: 7px;  border-radius:3px; overflow: hidden;}
-.result-bar div .bar2 {background-color: #E0E5EE; height: 6px; float: left; margin:0px; border:1px solid #E0E5EE}
+.result-bar div .bar {background-color: #e2e2e2; width: 400px; height: 6px; float: left; margin-top: 7px;  border-radius:3px;}
+.result-bar div .bar1 {background-color: #BF152C; width: 0px; height: 6px; float: left; margin-top: 0px;  border-radius:3px;}
+.result-bar div .bar2 { height: 8px; float: left; margin:0px;  border-right: 5px solid#ffffff;}
+.result-bar div .bar2::after { content: "정상"; float: right; transform:translate(15px, -16px); font-size: 11px;}

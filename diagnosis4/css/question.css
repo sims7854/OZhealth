@@ -52,11 +52,11 @@ input:checked + label {background-color: #2A3352; color: #ffffff;}
 .Q14 { display: none; }
 .Q14 label { top:256px;}
 .Q15 { display: none; }
-.Q15 label { top:210px; left: 195px; width: 200px; float: left; height: 200px; border-radius: 110px; margin-right: 50px; border: 10px solid #BEC8DE; overflow: hidden; background-repeat: no-repeat; background-size: 199px 199px;}
+.Q15 label { top:210px; left: 195px; width: 200px; float: left; height: 200px; border-radius: 110px; margin-right: 50px; border: 10px solid #BEC8DE; overflow: hidden; background-repeat: no-repeat; background-size: 200px 200px;}
 .Q15 label:hover { border: 10px solid #868EB0; background-color: #ffffff; color:#000000; }
 .Q15 input:checked + label { border: 10px solid #2A3352; background-color: transparent; color:#000000; }
 .Q16 { display: none; }
-.Q16 label { top:210px; left: 195px; width: 200px; float: left; height: 200px; border-radius: 110px; margin-right: 50px; border: 10px solid #BEC8DE; overflow: hidden; background-repeat: no-repeat; background-size: 199px 199px; }
+.Q16 label { top:210px; left: 195px; width: 200px; float: left; height: 200px; border-radius: 110px; margin-right: 50px; border: 10px solid #BEC8DE; overflow: hidden; background-repeat: no-repeat; background-size: 200px 200px; }
 .Q16 label:hover { border: 10px solid #868EB0; background-color: #ffffff; color:#000000; }
 .Q16 input:checked + label { border: 10px solid #2A3352; background-color: transparent; color:#000000; }
 .Q17 { display: none; }
