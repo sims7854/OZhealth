@@ -212,7 +212,7 @@
                 
               });
               var Resultbar = anime({
-                targets: '#po .bar',
+                targets: '#po .bar .bar1',
                 width: input*2,
                 duration: 1500,
                 easing: 'easeInOutExpo',
@@ -232,7 +232,7 @@
                 
               });
               var Resultbar2 = anime({
-                targets: '#st .bar',
+                targets: '#st .bar .bar1',
                 width: input2*2,
                 duration: 1500,
                 easing: 'easeInOutExpo',
@@ -252,7 +252,7 @@
                 
               });
               var Resultbar3 = anime({
-                targets: '#wr .bar',
+                targets: '#wr .bar .bar1',
                 width: input3*2,
                 duration: 1500,
                 easing: 'easeInOutExpo',
@@ -272,7 +272,7 @@
                 
               });
               var Resultbar4 = anime({
-                targets: '#pi .bar',
+                targets: '#pi .bar .bar1',
                 width: input4*2,
                 duration: 1500,
                 easing: 'easeInOutExpo',
@@ -292,7 +292,7 @@
                 
               });
               var Resultbar5 = anime({
-                targets: '#ss .bar',
+                targets: '#ss .bar .bar1',
                 width: input5*2,
                 duration: 1500,
                 easing: 'easeInOutExpo',
@@ -311,7 +311,7 @@
                 }
               });
               var Resultbar6 = anime({
-                targets: '#se .bar',
+                targets: '#se .bar .bar1',
                 width: input6*2,
                 duration: 1500,
                 easing: 'easeInOutExpo',
@@ -352,7 +352,19 @@
                recommend4 = "&recommend4=11" ;
                recommend5 = "&recommend5=10" ;
                recommend6 = "&recommend6=9" ;
-               recommendurl = recommendurl1 + recommendurl2 + recommend1 + recommend2 + recommend3 + recommend4 + recommend5 + recommend6
+               recommendAll = recommend1 + recommend2 + recommend3 + recommend4 + recommend5 + recommend6;
+               diagnosis1 = "&w=" + input7;
+               diagnosis2 = "&o=" + input8;
+               diagnosis3 = "&po=" + input;
+               diagnosis4 = "&st=" + input2;
+               diagnosis5 = "&wr=" + input3;
+               diagnosis6 = "&pi=" + input4;
+               diagnosis7 = "&ss=" + input5;
+               diagnosis8 = "&se=" + input6;
+               diagnosisAll = diagnosis1 + diagnosis2 + diagnosis3 + diagnosis4 + diagnosis5 + diagnosis6 + diagnosis7 + diagnosis8;
+ 
+               recommendurl = recommendurl1 + recommendurl2 + recommendAll + diagnosisAll
+               
 
 		}
         
