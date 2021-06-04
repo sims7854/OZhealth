@@ -75,7 +75,7 @@
                         receive_get_data("Q13")*6 + receive_get_data("Q14")*0 + receive_get_data("Q15")*0+ receive_get_data("Q16")*0 ;
             
             $('.recommend_url').on('click', function(){
-                var url1  = "http://skin-skin13.victoriabeautykr.cafe24.com/product/basket_option2.html?product_no=14&sActionType=basket&cate_no=42&";
+                var url1  = "http://skin-skin13.victoriabeautykr.cafe24.com/product/basket_option2.html?product_no=14&sActionType=basket&cate_no=66&";
                 var url2  = "w="+Math.round(input7)+"&o="+Math.round(input8)+"&po="+Math.round(input)+"&st="+Math.round(input2)+"&wr="+Math.round(input3)+"&pi="+Math.round(input4)+"&ss="+Math.round(input5)+"&se="+Math.round(input6);
                 var finalurl = url1 + url2 ;
                 window.open(finalurl,'_blank','width=600px,height=500px'); 
@@ -352,13 +352,17 @@
               /* 상품 추천 */
               recommendurl1 = "http://skin-skin13.victoriabeautykr.cafe24.com/4dskins/recommend.html";
               recommendurl2 = "?product_no=25&sActionType=basket&cate_no=158";
-              recommend1 = "&recommend1=14" ;
-              recommend2 = "&recommend2=13" ;
-              recommend3 = "&recommend3=12" ;
-              recommend4 = "&recommend4=11" ;
-              recommend5 = "&recommend5=10" ;
-              recommend6 = "&recommend6=9" ;
-              recommendAll = recommend1 + recommend2 + recommend3 + recommend4 + recommend5 + recommend6;
+              recommend1 = "&recommend1=26" ;
+              recommend2 = "&recommend2=27" ;
+              recommend3 = "&recommend3=28" ;
+              recommend4 = "&recommend4=29" ;
+              recommend5 = "&recommend5=30" ;
+              recommend6 = "&recommend6=25" ;
+              recommend7 = "&recommend7=9" ;
+              recommend8 = "&recommend8=10" ;
+              recommend9 = "&recommend9=11" ;
+              recommend10 = "&recommend10=12" ;
+              recommendAll = recommend1 + recommend2 + recommend3 + recommend4 + recommend5 + recommend6 + recommend7 + recommend8 + recommend9 + recommend10;
               diagnosis1 = "&w=" + input7;
               diagnosis2 = "&o=" + input8;
               diagnosis3 = "&po=" + input;

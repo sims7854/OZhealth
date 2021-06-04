@@ -17,10 +17,10 @@
 .oil-p { width: 84px; margin:105px 0 0 23px; font-size: 11px; }
 .menu { position: absolute; width: 252px; list-style: none; top: 680px; left: 50%; text-align: center; transform: translate(-50%, 0px); padding: 0; }
 .menu li { float:left; }
-.menu li a { display: block; width: 72px; height: 40px; margin: 3px; border: 3px solid; border-radius: 4px; text-decoration: none; color: #000000;}
-.menu li:nth-child(1) a { background-image: url("../image/icon-1.png"); }
-.menu li:nth-child(2) a { background-image: url("../image/icon-2.png"); }
-.menu li:nth-child(3) a { background-image: url("../image/icon-3.png"); }
+.menu li a { display: block; width: 76px; height: 40px; margin: 3px; border: 1px solid #c1c1c1; border-radius: 4px; text-decoration: none; color: #000000; font-size: 12px;}
+.menu li:nth-child(1) a { line-height: 20px; }
+.menu li:nth-child(2) a { line-height: 20px; }
+.menu li:nth-child(3) a { line-height: 20px; }
 
 .list1 { float: right; width: 84px; height: 84px; border-radius: 110px; border:3px solid #c1c1c1;  overflow: hidden; position: absolute; bottom:0; }
 .list1 > div { width:84px; height: 0px; background-color: #E0E5EE; line-height: 60px; text-align: center; font-size: 12px; position: absolute; bottom :0; }
