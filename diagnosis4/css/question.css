@@ -1,4 +1,5 @@
 * { margin: 0; padding: 0; font-family: 'arial'; -webkit-tap-highlight-color : transparent; -ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none; }
+.intro img { width:1000px; margin:0 0 125px 0; }
 input:focus{ outline:none; }
 span { font-weight: 600; color: #BF152C; font-size:18px; display: block; border: 2px solid #BF152C; border-radius: 19px; width:500px; height:36px; position: relative; left: 50%; transform: translate(-50%, 70px); margin: 15px 0 15px 0; line-height: 36px;  }
 svg { margin:5px 0 0 0; border-radius: 50px; } 
