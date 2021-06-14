@@ -1,0 +1,101 @@
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/anime.min.js"></script>
+<script src="js/diagnosis.js"></script>
+<link href="css/diagnosis.css" rel="stylesheet">
+<div id="line">
+<div id="container">
+    <div id="container1">
+        <div id="ex">
+            <br>
+            <div>
+                <div id="morphing" style="padding: 0 0 0 20px; text-align: center;">
+                    <div id="text" style="position: absolute;">
+                        <p id="po" style="transform: translate(193px, -25px);">모공<br></p>
+                        <p id="st" style="transform: translate(422px, 20px);">피부톤<br></p>
+                        <p id="wr" style="transform: translate(422px, 170px);"><br>주름<br></p>
+                        <p id="pi" style="transform: translate(193px, 215px);"><br>색소침착<br></p>
+                        <p id="ss" style="transform: translate(-38px, 33px);"><br>피지분비<br></p>
+                        <p id="se" style="transform: translate(-38px, -258px);">민감도<br></p>
+                    </div>
+                    <svg width="420" height="480" viewBox="0 0 140 140">
+                        <g fill="none" fill-rule="evenodd">
+                            <g transform="translate(0 0)">
+                                <polygon fill="#eff2f7" stroke="#fff" points="70 0 130.621778 35 130.621778 105 70 140 9.378221999999994 105 9.378221999999994 35"/>
+                                <polygon fill="#eff2f7" stroke="#fff" points="70 21 112.4352446 45.5 112.4352446 94.5 70 119 27.564755399999996 94.5 27.564755399999996 45.5"/>
+                                <polygon fill="#eff2f7" stroke="#fff" points="70 42 94.2487112 56 94.2487112 84 70 98 45.7512888 84 45.7512888 56"/>
+                                <polygon fill="#eff2f7" stroke="#fff" points="70 56 82.1243556 63 82.1243556 77 70 84 57.8756444 77 57.8756444 63"/>
+                            </g>
+                            <polygon class="polymorph" stroke-width="0.5" stroke="#BF152C" points="70 56 82.1243556 63 82.1243556 77 70 84 57.8756444 77 57.8756444 63"></polygon>
+                            <polygon stroke="#fff" points="70 0  70 140"></polygon>
+                            <polygon stroke="#fff" points="130.621778 35 9.378221999999994 105"></polygon>
+                            <polygon stroke="#fff" points="130.621778 105 9.378221999999994 35"></polygon>
+                            <polygon class="shadow1" stroke="#fff" points="70 0 130.621778 35"></polygon>
+                            <polygon class="shadow2" stroke="#fff" points="130.621778 35 130.621778 105"></polygon>
+                            <polygon class="shadow3" stroke="#fff" points="130.621778 105 70 140"></polygon>
+                            <polygon class="shadow4" stroke="#fff" points="70 140 9.378221999999994 105"></polygon>
+                            <polygon class="shadow5" stroke="#fff" points="9.378221999999994 105 9.378221999999994 35"></polygon>
+                            <polygon class="shadow6" stroke="#fff" points="9.378221999999994 35 70 0"></polygon>
+                            <circle class="dot" fill="#BF152C" cx="70" cy="56" r="1"></circle>
+                            <circle class="dot2" fill="#BF152C" cx="82.1243556" cy="63" r="1"></circle>
+                            <circle class="dot3" fill="#BF152C" cx="82.1243556" cy="77" r="1"></circle>
+                            <circle class="dot4" fill="#BF152C" cx="70" cy="84" r="1"></circle>
+                            <circle class="dot5" fill="#BF152C" cx="57.8756444" cy="77" r="1"></circle>
+                            <circle class="dot6" fill="#BF152C" cx="57.8756444" cy="63" r="1"></circle>
+                        </g>
+                    </svg> 
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="container2">
+        <div class="ow-zone">
+            <p>유분</p><p>수분</p>
+            <div id="ex">
+                <div class='box2'>
+                    <div class='wave -one'></div>
+                    <div class='wave -two'></div>
+                    <div class='wave -three'></div>
+                    <div class='title2'>0%</div>
+                </div>
+            </div>
+            <div id="ex2">
+                <div class='box'>
+                    <div class='wave -one'></div>
+                    <div class='wave -two'></div>
+                    <div class='wave -three'></div>
+                    <div class='title'>0%</div>
+                </div>
+            </div>
+        </div>
+        <div class="result-bar">
+            <div id="po"><p>모공</p><div class="bar"><div class="bar1"><div class="bar2" style="width:83px;"></div></div></div>&nbsp;<span>0%</span></div>
+            <div id="st"><p>피부톤</p><div class="bar"><div class="bar1"><div class="bar2" style="width:111px;"></div></div></div>&nbsp;<span>0%</span></div>
+            <div id="wr"><p>주름</p><div class="bar"><div class="bar1"><div class="bar2" style="width:79px;"></div></div></div>&nbsp;<span>0%</span></div>
+            <div id="pi"><p>색소침착</p><div class="bar"><div class="bar1"><div class="bar2" style="width:107px;"></div></div></div>&nbsp;<span>0%</span></div>
+            <div id="ss"><p>피지분비</p><div class="bar"><div class="bar1"><div class="bar2" style="width:91px;"></div></div></div>&nbsp;<span>0%</span></div>
+            <div id="se"><p>민감도</p><div class="bar"><div class="bar1"><div class="bar2" style="width:67px;"></div></div></div>&nbsp;<span>0%</span></div>
+        </div>
+    </div>
+</div>
+    <ul>
+        <li><a id="recommend_url" href="javascript::" onclick="window.open(recommendurl, '_blank', 'width=630, height=636, resizable=no'); return false;"> 화장품 추천받기 </a></li>
+        <li><a href="https://sims7854.github.io/OZhealth/diagnosis4/"> 피부 진단 다시하기 </a></li>
+        <li><a href="javascript::" onclick="copy_to_clipboard()">URL 복사하기</a></li>
+    </ul>
+</div>
+<script type="text/javascript" async> 
+    function copy_to_clipboard() {    
+        var dummy   = document.createElement("input");
+        var url1    = "https://4dskins.com/4dskins/Result-diagnosis.html";
+        var url2    = location.search;
+        
+        document.body.appendChild(dummy);
+        dummy.value = url1 + url2;
+        dummy.select();
+        document.execCommand("copy");
+        document.body.removeChild(dummy);
+        alert('클립보드에 복사 됐습니다.');
+    }
+</script>
