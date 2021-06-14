@@ -323,7 +323,7 @@
                 easing: 'easeInOutExpo',
                 autoplay: true
             });
-              var myObject7 = { prop: '0%' }
+              var myObject7 = { prop: '0' }
               var ResultAni7 = anime({
                 targets: myObject7,
                 prop: input7,
@@ -331,12 +331,12 @@
                 autoplay: true,
                 round: 1,
                 update: function() {
-                    var el = document.querySelector('.box .title');
+                    var el = document.querySelector('.box .title strong');
                         el.innerHTML = JSON.stringify(myObject7).replace(/\"/gi, "").replace(/\{/gi, "").replace(/\}/gi, "").replace(/prop:/gi, "");
                 }
               });
 
-              var myObject8 = { prop: '0%' }
+              var myObject8 = { prop: '0' }
               var ResultAni8 = anime({
                 targets: myObject8,
                 prop: input8,
@@ -344,7 +344,7 @@
                 autoplay: true,
                 round: 1,
                 update: function() {
-                    var el = document.querySelector('.box2 .title2');
+                    var el = document.querySelector('.box2 .title2 strong');
                         el.innerHTML = JSON.stringify(myObject8).replace(/\"/gi, "").replace(/\{/gi, "").replace(/\}/gi, "").replace(/prop:/gi, "");
                 }
               });
