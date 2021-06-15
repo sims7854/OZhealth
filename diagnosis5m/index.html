@@ -7,10 +7,8 @@
 <link href="css/question.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/xeicon/xeicon.min.css">
 <form action="result.html" method="get">
-<div class="btn">
-	<div class="prev-btn" style="display: none;">&#60;</div>
-</div>
-<div class="question">
+<div class="line">
+    <div class="question">
     <div id="ex">
         <div class="progress" >
             <div class="progress-bar"></div>
@@ -172,8 +170,11 @@
 		<div class="result-text" style="padding: 105px 0 0 0;"><p>본 테스트는 측정기를 통한 결과를 대신할 수는 없으며, 참고용으로만 사용해주세요.</p></div>
 		<div class="loading" style="display: none; padding: 210px 0 0 0;"><i class="xi-spinner-2 xi-spin" style="font-size: 40px;"></i><br><span style="display: contents; color: #000000;">분석 중...</span></div>
 	</ul>
-<!-- Q. 1 svg -->
-    
+    </div>
+    <div class="btn">
+        <div class="prev-btn" style="display: none;">&#60;</div>
+    </div>
+</div>
 </form>
 <script>
     document.querySelector('.result').onclick = function(){
