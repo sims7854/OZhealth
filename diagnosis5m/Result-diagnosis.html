@@ -1,0 +1,24 @@
+<!--@layout(/layout/basic/layout.html)-->
+<!--@css(/4dskins/sns.css)-->
+<div class="path">
+    <span>현재 위치</span>
+    <ol>
+        <li><a href="/">홈</a></li>
+        <li title="현재 위치"><strong>sns</strong></li>
+    </ol>
+</div>
+<script type="text/javascript">
+    document.ready = function(){
+        var url1    = "http://sims7854.github.io/OZhealth/diagnosis4/result.html";
+        var url2    = location.search;
+        var url = url1 + url2
+		document.getElementById("main_frame").src = url;
+    }
+</script>
+<div class="titleArea">
+    <h2>피부 자가진단</h2>
+</div>
+<div style="width:100%; height:800px; ">
+	<iframe id="main_frame" src="#none" scrolling=no style="border:none;  overflow:hidden;  width:1200px; height:100%;"></iframe>
+</div>
+
