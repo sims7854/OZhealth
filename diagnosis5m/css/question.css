@@ -24,7 +24,8 @@ label:hover {background-color: #868EB0; color:#ffffff; cursor: pointer;}
 input:checked + label {background-color: #2A3352; color: #ffffff;}
 .result { font-weight: 600; background-color: #BF152C; color:#ffffff; font-size:18px; display: block; border: 2px solid #BF152C; border-radius: 31px; width:300px; height:60px; position: relative; top: 400px; left: 50%; transform: translate(-50%, 0px); margin: 15px 0 15px 0; line-height: 60px;  }
 .result:hover { background-color: #B00020; cursor: pointer; }
-
+.dummy { position: absolute; top: 550px; opacity: 0; }
+.dummy-img { width:1px; height: 1px;}
 .Q1 { display: none; }
 .Q1 label { top:231px;}
 .Q2 { display: none; }
