@@ -4,21 +4,52 @@
 <script src="js/jquery-1.12.4.min.js"></script>
 <link href="css/Q1.css" rel="stylesheet">
 <link href="css/question.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="css/xeicon/xeicon.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 <form action="result.html" method="get">
 <div class="question">
     <div id="ex">
         <br>
         <div class="progress" >
-            <div class="progress-bar"></div>
+            <div class="progress-bar">
+				<div class="progress-bar-2"></div>
+			</div>
+			<div id="circle">
+				<div id="cir"><span>1</span></div>
+				<div id="cir-a" class="cir1"></div>
+				<div id="chk" class="chk1"></div>
+			</div>
+			<div id="circle">
+				<div id="cir"><span>2</span></div>
+				<div id="cir-a" class="cir2"></div>
+				<div id="chk" class="chk2"></div>
+			</div>
+			<div id="circle">
+				<div id="cir"><span>3</span></div>
+				<div id="cir-a" class="cir3"></div>
+				<div id="chk" class="chk3"></div>
+			</div>
+			<div id="circle">
+				<div id="cir"><span>4</span></div>
+				<div id="cir-a" class="cir4"></div>
+				<div id="chk" class="chk4"></div>
+			</div>
+			<div id="circle">
+				<div id="cir"><span>5</span></div>
+				<div id="cir-a" class="cir5"></div>
+				<div id="chk" class="chk5"></div>
+			</div>
         </div>
     </div><br>
 	<div class="btn">
-		<div class="prev-btn" style="display: none;">&#60;</div>
+		<div class="prev-btn" style="display: none;"><span>&#60;</span></div>
 		<div class="next-btn" style="display: none;">&#62;</div>
 	</div>
 	<ul class="intro">
-		<img src="image/4dskin_Regular.png"></img>
+		<h2><strong class="NotoSansKR">나에게 꼭 맞는 스킨케어,</strong></h3>
+		<h1>4D SKINS <strong class="NotoSansKR">자가진단 시스템</strong></h2>
+		<h3 style="margin:150px 0 0 0;">지금 바로 체험해보세요!</h3>	
 		<div class="start-btn">테스트 시작하기</div><br>
 		<i class="xi-spinner-2 xi-spin" style="opacity: 0;"></i>
 		<div class="dummy-img">
@@ -34,7 +65,7 @@
 			<div style="background-image: url(image/wr-4.png);"></div>
 		</div>
 	</ul>
-    <ul class="Q1 moving-q">
+    <ul class="Q1 moving-r">
         <!-- Q. 1 -->
         <span>기본 피부를 선택해 주세요.</span>
     	<input type="radio" name="Q1" id="Q1_1" value="3"><label for="Q1_1">아시아</label>
@@ -46,15 +77,15 @@
 		<input type="radio" name="Q1" id="Q1_7" value="4"><label for="Q1_1">동남아시아</label>
 		<input type="radio" name="Q1" id="Q1_8" value="5"><label for="Q1_1">서남아시아 &amp; 중동</label>
     </ul>
-    <ul class="Q2 moving-q">
+    <ul class="Q2 moving-r">
         <!-- Q. 2 -->
-        <span>성별을 골라주세요. </span>
-        <input type="radio" name="Q2" id="Q2_1" value="0.8"><label for="Q2_1">여성</label>
-        <input type="radio" name="Q2" id="Q2_2" value="1"/><label for="Q2_2">남성</label>
+        <span>당신의 <strong>성별</strong>을 선택해 주세요. </span>
+        <input type="radio" name="Q2" id="Q2_1" value="0.8"><label for="Q2_1">♀ 여성</label>
+        <input type="radio" name="Q2" id="Q2_2" value="1"/><label for="Q2_2">♂ 남성</label>
     </ul>
-    <ul class="Q3 moving-q">
+    <ul class="Q3 moving-r">
         <!-- Q. 3 -->
-        <span>나이를 입력해 주세요.</span><br>
+        <span>해당하는 <strong>나이</strong>를 선택해 주세요.</span><br>
         <!--input class="age" name="Q3" type="text" onkeyup="if(window.event.keyCode==13){age()}" autocomplete="off" value=""-->
 		<input type="radio" name="Q3" id="Q3_1" value="1"><label for="Q3_1">10대</label>
         <input type="radio" name="Q3" id="Q3_2" value="2"><label for="Q3_2">20대</label>
@@ -66,115 +97,115 @@
 			
 		</script>
     </ul>
-    <ul class="Q4 moving-q">
+    <ul class="Q4 moving-r">
         <!-- Q. 4 -->
-        <span>피부타입을 골라주세요.</span>
+        <span><strong>피부타입</strong>을 선택해 주세요.</span>
         <input type="radio" name="Q4" id="Q4_1" value="1"><label for="Q4_1">건성</label>
         <input type="radio" name="Q4" id="Q4_2" value="2"><label for="Q4_2">지성</label>
         <input type="radio" name="Q4" id="Q4_3" value="3"><label for="Q4_3">복합성</label>
         <input type="radio" name="Q4" id="Q4_4" value="4"><label for="Q4_4">중성</label>
         <input type="radio" name="Q4" id="Q4_5" value="3"><label for="Q4_5">모르겠다</label>
     </ul>
-    <ul class="Q5 moving-q">
+    <ul class="Q5 moving-r">
         <!-- Q. 5 -->
-        <span>하루 수면시간이 어떻게 되나요?</span>
+        <span>하루 <strong>수면시간</strong>이 어떻게 되나요?</span>
         <input type="radio" name="Q5" id="Q5_1" value="5"><label for="Q5_1">4시간 미만</label>
         <input type="radio" name="Q5" id="Q5_2" value="4"><label for="Q5_2">4~5시간</label>
         <input type="radio" name="Q5" id="Q5_3" value="2"><label for="Q5_3">5~7시간</label>
         <input type="radio" name="Q5" id="Q5_4" value="1"><label for="Q5_4">7~8시간</label>
         <input type="radio" name="Q5" id="Q5_5" value="1"><label for="Q5_5">8시간 이상</label>
     </ul>
-    <ul class="Q6 moving-q">
+    <ul class="Q6 moving-r">
         <!-- Q. 6 -->
-        <span>하루에 커피를 얼마나 드시나요?</span>
+        <span>하루에 <strong>커피</strong>를 얼마나 드시나요?</span>
         <input type="radio" name="Q6" id="Q6_1" value="1"><label for="Q6_1">마시지않는다</label>
         <input type="radio" name="Q6" id="Q6_2" value="2"><label for="Q6_2">1~2잔</label>
         <input type="radio" name="Q6" id="Q6_3" value="3"><label for="Q6_3">3~4잔</label>
         <input type="radio" name="Q6" id="Q6_4" value="4"><label for="Q6_4">5~6잔</label>
         <input type="radio" name="Q6" id="Q6_5" value="5"><label for="Q6_5">7잔 이상</label>
     </ul>
-    <ul class="Q7 moving-q">
+    <ul class="Q7 moving-r">
         <!-- Q. 7 -->
-        <span>하루에 자외선에 노출되는 시간은 얼마나 되나요?</span>
+        <span>하루에 <strong>자외선</strong>에 노출되는 시간은 얼마나 되나요?</span>
         <input type="radio" name="Q7" id="Q7_1" value="1"><label for="Q7_1">1시간 미만</label>
         <input type="radio" name="Q7" id="Q7_2" value="2"><label for="Q7_2">1~2시간</label>
         <input type="radio" name="Q7" id="Q7_3" value="3"><label for="Q7_3">3시간</label>
         <input type="radio" name="Q7" id="Q7_4" value="4"><label for="Q7_4">4~6시간</label>
         <input type="radio" name="Q7" id="Q7_5" value="5"><label for="Q7_5">6시간 이상</label>
     </ul>
-    <ul class="Q8 moving-q">
+    <ul class="Q8 moving-r">
         <!-- Q. 8 -->
-        <span>평소에 자외선 차단제를 얼마나 자주 사용하나요?</span>
+        <span>평소에 <strong>자외선 차단제</strong>를 얼마나 자주 사용하나요?</span>
         <input type="radio" name="Q8" id="Q8_1" value="5"><label for="Q8_1">전혀 바르지 않는다</label>
         <input type="radio" name="Q8" id="Q8_2" value="4"><label for="Q8_2">여름철 같이 뜨거운 계절에만 바른다</label>
         <input type="radio" name="Q8" id="Q8_3" value="3"><label for="Q8_3">가끔식 바른다</label>
         <input type="radio" name="Q8" id="Q8_4" value="2"><label for="Q8_4">외출할 때마다 바른다</label>
         <input type="radio" name="Q8" id="Q8_5" value="1"><label for="Q8_5">매일 바르며 수시로 덧바른다</label>
     </ul>
-    <ul class="Q9 moving-q">
+    <ul class="Q9 moving-r">
         <!-- Q. 9 -->
-        <span>담배를 얼마나 피우시나요?</span>
+        <span>하루에 <strong>담배</strong>를 얼마나 피우시나요?</span>
         <input type="radio" name="Q9" id="Q9_1" value="1"><label for="Q9_1">전혀 아니다</label>
         <input type="radio" name="Q9" id="Q9_2" value="2"><label for="Q9_2">하루 반갑 이하</label>
         <input type="radio" name="Q9" id="Q9_3" value="3"><label for="Q9_3">하루1갑</label>
         <input type="radio" name="Q9" id="Q9_4" value="5"><label for="Q9_4">하루2갑이상</label>
         <input type="radio" name="Q9" id="Q9_5" value="3"><label for="Q9_5">주변 흡연자로부터 간접흡연을 자주한다</label>
     </ul>
-    <ul class="Q10 moving-q">
+    <ul class="Q10 moving-r">
         <!-- Q. 10 -->
-        <span>세안 후 당신의 얼굴 피부 상태는 어떤가요?</span>
+        <span><strong>세안 후</strong> 당신의 <strong>얼굴 피부</strong> 상태는 어떤가요?</span>
         <input type="radio" name="Q10" id="Q10_1" value="1"><label for="Q10_1">건조하고 심하게 당긴다</label>
         <input type="radio" name="Q10" id="Q10_2" value="2"><label for="Q10_2">건조하거나 당기는 느낌이 든다.</label>
         <input type="radio" name="Q10" id="Q10_3" value="3"><label for="Q10_3">건조한 느낌은 들지만 당기는 느낌은 없다.</label>
         <input type="radio" name="Q10" id="Q10_4" value="4"><label for="Q10_4">아무느낌이 없다</label>
         <input type="radio" name="Q10" id="Q10_5" value="5"><label for="Q10_5">촉촉한 느낌이다</label>
     </ul>
-    <ul class="Q11 moving-q">
+    <ul class="Q11 moving-r">
         <!-- Q. 11 -->
-        <span>평소 얼굴 피부는 촉촉한가요?</span>
+        <span>평소 <strong>얼굴 피부</strong>는 촉촉한가요?</span>
         <input type="radio" name="Q11" id="Q11_1" value="0"><label for="Q11_1">전혀 그렇지 않다</label>
         <input type="radio" name="Q11" id="Q11_2" value="1"><label for="Q11_2">거의 그렇지 않다</label>
         <input type="radio" name="Q11" id="Q11_3" value="3"><label for="Q11_3">가끔 그렇다</label>
         <input type="radio" name="Q11" id="Q11_4" value="4"><label for="Q11_4">자주 그렇다</label>
         <input type="radio" name="Q11" id="Q11_5" value="5"><label for="Q11_5">항상 그렇다</label>
     </ul>
-    <ul class="Q12 moving-q">
+    <ul class="Q12 moving-r">
         <!-- Q. 12 -->
-        <span>얼굴에 모공이 얼마나 있나요?</span>
+        <span style="display: block;">얼굴에 <strong>모공</strong>이 얼마나 있나요?</span>
         <input type="radio" name="Q12" id="Q12_1" value="0"><label for="Q12_1" style="background-image: url(image/normal.png);"></label>
         <input type="radio" name="Q12" id="Q12_2" value="2"><label for="Q12_2" style="background-image: url(image/po-2.png);"></label>
         <input type="radio" name="Q12" id="Q12_3" value="4"><label for="Q12_3" style="background-image: url(image/po-3.png);"></label>
         <input type="radio" name="Q12" id="Q12_4" value="5"><label for="Q12_4" style="background-image: url(image/po-4.png);"></label>
         <!--input type="radio" name="Q12" id="Q12_5" value="5"><label for="Q12_5">5(사진)</label-->
     </ul>
-    <ul class="Q13 moving-q">
+    <ul class="Q13 moving-r">
         <!-- Q. 13 -->
-        <span>세안 후 언제 몇 시간 뒤에 유분기가 생기나요?</span>
+        <span><strong>세안 후</strong> 몇 시간 뒤에 <strong>유분기</strong>가 생기나요?</span>
         <input type="radio" name="Q13" id="Q13_1" value="0"><label for="Q13_1">전혀 생기지않는다</label>
         <input type="radio" name="Q13" id="Q13_2" value="1"><label for="Q13_2">4~6시간</label>
         <input type="radio" name="Q13" id="Q13_3" value="2"><label for="Q13_3">2~4시간</label>
         <input type="radio" name="Q13" id="Q13_4" value="4"><label for="Q13_4">1~2시간</label>
         <input type="radio" name="Q13" id="Q13_5" value="5"><label for="Q13_5">1시간 이내</label>
     </ul>
-    <ul class="Q14 moving-q">
+    <ul class="Q14 moving-r">
         <!-- Q. 14 -->
-        <span>코에 블랙헤드나 화이트헤드가 얼마나 있나요?</span>
+        <span>코에 <strong>블랙헤드</strong>나 <strong>화이트헤드</strong>가 얼마나 있나요?</span>
         <input type="radio" name="Q14" id="Q14_1" value="1"><label for="Q14_1">거의 없다</label>
         <input type="radio" name="Q14" id="Q14_3" value="3"><label for="Q14_3">다소 있다</label>
         <input type="radio" name="Q14" id="Q14_5" value="5"><label for="Q14_5">많이 있다</label>
     </ul>
-    <ul class="Q15 moving-q">
+    <ul class="Q15 moving-r">
         <!-- Q. 15 -->
-        <span>화장품을 사용한 뒤 홍조나 따끔거리는 증상이 있나요?</span>
+        <span style="display: block;"><strong>화장품을 사용한 뒤</strong> 홍조나 따끔거리는 증상이 있나요?</span>
         <input type="radio" name="Q15" id="Q15_1" value="0"><label for="Q15_1" style="background-image: url(image/normal.png);"></label>
         <input type="radio" name="Q15" id="Q15_2" value="2"><label for="Q15_2" style="background-image: url(image/se-2.png);"></label>
         <input type="radio" name="Q15" id="Q15_3" value="4"><label for="Q15_3" style="background-image: url(image/se-3.png);"></label>
         <input type="radio" name="Q15" id="Q15_4" value="5"><label for="Q15_4" style="background-image: url(image/se-4.png);"></label>
         <!--input type="radio" name="Q15" id="Q15_5" value="2"><label for="Q15_5">화장품을 사용하지 않는다</label-->
     </ul>
-    <ul class="Q16 moving-q">
+    <ul class="Q16 moving-r">
         <!-- Q. 16 -->
-        <span>얼굴에 주름이 있나요?</span>
+        <span style="display: block;">얼굴에 <strong>주름</strong>이 있나요?</span>
         <input type="radio" name="Q16" id="Q16_1" value="0"><label for="Q16_1" style="background-image: url(image/normal.png);"></label>
         <input type="radio" name="Q16" id="Q16_2" value="2"><label for="Q16_2" style="background-image: url(image/wr-2.png);"></label>
         <input type="radio" name="Q16" id="Q16_3" value="4"><label for="Q16_3" style="background-image: url(image/wr-3.png);"></label>
@@ -183,7 +214,7 @@
 		<input class="submit" type="submit" id="submit" style="display:none;" value="결과보기" />
 		
     </ul>
-	<ul class="Q17">
+	<ul class="Q17 moving-r">
 		<label class="result-delay"for="submit">결과보기</label>
 		<div class="result"><p>결과보기</p></div>
 		<div class="result-text"><p>본 테스트는 측정기를 통한 결과를 대신할 수는 없으며, 참고용으로만 사용해주세요.</p></div>
@@ -208,10 +239,10 @@
 		<span class="loading-text">분석 중...</span></div>
 	</ul>
 <!-- Q. 1 svg -->
-<ul class="question1">
-<span>현재 살고있는 지역을 선택해 주세요.</span>
-<svg version="1.1" id="svg2985" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 2560 1134" style="enable-background:new 0 0 2560 1134;" xml:space="preserve">
+<ul class="question1 moving-r">
+<span><strong>현재 살고있는 지역</strong>을 선택해 주세요.</span>
+<div class="svg-box">
+	<svg version="1.1" id="svg2985" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="1200px" y="600px" viewBox="0 0 2560 1134" xml:space="preserve">
 <rect id="ocean" class="st0" width="2831.6" height="1134"/>
 <path id="sd" class="st1  middleeast" d="M1382.5,576.6c0.3-0.3,0.3-0.8,0.6-1.1c0.4-0.4,1-0.7,1.4-1.1c0.6-0.6,0-1.9,0.6-2.5
 	c0.4-0.4,1.8,0.2,2.3-0.3c0.4-0.4,2.5-1,2.8-0.7c0.5,0.5,0.4,2,0.6,2.2s0.9,0.1,1.1,0.2c0.3,0.3,0.3,0.9,0.5,1.2
@@ -7643,12 +7674,14 @@
 	<path id="tk-" class="st2" d="M2525.4,730.6c-0.1-0.1,0.2-0.1-0.1-0.1C2525.2,730.4,2525.1,730.6,2525.4,730.6"/>
 	<circle id="tk_" class="st5" cx="2526" cy="727.7" r="5.5"/>
 </g>
-</svg>
+	</svg>
+</div>
 </ul>
 </div>
 <script src="js/Q1.js"></script>
 <script>
  document.querySelector('.result').onclick = function(){
+	 $('.progress').fadeOut(100);
 	 $('.result').fadeOut(100);
 	 $('.result-text').fadeOut(100);
 	 $('.prev-btn').fadeOut(100);
