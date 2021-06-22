@@ -7,7 +7,7 @@ window.onload = function(){
         $(".question1").delay(1000).fadeIn(500);
     }
     page = 0
-    $('path, label, .next-btn').on('click', function(){
+    $('#svg2985 path, label, .next-btn').on('click', function(){
         page = page +1
         var ani3 = anime({
             targets: '.progress .progress-bar .progress-bar-2',
