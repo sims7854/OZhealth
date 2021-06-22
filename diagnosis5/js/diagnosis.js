@@ -204,7 +204,7 @@
                 easing: 'easeInOutExpo',
                 autoplay: true
             });
-            var myObject = { prop: '0%' }
+            var myObject = { prop: '0' }
               var ResultAni = anime({
                 targets: myObject,
                 prop: input,
@@ -212,7 +212,7 @@
                 autoplay: true,
                 round: 1,
                 update: function() {
-                    var el = document.querySelector('#po span');
+                    var el = document.querySelector('#po strong');
                         el.innerHTML = JSON.stringify(myObject).replace(/\"/gi, "").replace(/\{/gi, "").replace(/\}/gi, "").replace(/prop:/gi, "");
                 }
                 
@@ -224,7 +224,7 @@
                 easing: 'easeInOutExpo',
                 autoplay: true
             });
-              var myObject2 = { prop: '0%' }
+              var myObject2 = { prop: '0' }
               var ResultAni2 = anime({
                 targets: myObject2,
                 prop: input2,
@@ -232,7 +232,7 @@
                 autoplay: true,
                 round: 1,
                 update: function() {
-                    var el = document.querySelector('#st span');
+                    var el = document.querySelector('#st strong');
                         el.innerHTML = JSON.stringify(myObject2).replace(/\"/gi, "").replace(/\{/gi, "").replace(/\}/gi, "").replace(/prop:/gi, "");
                 }
                 
@@ -244,7 +244,7 @@
                 easing: 'easeInOutExpo',
                 autoplay: true
             });
-              var myObject3 = { prop: '0%' }
+              var myObject3 = { prop: '0' }
               var ResultAni3 = anime({
                 targets: myObject3,
                 prop: input3,
@@ -252,7 +252,7 @@
                 autoplay: true,
                 round: 1,
                 update: function() {
-                    var el = document.querySelector('#wr span');
+                    var el = document.querySelector('#wr strong');
                         el.innerHTML = JSON.stringify(myObject3).replace(/\"/gi, "").replace(/\{/gi, "").replace(/\}/gi, "").replace(/prop:/gi, "");
                 }
                 
@@ -264,7 +264,7 @@
                 easing: 'easeInOutExpo',
                 autoplay: true
             });
-              var myObject4 = { prop: '0%' }
+              var myObject4 = { prop: '0' }
               var ResultAni4 = anime({
                 targets: myObject4,
                 prop: input4,
@@ -272,7 +272,7 @@
                 autoplay: true,
                 round: 1,
                 update: function() {
-                    var el = document.querySelector('#pi span');
+                    var el = document.querySelector('#pi strong');
                         el.innerHTML = JSON.stringify(myObject4).replace(/\"/gi, "").replace(/\{/gi, "").replace(/\}/gi, "").replace(/prop:/gi, "");
                 }
                 
@@ -284,7 +284,7 @@
                 easing: 'easeInOutExpo',
                 autoplay: true
             });
-              var myObject5 = { prop: '0%' }
+              var myObject5 = { prop: '0' }
               var ResultAni5 = anime({
                 targets: myObject5,
                 prop: input5,
@@ -292,7 +292,7 @@
                 autoplay: true,
                 round: 1,
                 update: function() {
-                    var el = document.querySelector('#ss span');
+                    var el = document.querySelector('#ss strong');
                         el.innerHTML = JSON.stringify(myObject5).replace(/\"/gi, "").replace(/\{/gi, "").replace(/\}/gi, "").replace(/prop:/gi, "");
                 }
                 
@@ -304,7 +304,7 @@
                 easing: 'easeInOutExpo',
                 autoplay: true
             });
-              var myObject6 = { prop: '0%' }
+              var myObject6 = { prop: '0' }
               var ResultAni6 = anime({
                 targets: myObject6,
                 prop: input6,
@@ -312,7 +312,7 @@
                 autoplay: true,
                 round: 1,
                 update: function() {
-                    var el = document.querySelector('#se span');
+                    var el = document.querySelector('#se strong');
                         el.innerHTML = JSON.stringify(myObject6).replace(/\"/gi, "").replace(/\{/gi, "").replace(/\}/gi, "").replace(/prop:/gi, "");
                 }
               });

@@ -29,8 +29,9 @@ ul li a { text-decoration: none; color: #535773;  display: block;}
 
 .result-bar { width:540px; height: 260px; padding: 0 20px 0 0px;}
 .result-bar div { width: 540px; height: 20px; float: left; margin: 20px 0 0 0; }
-.result-bar div p { margin: 0; width:80px; float: left; text-align: left; color: #535773;}
-.result-bar div span { line-height: 20px; color: #535773; padding: 0 0px 0 17px;}
+.result-bar div p { margin: 0; width:80px; float: left; text-align: left; color: #535773; }
+.result-bar div strong { line-height: 20px; color: #535773; padding: 0 0px 0 17px; font-family: 'MullerDemo-ExtraBold';}
+.result-bar div span { line-height: 20px; color: #535773; font-family: 'GMARKETSANSBOLD'; font-size: 10px;}
 .result-bar div .bar {background-color: #f8f9fd; width: 400px; height: 6px; float: left; margin-top: 7px;  border-radius:3px;}
 .result-bar div .bar1 {background: linear-gradient(70deg, #BF152C, transparent); width: 0px; height: 6px; float: left; margin-top: 0px;  border-radius:3px;}
 .result-bar div .bar2 { height: 8px; float: left; margin:0px;  border-right: 1px solid #f8f9fd;}
@@ -44,9 +45,9 @@ ul li a { text-decoration: none; color: #535773;  display: block;}
 .wave.-two {animation: drift 7000ms infinite linear;opacity: .1;background: #fff;}
 .box:after {content: '';display: block;left: 0;top: 0;width: 100%;height: 100%;z-index: 11;transform: translate3d(0, 0, 0);}
 .box2:after {content: '';display: block;left: 0;top: 0;width: 100%;height: 100%;z-index: 11;transform: translate3d(0, 0, 0);}
-.title strong { font-size: 25px; letter-spacing: 0px; }
-.title span { font-size: 15px; letter-spacing: 0px; }
-.title2 strong { font-size: 25px; letter-spacing: 0px; }
+.title strong { font-size: 47px; letter-spacing: 0px; font-family: 'MullerDemo-ExtraBold'; }
+.title span { font-size: 15px; letter-spacing: 0px;  }
+.title2 strong { font-size: 47px; letter-spacing: 0px; font-family: 'MullerDemo-ExtraBold'; }
 .title2 span { font-size: 15px; letter-spacing: 0px; }
 .title {position: absolute;left: 0;top: 50px; width: 100%;z-index: 1;line-height: 40px;text-align: center;transform: translate3d(0, 0, 0);color: #3a629c;text-transform: uppercase;letter-spacing: .4em;font-size: 24px;text-shadow: 0 1px 0 rgba(black, .1);text-indent: .3em;}
 .title2 {position: absolute;left: 0;top: 50px; width: 100%;z-index: 1;line-height: 40px;text-align: center;transform: translate3d(0, 0, 0);color: #865d37;text-transform: uppercase;letter-spacing: .4em;font-size: 24px;text-shadow: 0 1px 0 rgba(black, .1);text-indent: .3em;}
