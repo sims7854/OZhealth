@@ -1,7 +1,13 @@
 @font-face {
-    font-family: 'GmarketSans';
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
-    font-weight: 600;
-    font-display: swap;
-    src: url(fonts/GmarketSansTTF/GmarketSansTTFBold.ttf);
-  }
+}
+@font-face {
+    font-family: 'MullerDemo-ExtraBold';
+    src: url('/OZhealth/diagnosis4/fonts/MullerDemo-ExtraBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
