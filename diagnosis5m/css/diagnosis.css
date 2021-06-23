@@ -41,9 +41,9 @@ ul li a { text-decoration: none; color: #777;  display: block; font-size: 13px; 
 .wave.-two {animation: drift 7000ms infinite linear;opacity: .1;background: #fff;}
 .box:after {content: '';display: block;left: 0;top: 0;width: 100%;height: 100%;z-index: 11;transform: translate3d(0, 0, 0);}
 .box2:after {content: '';display: block;left: 0;top: 0;width: 100%;height: 100%;z-index: 11;transform: translate3d(0, 0, 0);}
-.title strong { font-size: 24px; }
+.title strong { font-size: 24px; font-family: 'MullerDemo-ExtraBold'; }
 .title span { font-size: 14px; }
-.title2 strong { font-size: 24px; }
+.title2 strong { font-size: 24px; font-family: 'MullerDemo-ExtraBold'; }
 .title2 span { font-size: 14px; }
 .title {position: absolute;left: 0;top: 20px;width: 100%;z-index: 1;line-height: 30px;text-align: center;transform: translate3d(0, 0, 0);color: #3a629c;text-transform: uppercase;letter-spacing: 0em;font-size: 24px;text-shadow: 0 1px 0 rgba(black, .1);text-indent: .3em;}
 .title2 {position: absolute;left: 0;top: 20px;width: 100%;z-index: 1;line-height: 30px;text-align: center;transform: translate3d(0, 0, 0);color: #865d37;text-transform: uppercase;letter-spacing: 0em;font-size: 24px;text-shadow: 0 1px 0 rgba(black, .1);text-indent: .3em;}
