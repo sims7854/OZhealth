@@ -1,21 +1,9 @@
-function age() {
-    $(".Q3").fadeOut(100);
-    $(".next-btn").fadeOut(100);
-    $(".Q4").delay(100).fadeIn(100);
-    page = 3 
-    var ani3 = anime({
-        targets: '.progress .progress-bar',
-        width: page*80,
-        duration: 500,
-        easing: 'easeInOutExpo',
-        autoplay: true
-    });
-}
 window.onload = function(){
     document.querySelector('.start-btn').onclick = function(){
-        $(".intro").fadeOut(100);
-        $(".progress").delay(100).fadeIn(100);
-        $(".Q1").delay(100).fadeIn(100);
+        $(".intro").addClass('moving-l');
+        $(".intro").fadeOut(500);
+        $(".progress").addClass('moving-p-i');
+        $(".Q1").delay(1000).fadeIn(500);
     }
     page = 0
     $('path, label, .next-btn').on('click', function(){
@@ -29,7 +17,7 @@ window.onload = function(){
         });
         if (page==1) {
             $(".Q1").fadeOut(100);
-            $(".prev-btn").fadeIn(100);
+            $(".prev-btn").delay(100).fadeIn(100);
             $(".Q2").delay(100).fadeIn(100);	
         };
         if (page==2) {
