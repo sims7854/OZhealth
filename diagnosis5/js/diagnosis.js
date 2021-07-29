@@ -350,7 +350,7 @@
               });
               
               /* 상품 추천 */
-              recommendurl1 = "http://skin-skin13.victoriabeautykr.cafe24.com/4dskins/recommend.html";
+              recommendurl1 = "http://4dskins.com/4dskins/recommend.html";
               recommendurl2 = "?product_no=25&sActionType=basket&cate_no=158";
               recommend1 = "&recommend1=31" ;
               recommend2 = "&recommend2=32" ;
