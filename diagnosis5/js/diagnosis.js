@@ -351,7 +351,7 @@
               
               /* 상품 추천 */
               recommendurl1 = "http://4dskins.com/4dskins/recommend.html";
-              recommendurl2 = "?product_no=25&sActionType=basket&cate_no=158";
+              recommendurl2 = "?product_no=31&sActionType=basket&cate_no=42";
               recommend1 = "&recommend1=31" ;
               recommend2 = "&recommend2=32" ;
               recommend3 = "&recommend3=33" ;
